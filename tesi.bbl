@@ -1,0 +1,16 @@
+\begin{thebibliography}{1}
+
+\bibitem{decentrbootstrapp2p}
+Jochen Dinger and Oliver~P. Waldhorst.
+\newblock Decentralized bootstrapping of p2p systems: A practical view.
+\newblock In Luigi Fratta, Henning Schulzrinne, Yutaka Takahashi, and Otto
+  Spaniol, editors, {\em NETWORKING 2009}, pages 703--715, Berlin, Heidelberg,
+  2009. Springer Berlin Heidelberg.
+
+\bibitem{eclipseatk}
+Sharon~Goldberg Ethan Heilman. Alison~Kendler, Aviv~Zohar.
+\newblock Eclipse attacks on bitcoin’s peer-to-peer network.
+\newblock Cryptology ePrint Archive, Report 2015/263, 2015.
+\newblock \url{https://eprint.iacr.org/2015/263}.
+
+\end{thebibliography}
