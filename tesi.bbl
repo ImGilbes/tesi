@@ -1,5 +1,12 @@
 \begin{thebibliography}{1}
 
+\bibitem{localityaware}
+C.~Cramer, K.~Kutzner, and T.~Fuhrmann.
+\newblock Bootstrapping locality-aware p2p networks.
+\newblock In {\em Proceedings. 2004 12th IEEE International Conference on
+  Networks (ICON 2004) (IEEE Cat. No.04EX955)}, volume~1, pages 357--361 vol.1,
+  2004.
+
 \bibitem{decentrbootstrapp2p}
 Jochen Dinger and Oliver~P. Waldhorst.
 \newblock Decentralized bootstrapping of p2p systems: A practical view.
@@ -12,5 +19,17 @@ Sharon~Goldberg Ethan Heilman. Alison~Kendler, Aviv~Zohar.
 \newblock Eclipse attacks on bitcoin’s peer-to-peer network.
 \newblock Cryptology ePrint Archive, Report 2015/263, 2015.
 \newblock \url{https://eprint.iacr.org/2015/263}.
+
+\bibitem{mahmoud_netsec_boot}
+Mahmoud Mostafa.
+\newblock Bitcoin’s blockchain peer-to-peer network security attacks and
+  countermeasures.
+\newblock {\em Indian Journal of Science and Technology}, 13:767--786, 02 2020.
+
+\bibitem{toucedafakeboot}
+Diego~Suarez Touceda, Jose~M. Sierra, Antonio Izquierdo, and Henning
+  Schulzrinne.
+\newblock Survey of attacks and defenses on p2psip communications.
+\newblock {\em IEEE Communications Surveys Tutorials}, 14(3):750--783, 2012.
 
 \end{thebibliography}

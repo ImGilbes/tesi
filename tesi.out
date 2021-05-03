@@ -2,5 +2,6 @@
 \BOOKMARK [2][-]{subsection.1.1}{Connection and peer discovery}{section.1}% 2
 \BOOKMARK [1][-]{section.2}{Bitcoin Network Security Issues}{}% 3
 \BOOKMARK [2][-]{subsubsection.2.0.1}{Peer database structure}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.1}{Eclipse attacks}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.2}{Fake bootstrapping}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.1}{Eclipse attack}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.2}{Fake bootstrapping attack}{section.2}% 6
+\BOOKMARK [1][-]{section.3}{Results}{}% 7
