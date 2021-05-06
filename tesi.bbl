@@ -19,6 +19,11 @@ Jochen Dinger and Oliver~P. Waldhorst.
   Spaniol, editors, {\em NETWORKING 2009}, pages 703--715, Berlin, Heidelberg,
   2009. Springer Berlin Heidelberg.
 
+\bibitem{dotan2020surveychallenges}
+Maya Dotan, Yvonne-Anne Pignolet, Stefan Schmid, Saar Tochner, and Aviv Zohar.
+\newblock Survey on cryptocurrency networking: Context, state-of-the-art,
+  challenges, 2020.
+
 \bibitem{eclipseatk}
 Sharon~Goldberg Ethan Heilman. Alison~Kendler, Aviv~Zohar.
 \newblock Eclipse attacks on bitcoin’s peer-to-peer network.
