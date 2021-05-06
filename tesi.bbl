@@ -1,4 +1,9 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{completeattacksurvey}
+Mauro Conti, E.~Sandeep~Kumar, Chhagan Lal, and Sushmita Ruj.
+\newblock A survey on security and privacy issues of bitcoin.
+\newblock {\em IEEE Communications Surveys Tutorials}, 20(4):3416--3452, 2018.
 
 \bibitem{localityaware}
 C.~Cramer, K.~Kutzner, and T.~Fuhrmann.
@@ -20,16 +25,51 @@ Sharon~Goldberg Ethan Heilman. Alison~Kendler, Aviv~Zohar.
 \newblock Cryptology ePrint Archive, Report 2015/263, 2015.
 \newblock \url{https://eprint.iacr.org/2015/263}.
 
+\bibitem{selfishmining}
+Ittay Eyal and Emin~Gun Sirer.
+\newblock Majority is not enough: Bitcoin mining is vulnerable, 2013.
+
+\bibitem{doublespendfastpay}
+Ghassan~O. Karame, Elli Androulaki, and Srdjan Capkun.
+\newblock Double-spending fast payments in bitcoin.
+\newblock In {\em Proceedings of the 2012 ACM Conference on Computer and
+  Communications Security}, CCS '12, page 906–917, New York, NY, USA, 2012.
+  Association for Computing Machinery.
+
+\bibitem{leelavimolsilp2018selfish}
+Tin Leelavimolsilp, Long Tran-Thanh, and Sebastian Stein.
+\newblock On the preliminary investigation of selfish mining strategy with
+  multiple selfish miners, 2018.
+
 \bibitem{mahmoud_netsec_boot}
 Mahmoud Mostafa.
 \newblock Bitcoin’s blockchain peer-to-peer network security attacks and
   countermeasures.
 \newblock {\em Indian Journal of Science and Technology}, 13:767--786, 02 2020.
 
+\bibitem{saad2019attacksurface}
+Muhammad Saad, Jeffrey Spaulding, Laurent Njilla, Charles Kamhoua, Sachin
+  Shetty, DaeHun Nyang, and Aziz Mohaisen.
+\newblock Exploring the attack surface of blockchain: A systematic overview,
+  2019.
+
+\bibitem{51atk}
+Sarwar Sayeed and Hector Marco-Gisbert.
+\newblock Assessing blockchain consensus and security mechanisms against the
+  51% attack.
+\newblock {\em Applied Sciences}, 9(9), 2019.
+
 \bibitem{toucedafakeboot}
 Diego~Suarez Touceda, Jose~M. Sierra, Antonio Izquierdo, and Henning
   Schulzrinne.
 \newblock Survey of attacks and defenses on p2psip communications.
 \newblock {\em IEEE Communications Surveys Tutorials}, 14(3):750--783, 2012.
+
+\bibitem{secpermissionlessblock}
+Hao Wang, Chunpeng Ge, and Zhe Liu.
+\newblock On the security of permissionless blockchain systems: Challenges and
+  research perspective.
+\newblock In {\em 2021 IEEE Conference on Dependable and Secure Computing
+  (DSC)}, pages 1--8, 2021.
 
 \end{thebibliography}
