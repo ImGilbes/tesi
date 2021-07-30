@@ -17,11 +17,14 @@
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Bitcoin peer-to-peer protocol}{1}{section.1}\protected@file@percent }
-\newlabel{netintro}{{1}{1}{Bitcoin peer-to-peer protocol}{section.1}{}}
+\newlabel{sec:netintro}{{1}{1}{Bitcoin peer-to-peer protocol}{section.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Connection and peer discovery}{1}{subsection.1.1}\protected@file@percent }
-\newlabel{peerdisc}{{1.1}{1}{Connection and peer discovery}{subsection.1.1}{}}
+\newlabel{sec:peerdisc}{{1.1}{1}{Connection and peer discovery}{subsection.1.1}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Peers connection handshake\relax }}{1}{figure.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:btcconn}{{1}{1}{Peers connection handshake\relax }{figure.caption.1}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Addresses exchange upon connection\relax }}{2}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:addr}{{2}{2}{Addresses exchange upon connection\relax }{figure.caption.2}{}}
 \citation{decentrbootstrapp2p}
 \citation{doublespendfastpay}
 \citation{51atk}
@@ -31,35 +34,41 @@
 \citation{saad2019attacksurface}
 \citation{secpermissionlessblock}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Peer database structure}{3}{subsection.1.2}\protected@file@percent }
-\newlabel{cachestruct}{{1.2}{3}{Peer database structure}{subsection.1.2}{}}
+\newlabel{sec:cachestruct}{{1.2}{3}{Peer database structure}{subsection.1.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Bitcoin security concerns}{3}{section.2}\protected@file@percent }
-\newlabel{securityintro}{{2}{3}{Bitcoin security concerns}{section.2}{}}
+\newlabel{sec:securityintro}{{2}{3}{Bitcoin security concerns}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Common security threats on cryptocurrecies}{3}{subsection.2.1}\protected@file@percent }
 \citation{toucedafakeboot}
 \citation{eclipseatk}
 \citation{dotan2020surveychallenges}
+\citation{douceur2002sybil}
+\citation{kedziora-sybil-ledgers}
+\citation{zhang-ds-sybil}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Network security}{4}{subsection.2.2}\protected@file@percent }
+\newlabel{sec:netsec}{{2.2}{4}{Network security}{subsection.2.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Sybil attack}{4}{subsubsection.2.2.1}\protected@file@percent }
+\newlabel{sec:sec:sybil}{{2.2.1}{4}{Sybil attack}{subsubsection.2.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Sybil nodes behaviour during the attack\relax }}{5}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:sybil}{{3}{5}{Sybil nodes behaviour during the attack\relax }{figure.caption.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Block race for double-spending\relax }}{5}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:race1}{{4}{5}{Block race for double-spending\relax }{figure.caption.4}{}}
 \citation{eclipseatk}
 \citation{decentrbootstrapp2p}
 \citation{localityaware}
 \citation{toucedafakeboot}
 \citation{mahmoud_netsec_boot}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Network security}{4}{subsection.2.1}\protected@file@percent }
-\newlabel{netsec}{{2.1}{4}{Network security}{subsection.2.1}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}Fake bootstrapping attack}{4}{subsubsection.2.1.1}\protected@file@percent }
-\newlabel{fakeboot}{{2.1.1}{4}{Fake bootstrapping attack}{subsubsection.2.1.1}{}}
 \citation{eclipseatk}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces The attacker releases the longest chain\relax }}{6}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:race2}{{5}{6}{The attacker releases the longest chain\relax }{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Fake bootstrapping attack}{6}{subsubsection.2.2.2}\protected@file@percent }
+\newlabel{sec:fakeboot}{{2.2.2}{6}{Fake bootstrapping attack}{subsubsection.2.2.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.3}Eclipse attack}{6}{subsubsection.2.2.3}\protected@file@percent }
+\newlabel{sec:eclipse}{{2.2.3}{6}{Eclipse attack}{subsubsection.2.2.3}{}}
 \bibstyle{plain}
 \bibdata{bib.bib}
 \bibcite{completeattacksurvey}{1}
 \bibcite{localityaware}{2}
 \bibcite{decentrbootstrapp2p}{3}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2}Eclipse attack}{5}{subsubsection.2.1.2}\protected@file@percent }
-\newlabel{eclipse}{{2.1.2}{5}{Eclipse attack}{subsubsection.2.1.2}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.3}Sybil attack}{5}{subsubsection.2.1.3}\protected@file@percent }
-\newlabel{sybil}{{2.1.3}{5}{Sybil attack}{subsubsection.2.1.3}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.4}DDoS attack}{5}{subsubsection.2.1.4}\protected@file@percent }
-\newlabel{ddos}{{2.1.4}{5}{DDoS attack}{subsubsection.2.1.4}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{5}{section.3}\protected@file@percent }
-\newlabel{res}{{3}{5}{Results}{section.3}{}}
 \bibcite{dotan2020surveychallenges}{4}
 \bibcite{eclipseatk}{5}
 \bibcite{selfishmining}{6}
@@ -67,6 +76,10 @@
 \bibcite{leelavimolsilp2018selfish}{8}
 \bibcite{mahmoud_netsec_boot}{9}
 \bibcite{saad2019attacksurface}{10}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.4}DDoS attack}{7}{subsubsection.2.2.4}\protected@file@percent }
+\newlabel{sec:ddos}{{2.2.4}{7}{DDoS attack}{subsubsection.2.2.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{7}{section.3}\protected@file@percent }
+\newlabel{sec:res}{{3}{7}{Results}{section.3}{}}
 \bibcite{51atk}{11}
 \bibcite{toucedafakeboot}{12}
 \bibcite{secpermissionlessblock}{13}

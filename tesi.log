@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.19)  28 JUL 2021 18:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.19)  30 JUL 2021 18:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -442,7 +442,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 22.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 22.
-<pict/BTCconnection.png, id=44, 352.31625pt x 367.3725pt>
+<pict/BTCconnection.png, id=49, 352.31625pt x 367.3725pt>
 File: pict/BTCconnection.png Graphic file (type png)
 <use pict/BTCconnection.png>
 Package pdftex.def Info: pict/BTCconnection.png  used on input line 28.
@@ -450,61 +450,123 @@ Package pdftex.def Info: pict/BTCconnection.png  used on input line 28.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./pict/BTCconnection.png>]
-<pict/BTCaddr.png, id=58, 351.3125pt x 294.09875pt>
+
+
+LaTeX Warning: Reference `netsec' on page 2 undefined on input line 42.
+
+<pict/BTCaddr.png, id=63, 351.3125pt x 294.09875pt>
 File: pict/BTCaddr.png Graphic file (type png)
 <use pict/BTCaddr.png>
-Package pdftex.def Info: pict/BTCaddr.png  used on input line 46.
+Package pdftex.def Info: pict/BTCaddr.png  used on input line 47.
 (pdftex.def)             Requested size: 211.38832pt x 176.9677pt.
 
 Underfull \vbox (badness 5787) has occurred while \output is active []
 
- [2 <./pict/BTCaddr.png>]
-Underfull \vbox (badness 3557) has occurred while \output is active []
-
- [3]
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+ [2 <./pict/BTCaddr.png>] [3]
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--94
+LaTeX Warning: Citation `douceur2002sybil' on page 4 undefined on input line 97
+.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--98
 
  []
 
-[4] (./tesi.bbl [5]
+
+LaTeX Warning: Citation `kedziora-sybil-ledgers' on page 4 undefined on input l
+ine 99.
+
+<pict/sybil.png, id=94, 371.3875pt x 496.85625pt>
+File: pict/sybil.png Graphic file (type png)
+<use pict/sybil.png>
+Package pdftex.def Info: pict/sybil.png  used on input line 106.
+(pdftex.def)             Requested size: 187.89914pt x 251.38425pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: Citation `zhang-ds-sybil' on page 4 undefined on input line 114.
+
+
+[4]
+Overfull \hbox (4.93588pt too wide) in paragraph at lines 120--121
+[]\OT1/cmr/m/n/12 In the mean-while Sybil nodes ham-per the growth both of the 
+pub-lic and vic-tim's blockchain
+ []
+
+<pict/blockrace1.png, id=105, 901.3675pt x 176.66pt>
+File: pict/blockrace1.png Graphic file (type png)
+<use pict/blockrace1.png>
+Package pdftex.def Info: pict/blockrace1.png  used on input line 123.
+(pdftex.def)             Requested size: 422.77664pt x 82.86038pt.
+<pict/blockrace2.png, id=106, 1141.26375pt x 176.66pt>
+File: pict/blockrace2.png Graphic file (type png)
+<use pict/blockrace2.png>
+Package pdftex.def Info: pict/blockrace2.png  used on input line 130.
+(pdftex.def)             Requested size: 422.77664pt x 65.44135pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 5388) has occurred while \output is active []
+
+ [5 <./pict/sybil.png> <./pict/blockrace1.png>]
+
+LaTeX Warning: Reference `res' on page 6 undefined on input line 141.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
+
+ []
+
+
+LaTeX Warning: Reference `netsec' on page 6 undefined on input line 152.
+
+[6 <./pict/blockrace2.png>] (./tesi.bbl
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 31.
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 138.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 138.
+ [7])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 184.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 184.
  (./tesi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 138.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 138.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 184.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 184.
 Package rerunfilecheck Info: File `tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 4607EAB719BBD05ACF1554ED4927EC30;680.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 138.
+(rerunfilecheck)             Checksum: 696BAF71D1421411EDD4F15A27F78272;772.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 184.
  ) 
 Here is how much of TeX's memory you used:
- 9892 strings out of 481239
- 156092 string characters out of 5920377
- 432057 words of memory out of 5000000
- 24982 multiletter control sequences out of 15000+600000
+ 9924 strings out of 481239
+ 156649 string characters out of 5920377
+ 432380 words of memory out of 5000000
+ 25005 multiletter control sequences out of 15000+600000
  538022 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,42p,919b,448s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,6n,42p,919b,450s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tesi.pdf (6 pages, 97219 bytes).
+Output written on tesi.pdf (8 pages, 142233 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 121 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 167 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 114 words of extra memory for PDF output out of 10000 (max. 10000000)
 
