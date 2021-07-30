@@ -24,6 +24,12 @@ Maya Dotan, Yvonne-Anne Pignolet, Stefan Schmid, Saar Tochner, and Aviv Zohar.
 \newblock Survey on cryptocurrency networking: Context, state-of-the-art,
   challenges, 2020.
 
+\bibitem{douceur2002sybil}
+John~R Douceur.
+\newblock The sybil attack.
+\newblock In {\em International workshop on peer-to-peer systems}, pages
+  251--260. Springer, 2002.
+
 \bibitem{eclipseatk}
 Sharon~Goldberg Ethan Heilman. Alison~Kendler, Aviv~Zohar.
 \newblock Eclipse attacks on bitcoin’s peer-to-peer network.
@@ -34,12 +40,23 @@ Sharon~Goldberg Ethan Heilman. Alison~Kendler, Aviv~Zohar.
 Ittay Eyal and Emin~Gun Sirer.
 \newblock Majority is not enough: Bitcoin mining is vulnerable, 2013.
 
+\bibitem{iqbal-sybil}
+Mubashar Iqbal and Raimundas Matulevičius.
+\newblock Exploring sybil and double-spending risks in blockchain systems.
+\newblock {\em IEEE Access}, 9:76153--76177, 2021.
+
 \bibitem{doublespendfastpay}
 Ghassan~O. Karame, Elli Androulaki, and Srdjan Capkun.
 \newblock Double-spending fast payments in bitcoin.
 \newblock In {\em Proceedings of the 2012 ACM Conference on Computer and
   Communications Security}, CCS '12, page 906–917, New York, NY, USA, 2012.
   Association for Computing Machinery.
+
+\bibitem{kedziora-sybil-ledgers}
+Michal Kedziora, Patryk Kozlowski, and Piotr Jozwiak.
+\newblock {\em Security of Blockchain Distributed Ledger Consensus Mechanism in
+  Context of the Sybil Attack}, pages 407--418.
+\newblock 09 2020.
 
 \bibitem{leelavimolsilp2018selfish}
 Tin Leelavimolsilp, Long Tran-Thanh, and Sebastian Stein.
@@ -76,5 +93,17 @@ Hao Wang, Chunpeng Ge, and Zhe Liu.
   research perspective.
 \newblock In {\em 2021 IEEE Conference on Dependable and Secure Computing
   (DSC)}, pages 1--8, 2021.
+
+\bibitem{zhang-ds-sybil}
+Shijie Zhang and Jong-Hyouk Lee.
+\newblock Double-spending with a sybil attack in the bitcoin decentralized
+  network.
+\newblock {\em IEEE Transactions on Industrial Informatics}, 15(10):5715--5722,
+  2019.
+
+\bibitem{zhang-sybil-mitigations}
+Shijie Zhang and Jong-Hyouk Lee.
+\newblock Mitigations on sybil-based double-spend attacks in bitcoin.
+\newblock {\em IEEE Consumer Electronics Magazine}, pages 1--1, 2020.
 
 \end{thebibliography}
