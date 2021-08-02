@@ -20,6 +20,113 @@
 \begin{document}
 \maketitle
 
+\section{Introduction to Bitcoin}\label{sec:introbtc}
+Bitcoin address = hash of the public key = receiving address
+
+miners bundle transactions in blocks
+
+blocks are advertised in order to claim a mining reward
+
+blockchain = distributed public ledger
+
+coins are represented only in form of transactions
+
+UTXO unspent transaction output
+
+keep global view of the blockchain consistent
+
+pow + probabilistic distributed consensus protocol
+
+the correct state of the blockchain is obtained by election
+
+to verify transactions miners have to perform a computational task
+
+pow puzzle in sha 256, difficulty exponential on the number of zeros
+
+transaction verification is O(1)
+
+mine a block = hash the txs in the block + varying nonce => solve computational task
+
+reward generating transaction + transaction fees
+
+target value( for the mining difficulty adjustment) changed every 2016 blocks, keeps block verification time around 10 minutes
+
+transactions are stored using a merkle tree
+
+tempering a block is impossible 
+
+natural probabilistic blockchain forks and how they solve by themselves
+
+mining pools
+
+A creates a transaction with a BTC transfer to B, it advertises the transaction to the miners by broadcasting it on the network, miners include the transaction in a block and when they mine it the transaction will belong to the blockchain and will be verified after some time.
+
+partecipants require no authentication (permissionless) to join the network.
+
+
+itcoin is a cryptocurrency
+
+
+\subsection{An introductory example to Bitcoin usage}\label{sec:useexample}
+A basic usage example, shown in Fig.~\ref{fig:basicexample}, is presented here to get the reader started with Bitcoin.
+
+\begin{figure}[h!]
+	\includegraphics[width=.90\textwidth]{pict/basicexample.png}
+	\centering
+	\caption{Bitcoin introductory use case}
+	\label{fig:basicexample}
+\end{figure}
+
+Let Alice and Bob be two Bitcoin users with a third-party wallet software. Each wallet is associated with a pair ECDSA keys used to identify users. The private key is used to sign issued transactions; instead, hashing the public key will produce the Bitcoin address on which Bob can receive Bitcoins. 
+
+Suppose that Alice wants to transfer some amount of Bitcoins to Bob. Alice will generate a transaction in which she uses some set of unspent Bitcoins. The generated transaction will then be broadcast to the bitcoin network.
+
+A subset of the nodes, called miners, compete against one another in a parallel transaction confirmation process. Transactions are confirmed once they are included in a block added to the blockchain (\emph{mined} block).
+
+To create a block, miners have to solve an exponentially difficult computational problem and therefore have to employ their computational power for process. The miner that first creates the new block is rewarded with reward, that is included as a \emph{reward generating transaction} in the block, and with the \emph{transaction fees} payed by the users whose transactions have been confirmed.
+
+Once the transaction is included in the blockchain it is confirmed thus the receiver will be able to spend again the transferred coins.
+\subsection{Proof-of-work (PoW)}\label{sec:pow}
+
+
+
+\paragraph{Why PoW?}\label{sec:whypow}
+
+
+\subsection{Transaction structure}\label{sec:tx}
+
+Transactions implement transfers and, collected and ordered in the blockchain, represent the entire set of coins available to users and its history. As a case in point, one can determine the balance of a certain wallet just by scanning the transactions on the blockchain~\cite{tschorsch-intro-survey}.
+
+In Fig.~\ref{fig:tx} the reader can find the structure of a transaction, with its main fields.
+
+\begin{figure}[h!]
+	\includegraphics[width=.40\textwidth]{pict/txstruct.png}
+	\centering
+	\caption{Transaction structure}
+	\label{fig:tx}
+\end{figure}
+
+In particular, the \texttt{lock\_time} field refers to the time or the blockchain height after which the transaction can be included in a block.
+
+Transactions collect a set of \emph{inputs} and \emph{outputs}. Inputs are a collection of unspent coin sets, that are available to the user as previous transaction outputs or \textit{unspent transaction outputs} (UTXO). Outputs, instead, specify the number of coins to be transferred.
+
+Each input and output structure include \emph{scripts}. These are a set of instructions, written in a Forth-like, stack based language that describe the means to access the transferred coins. The script of a standard transaction includes a public key that, when hashed, yields a Bitcoin address, and a private key signature. The most common scripts on the market are \emph{Pay-to-PubKeyHash} (P2PKH) and \emph{Pay-to-ScriptHash} (P2SH).
+
+Broadcast transactions may be deemed invalid by honest miners and thus dropped. That might be the case for transactions that try to spend more than once the same set of coins or use invalid addresses. Nodes that broadcast invalid transactions may incur in bans if their behaviour is considered malicious.
+
+\subsection{Block structure and blockchain}\label{sec:block}
+ ciao
+ 
+\begin{figure}[h!]
+	\includegraphics[width=.55\textwidth]{pict/blockstruct.png}
+	\centering
+	\caption{Block structure in the blockchain}
+	\label{fig:blockstrcut}
+\end{figure}
+
+\subsection{Miners behaviour}\label{sec:miners}
+\subsection{Consensus protocol}\label{sec:consensus}
+
 \section{Bitcoin peer-to-peer protocol}\label{sec:netintro}
 
 \begin{figure}[h!]
