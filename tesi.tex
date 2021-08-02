@@ -21,50 +21,15 @@
 \maketitle
 
 \section{Introduction to Bitcoin}\label{sec:introbtc}
-Bitcoin address = hash of the public key = receiving address
-
-miners bundle transactions in blocks
-
-blocks are advertised in order to claim a mining reward
-
-blockchain = distributed public ledger
-
-coins are represented only in form of transactions
-
-UTXO unspent transaction output
-
-keep global view of the blockchain consistent
-
-pow + probabilistic distributed consensus protocol
-
-the correct state of the blockchain is obtained by election
-
-to verify transactions miners have to perform a computational task
-
-pow puzzle in sha 256, difficulty exponential on the number of zeros
-
-transaction verification is O(1)
-
-mine a block = hash the txs in the block + varying nonce => solve computational task
-
-reward generating transaction + transaction fees
-
-target value( for the mining difficulty adjustment) changed every 2016 blocks, keeps block verification time around 10 minutes
-
-transactions are stored using a merkle tree
-
-tempering a block is impossible 
-
 natural probabilistic blockchain forks and how they solve by themselves
 
 mining pools
 
-A creates a transaction with a BTC transfer to B, it advertises the transaction to the miners by broadcasting it on the network, miners include the transaction in a block and when they mine it the transaction will belong to the blockchain and will be verified after some time.
 
 partecipants require no authentication (permissionless) to join the network.
 
 
-itcoin is a cryptocurrency
+Bitcoin is a cryptocurrency~\cite{nakamoto}
 
 
 \subsection{An introductory example to Bitcoin usage}\label{sec:useexample}
@@ -99,7 +64,7 @@ Transactions implement transfers and, collected and ordered in the blockchain, r
 
 In Fig.~\ref{fig:tx} the reader can find the structure of a transaction, with its main fields.
 
-\begin{figure}[h!]
+\begin{figure}[h]
 	\includegraphics[width=.40\textwidth]{pict/txstruct.png}
 	\centering
 	\caption{Transaction structure}
@@ -108,34 +73,90 @@ In Fig.~\ref{fig:tx} the reader can find the structure of a transaction, with it
 
 In particular, the \texttt{lock\_time} field refers to the time or the blockchain height after which the transaction can be included in a block.
 
-Transactions collect a set of \emph{inputs} and \emph{outputs}. Inputs are a collection of unspent coin sets, that are available to the user as previous transaction outputs or \textit{unspent transaction outputs} (UTXO). Outputs, instead, specify the number of coins to be transferred.
+Transactions collect a set of \emph{inputs} and \emph{outputs}. Inputs are a collection of unspent coin sets, that are available to the user as previous transaction outputs or \textit{unspent transaction outputs} (UTXO). Outputs, instead, specify the number of coins to be transferred and a receiver address.
 
-Each input and output structure include \emph{scripts}. These are a set of instructions, written in a Forth-like, stack based language that describe the means to access the transferred coins. The script of a standard transaction includes a public key that, when hashed, yields a Bitcoin address, and a private key signature. The most common scripts on the market are \emph{Pay-to-PubKeyHash} (P2PKH) and \emph{Pay-to-ScriptHash} (P2SH).
+Each input and output structure includes \emph{scripts}. These are a set of instructions, written in a Forth-like, stack-based language that describe the means to access the transferred coins. The script of a standard transaction includes a public key that, when hashed, yields a Bitcoin address, and a private key signature. The most common scripts on the market are \emph{Pay-to-PubKeyHash} (P2PKH) and \emph{Pay-to-ScriptHash} (P2SH).
 
-Broadcast transactions may be deemed invalid by honest miners and thus dropped. That might be the case for transactions that try to spend more than once the same set of coins or use invalid addresses. Nodes that broadcast invalid transactions may incur in bans if their behaviour is considered malicious.
+Broadcast transactions are verified before being added to a block and may be deemed invalid by honest miners and thus dropped. That might be the case for transactions that try to spend more than once the same set of coins or use invalid addresses. Nodes that broadcast invalid transactions may incur in bans if their behaviour is considered malicious.
 
 \subsection{Block structure and blockchain}\label{sec:block}
- ciao
- 
-\begin{figure}[h!]
+
+The blockchain is a public distributed ledger, structured as an append-only linked list. It stores the entire transaction history of every peer in form of blocks.
+
+In a block as set of transactions is bundled together and stored as a Merkle Tree, which ensures the data is unaltered and undamaged from the moment it is put into the block.
+
+On top of that each block contains the hash of the previous block in the blockchain and its own hash, thus granting that blocks cannot be tempered, for altering a transaction would result in mismatching hashes in the Merkle Tree, the stored block hash and in the hash in the next block in the blockchain.
+
+Blocks have to be mined in order to be added to the blockchain. This means that the right \emph{nonce} needs to be found. The nonce is a varying value field that modifies the resulting hash of the block. A block is considered valid when a nonce such that the resulting hash is lower that a well-known \emph{target value} is found. That is equivalent to finding an hash that begins with $n$ zeroes.
+
+Looking for the right nonce implies scanning and is therefore exponential on $n$ number of zeroes. Validating a block is instead a fast, one-step task, i.e. hash of the block.
+
+The target value, and therefore the \emph{difficulty} of the computational task, is adjusted every 2016 blocks in order to keep the block generation and validation time around ten minutes.
+
+Fig.~\ref{fig:blockstruct} shows the main fields stored in a block.
+
+\begin{figure}[h]
 	\includegraphics[width=.55\textwidth]{pict/blockstruct.png}
 	\centering
 	\caption{Block structure in the blockchain}
-	\label{fig:blockstrcut}
+	\label{fig:blockstruct}
 \end{figure}
 
 \subsection{Miners behaviour}\label{sec:miners}
-\subsection{Consensus protocol}\label{sec:consensus}
 
-\section{Bitcoin peer-to-peer protocol}\label{sec:netintro}
+The subset of peers that concurrently try to mine blocks by finding the right nonce are called miners, as described in Section~\ref{sec:block}. What motivates the miners to invest their computational power are mining rewards and transaction fees.
+
+Mining rewards are implemented as transaction to the miner's wallet address that is included in the new block by the miner itself. Transaction fees are instead an amount of Bitcoins that the issuer of a transaction discretionally gives to the miners as an incentive for their work. Transactions with low transaction fees may incur in long processing times, since miners prioritize high rewards.\\
+
+Transactions and blocks are gossiped through the network. Although each node has its own relay policy, it is in their interest, as honest miners, to get to know most of pending transactions available for mining and to keep the view of the blockchain consistent at each node.
+
+In particular, it is in the interest of miners to spread as fast as possible newly mined blocks in order to claim rewards and not to waste time on stale views of the blockchain.
+
+For the latter purpose, nodes need to keep their local blockchain view consistent with that of their neighbours. Nodes exchange \texttt{getblocks} messages to request \texttt{inv} messages which advertise local blocks. Missing blocks in a received \texttt{inv} message are retrieved with a \texttt{getdata} message~\cite{protocoldoc}.
+
+\texttt{inv} messages are also gossiped when a node receives a new block. The described message exchange can be found in Fig.~\ref{fig:synch}.
 
 \begin{figure}[h!]
-	\includegraphics[width=.45\textwidth]{pict/blockchain-synch.png}
+	\includegraphics[width=.35\textwidth]{pict/blockchain-synch.png}
 	\centering
-	\caption{blockchcain synch}
+	\caption{blockchain synch}
 	\label{fig:synch}
 \end{figure}
 
+\subsection{Proof-of-Work and Consensus protocol}\label{sec:consensus}
+whenever the block chain goes into an incosistent state all nodes update their local copy with the state on which the majority of nodes agree -  thus teh correct state os the ledger is obtained by election
+
+fault-tolerant consensus protocl to ensure that all nodes agree on the order in which entries have been appended to the blockchain.\\
+
+
+In Bitcoin, as well as in other cryptocurrencies, the transaction verification process (mining) is distributed. The legitimacy of a transaction is verified by the majority of nodes before it is added to the public ledger, the blockchain.
+
+These distributed environments are vulnerable to attacks in which a malicious user connects multiple fake replicas of himself to the network. If the number of fake attacking nodes exceeds that of the honest nodes, the attacker can forge any kind of data and validate it, thus appending it to the blockchain.
+
+To avoid such scenarios, in order to append data to the blockchain, a Proof-of-Work is required. PoWs are cryptographic math puzzles that require scanning for a value, the nonce, which correct value attests that the node has put computational power and time to verify the transaction(s). Mining is also described in Section~\ref{sec:useexample} and~\ref{sec:block}.
+
+Thus, PoW discourages any kind of data forgery. Furthermore, tempering on the blockchain is impossible, thanks to the definition of Merkle tree and blockchain, as described in Section~\ref{sec:block}. Bitcoin is therefore resistant both to tempering and forgery.
+
+As mining is defined as a distributed process and due to the lack of any centralized ledger, nodes may share inconsistent views of the blockchain. This is the case if relayed blocks are not delivered to some nodes or two or more nodes mine a new block approximately at the same time.
+
+\emph{Forks} on the blockchain that are not maliciously engineered are solved by themselves by following a simple rule: only the longest branch of the blockchain is considered valid.
+
+If two nodes are working on different branches of the same height, due to the random nature of mining, eventually one will release a new block before another. Hence its blockchain will be the longest and the only one considered correct.
+
+A fault-tolerant distributed consensus protocol ensures that all nodes agree on the order of the entries of the blockchain. More specifically the protocol states that:
+\begin{enumerate}
+	\item input and output values are rational
+	\item transactions only spend unspent outputs
+	\item all inputs being spent have valid signatures
+	\item no coinbase transactions were spent within 100 blocks of their creation
+	\item no transactions spend inputs with a \texttt{time\_lock} before the block in which they are confirmed
+\end{enumerate} 
+ 
+The PoW based consensus algorithm is generally considered robust and extremely scalable, as no authorization is required to join the network and mine.
+
+
+
+\section{Bitcoin peer-to-peer protocol}\label{sec:netintro}
 \subsection{Connection and peer discovery}\label{sec:peerdisc}
 In order to establish a connection two peers need to exchange version messages over an unencrypted TCP channel in an handshake fashion as shown in \emph{Fig.~\ref{fig:btcconn}}. The node that first sends a \texttt{version} message is said to be establishing an \emph{outgoing connection}. The receiving node sets up an \emph{ingoing connection} instead. Once the handshake is completed the connection is fully set up.
 
@@ -296,7 +317,7 @@ Every peer-to-peer system needs some mean to let nodes join the network: in Bitc
 
 In a fake bootstrapping attack the peers contacted while a node is still initiating its connections, and hence its knowledge of the network, flood the bootstrapping peer with malicious addresses.
 
-The results in Chapter~\ref{res} show how feeding bogus information to a joining node can seriously influence its view of the network and lead to network partitions and peer eclipsing. This condition would also increase the efficacy of other network-level attacks, such as a DDoS, and the success rate of spending and mining attacks~\cite{eclipseatk}.\\
+The results in Chapter~\ref{sec:res} show how feeding bogus information to a joining node can seriously influence its view of the network and lead to network partitions and peer eclipsing. This condition would also increase the efficacy of other network-level attacks, such as a DDoS, and the success rate of spending and mining attacks~\cite{eclipseatk}.\\
 
 Prevention is done by ensuring a node can contact a trustworthy peer when joining the network. Peer caches and centralized bootstrap services serve this purpose, allowing joining nodes to make use of old neighbours while having central bootstrap servers as a fallback.
 

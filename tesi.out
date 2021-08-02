@@ -4,7 +4,7 @@
 \BOOKMARK [2][-]{subsection.1.3}{Transaction structure}{section.1}% 4
 \BOOKMARK [2][-]{subsection.1.4}{Block structure and blockchain}{section.1}% 5
 \BOOKMARK [2][-]{subsection.1.5}{Miners behaviour}{section.1}% 6
-\BOOKMARK [2][-]{subsection.1.6}{Consensus protocol}{section.1}% 7
+\BOOKMARK [2][-]{subsection.1.6}{Proof-of-Work and Consensus protocol}{section.1}% 7
 \BOOKMARK [1][-]{section.2}{Bitcoin peer-to-peer protocol}{}% 8
 \BOOKMARK [2][-]{subsection.2.1}{Connection and peer discovery}{section.2}% 9
 \BOOKMARK [2][-]{subsection.2.2}{Peer database structure}{section.2}% 10

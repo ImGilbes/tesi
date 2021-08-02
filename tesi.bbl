@@ -1,5 +1,10 @@
 \begin{thebibliography}{10}
 
+\bibitem{protocoldoc}
+Bitcoin protocol documentation.
+\newblock \url{https://en.bitcoin.it/wiki/Protocol_documentation}.
+\newblock Accessed: 2021-8-2.
+
 \bibitem{completeattacksurvey}
 Mauro Conti, E.~Sandeep~Kumar, Chhagan Lal, and Sushmita Ruj.
 \newblock A survey on security and privacy issues of bitcoin.
@@ -21,8 +26,9 @@ Jochen Dinger and Oliver~P. Waldhorst.
 
 \bibitem{dotan2020surveychallenges}
 Maya Dotan, Yvonne-Anne Pignolet, Stefan Schmid, Saar Tochner, and Aviv Zohar.
-\newblock Survey on cryptocurrency networking: Context, state-of-the-art,
-  challenges, 2020.
+\newblock Survey on blockchain networking: Context, state-of-the-art,
+  challenges.
+\newblock {\em ACM Comput. Surv.}, 54(5), May 2021.
 
 \bibitem{douceur2002sybil}
 John~R Douceur.
@@ -37,8 +43,9 @@ Sharon~Goldberg Ethan Heilman. Alison~Kendler, Aviv~Zohar.
 \newblock \url{https://eprint.iacr.org/2015/263}.
 
 \bibitem{selfishmining}
-Ittay Eyal and Emin~Gun Sirer.
-\newblock Majority is not enough: Bitcoin mining is vulnerable, 2013.
+Ittay Eyal and Emin~G\"{u}n Sirer.
+\newblock Majority is not enough: Bitcoin mining is vulnerable.
+\newblock {\em Commun. ACM}, 61(7):95–102, June 2018.
 
 \bibitem{iqbal-sybil}
 Mubashar Iqbal and Raimundas Matulevičius.
@@ -61,7 +68,8 @@ Michal Kedziora, Patryk Kozlowski, and Piotr Jozwiak.
 \bibitem{leelavimolsilp2018selfish}
 Tin Leelavimolsilp, Long Tran-Thanh, and Sebastian Stein.
 \newblock On the preliminary investigation of selfish mining strategy with
-  multiple selfish miners, 2018.
+  multiple selfish miners.
+\newblock 2018.
 
 \bibitem{mahmoud_netsec_boot}
 Mahmoud Mostafa.
@@ -69,16 +77,22 @@ Mahmoud Mostafa.
   countermeasures.
 \newblock {\em Indian Journal of Science and Technology}, 13:767--786, 02 2020.
 
+\bibitem{nakamoto}
+Satoshi Nakamoto.
+\newblock Bitcoin: A peer-to-peer electronic cash system.
+\newblock \url{https://bitcoin.org/bitcoin.pdf}, 2008.
+\newblock Accessed: 2021-8-2.
+
 \bibitem{saad2019attacksurface}
 Muhammad Saad, Jeffrey Spaulding, Laurent Njilla, Charles Kamhoua, Sachin
-  Shetty, DaeHun Nyang, and Aziz Mohaisen.
-\newblock Exploring the attack surface of blockchain: A systematic overview,
-  2019.
+  Shetty, DaeHun Nyang, and David Mohaisen.
+\newblock Exploring the attack surface of blockchain: A comprehensive survey.
+\newblock {\em IEEE Communications Surveys Tutorials}, 22(3):1977--2008, 2020.
 
 \bibitem{51atk}
 Sarwar Sayeed and Hector Marco-Gisbert.
 \newblock Assessing blockchain consensus and security mechanisms against the
-  51% attack.
+  51\% attack.
 \newblock {\em Applied Sciences}, 9(9), 2019.
 
 \bibitem{toucedafakeboot}
@@ -86,6 +100,12 @@ Diego~Suarez Touceda, Jose~M. Sierra, Antonio Izquierdo, and Henning
   Schulzrinne.
 \newblock Survey of attacks and defenses on p2psip communications.
 \newblock {\em IEEE Communications Surveys Tutorials}, 14(3):750--783, 2012.
+
+\bibitem{tschorsch-intro-survey}
+Florian Tschorsch and Björn Scheuermann.
+\newblock Bitcoin and beyond: A technical survey on decentralized digital
+  currencies.
+\newblock {\em IEEE Communications Surveys Tutorials}, 18(3):2084--2123, 2016.
 
 \bibitem{secpermissionlessblock}
 Hao Wang, Chunpeng Ge, and Zhe Liu.
@@ -104,6 +124,6 @@ Shijie Zhang and Jong-Hyouk Lee.
 \bibitem{zhang-sybil-mitigations}
 Shijie Zhang and Jong-Hyouk Lee.
 \newblock Mitigations on sybil-based double-spend attacks in bitcoin.
-\newblock {\em IEEE Consumer Electronics Magazine}, pages 1--1, 2020.
+\newblock {\em IEEE Consumer Electronics Magazine}, 2020.
 
 \end{thebibliography}
