@@ -21,15 +21,15 @@
 \maketitle
 
 \section{Introduction to Bitcoin}\label{sec:introbtc}
-natural probabilistic blockchain forks and how they solve by themselves
+Bitcoin is a cryptocurrency and an electronic payment system built on a fully-decentralized peer-to-peer network.
 
-mining pools
+It uses a permissionless blockchain as ledger and relies on \emph{Proof-of-Work} (PoW) based probabilistic consensus algorithm to achieve eventual data consistency~\cite{nakamoto}.
 
+A Proof-of-work is a computational tasks given to peer, which solution is necessary to validate data appended to the blockchain. The high amount of time required to solve PoW puzzles makes attacks on the consensus algorithm infeasible, in the assumption that no user holds more than 50\% of the computing power on the network (see section~\ref{sec:securityintro}).
 
-partecipants require no authentication (permissionless) to join the network.
+Moreover the structure of the blockchain, as shown in Section~\ref{fig:blockstruct}, makes tempering infeasible, thus ensuring the integrity of the data in blockchain.\\
 
-
-Bitcoin is a cryptocurrency~\cite{nakamoto}
+In the following sections the reader will find an introduction to the Bitcoin network, where its main components and their function are analysed.
 
 
 \subsection{An introductory example to Bitcoin usage}\label{sec:useexample}
@@ -48,19 +48,12 @@ Suppose that Alice wants to transfer some amount of Bitcoins to Bob. Alice will 
 
 A subset of the nodes, called miners, compete against one another in a parallel transaction confirmation process. Transactions are confirmed once they are included in a block added to the blockchain (\emph{mined} block).
 
-To create a block, miners have to solve an exponentially difficult computational problem and therefore have to employ their computational power for process. The miner that first creates the new block is rewarded with reward, that is included as a \emph{reward generating transaction} in the block, and with the \emph{transaction fees} payed by the users whose transactions have been confirmed.
+To create a block, miners have to solve an exponentially difficult computational problem and therefore have to employ their computational power for process. The miner that first creates the new block is rewarded with reward, that is included as a \emph{reward generating transaction} in the block, and with the \emph{transaction fees} paid by the users whose transactions have been confirmed.
 
 Once the transaction is included in the blockchain it is confirmed thus the receiver will be able to spend again the transferred coins.
-\subsection{Proof-of-work (PoW)}\label{sec:pow}
-
-
-
-\paragraph{Why PoW?}\label{sec:whypow}
-
 
 \subsection{Transaction structure}\label{sec:tx}
-
-Transactions implement transfers and, collected and ordered in the blockchain, represent the entire set of coins available to users and its history. As a case in point, one can determine the balance of a certain wallet just by scanning the transactions on the blockchain~\cite{tschorsch-intro-survey}.
+Transactions implement transfers and represent the entire set of coins available to users and its history, when collected and ordered in the blockchain. Hence, one can determine the balance of a certain wallet just by scanning the transactions on the blockchain~\cite{tschorsch-intro-survey}.
 
 In Fig.~\ref{fig:tx} the reader can find the structure of a transaction, with its main fields.
 
@@ -75,21 +68,20 @@ In particular, the \texttt{lock\_time} field refers to the time or the blockchai
 
 Transactions collect a set of \emph{inputs} and \emph{outputs}. Inputs are a collection of unspent coin sets, that are available to the user as previous transaction outputs or \textit{unspent transaction outputs} (UTXO). Outputs, instead, specify the number of coins to be transferred and a receiver address.
 
-Each input and output structure includes \emph{scripts}. These are a set of instructions, written in a Forth-like, stack-based language that describe the means to access the transferred coins. The script of a standard transaction includes a public key that, when hashed, yields a Bitcoin address, and a private key signature. The most common scripts on the market are \emph{Pay-to-PubKeyHash} (P2PKH) and \emph{Pay-to-ScriptHash} (P2SH).
+Each input and output structure includes \emph{scripts}. These are sets of instructions, written in a Forth-like, stack-based language that describe the means to access the transferred coins. The script of a standard transaction includes a public key that, when hashed, yields a Bitcoin address, and a private key signature. The most common scripts on the market are \emph{Pay-to-PubKeyHash} (P2PKH) and \emph{Pay-to-ScriptHash} (P2SH).
 
 Broadcast transactions are verified before being added to a block and may be deemed invalid by honest miners and thus dropped. That might be the case for transactions that try to spend more than once the same set of coins or use invalid addresses. Nodes that broadcast invalid transactions may incur in bans if their behaviour is considered malicious.
 
 \subsection{Block structure and blockchain}\label{sec:block}
-
 The blockchain is a public distributed ledger, structured as an append-only linked list. It stores the entire transaction history of every peer in form of blocks.
 
-In a block as set of transactions is bundled together and stored as a Merkle Tree, which ensures the data is unaltered and undamaged from the moment it is put into the block.
+In a block a set of transactions is bundled together and stored as a Merkle Tree, which ensures the data is unaltered and undamaged from the moment it is put into the block.
 
-On top of that each block contains the hash of the previous block in the blockchain and its own hash, thus granting that blocks cannot be tempered, for altering a transaction would result in mismatching hashes in the Merkle Tree, the stored block hash and in the hash in the next block in the blockchain.
+On top of that, each block contains the hash of the previous block in the blockchain and its own hash, thus preventing entirely block tempering, for altering a transaction would result in mismatching hashes in the Merkle Tree, in the stored block hash and in the hash in the next block in the blockchain.
 
 Blocks have to be mined in order to be added to the blockchain. This means that the right \emph{nonce} needs to be found. The nonce is a varying value field that modifies the resulting hash of the block. A block is considered valid when a nonce such that the resulting hash is lower that a well-known \emph{target value} is found. That is equivalent to finding an hash that begins with $n$ zeroes.
 
-Looking for the right nonce implies scanning and is therefore exponential on $n$ number of zeroes. Validating a block is instead a fast, one-step task, i.e. hash of the block.
+Looking for the right nonce is exponential on $n$ number of zeroes.
 
 The target value, and therefore the \emph{difficulty} of the computational task, is adjusted every 2016 blocks in order to keep the block generation and validation time around ten minutes.
 
@@ -103,20 +95,19 @@ Fig.~\ref{fig:blockstruct} shows the main fields stored in a block.
 \end{figure}
 
 \subsection{Miners behaviour}\label{sec:miners}
-
 The subset of peers that concurrently try to mine blocks by finding the right nonce are called miners, as described in Section~\ref{sec:block}. What motivates the miners to invest their computational power are mining rewards and transaction fees.
 
-Mining rewards are implemented as transaction to the miner's wallet address that is included in the new block by the miner itself. Transaction fees are instead an amount of Bitcoins that the issuer of a transaction discretionally gives to the miners as an incentive for their work. Transactions with low transaction fees may incur in long processing times, since miners prioritize high rewards.\\
+The mining reward is implemented as a transaction to the miner's wallet address that is included in the new block by the miner itself. Transaction fees are instead an amount of Bitcoins that the issuer of a transaction discretionally gives to the miners as an incentive for their work. Transactions with low transaction fees may incur in long processing times, since miners prioritize high rewards.\\
 
 Transactions and blocks are gossiped through the network. Although each node has its own relay policy, it is in their interest, as honest miners, to get to know most of pending transactions available for mining and to keep the view of the blockchain consistent at each node.
 
-In particular, it is in the interest of miners to spread as fast as possible newly mined blocks in order to claim rewards and not to waste time on stale views of the blockchain.
+In particular, it is in the interest of miners to spread as fast as possible newly mined blocks in order to claim rewards and not waste time on stale views of the blockchain.
 
-For the latter purpose, nodes need to keep their local blockchain view consistent with that of their neighbours. Nodes exchange \texttt{getblocks} messages to request \texttt{inv} messages which advertise local blocks. Missing blocks in a received \texttt{inv} message are retrieved with a \texttt{getdata} message~\cite{protocoldoc}.
+For the latter purpose, nodes need to keep their local blockchain view consistent with that of their neighbours. Nodes exchange \texttt{getblocks} messages to request \texttt{inv} messages which advertise local blocks. Missing blocks in a received \texttt{inv} message are retrieved with a \texttt{getdata} message~\cite{protocoldoc}. The described message exchange can be found in Fig.~\ref{fig:synch}.
 
-\texttt{inv} messages are also gossiped when a node receives a new block. The described message exchange can be found in Fig.~\ref{fig:synch}.
+Furthermore, \texttt{inv} messages are also gossiped when a node receives a new block. It is relevant to note that new blocks will be dropped by the receiving peers if any transaction is invalid or already spent. Nodes implicitly accept a block by starting to work on the next one, that contains the hash of last received valid block. 
 
-\begin{figure}[h!]
+\begin{figure}[h]
 	\includegraphics[width=.35\textwidth]{pict/blockchain-synch.png}
 	\centering
 	\caption{blockchain synch}
@@ -124,11 +115,6 @@ For the latter purpose, nodes need to keep their local blockchain view consisten
 \end{figure}
 
 \subsection{Proof-of-Work and Consensus protocol}\label{sec:consensus}
-whenever the block chain goes into an incosistent state all nodes update their local copy with the state on which the majority of nodes agree -  thus teh correct state os the ledger is obtained by election
-
-fault-tolerant consensus protocl to ensure that all nodes agree on the order in which entries have been appended to the blockchain.\\
-
-
 In Bitcoin, as well as in other cryptocurrencies, the transaction verification process (mining) is distributed. The legitimacy of a transaction is verified by the majority of nodes before it is added to the public ledger, the blockchain.
 
 These distributed environments are vulnerable to attacks in which a malicious user connects multiple fake replicas of himself to the network. If the number of fake attacking nodes exceeds that of the honest nodes, the attacker can forge any kind of data and validate it, thus appending it to the blockchain.
@@ -137,23 +123,21 @@ To avoid such scenarios, in order to append data to the blockchain, a Proof-of-W
 
 Thus, PoW discourages any kind of data forgery. Furthermore, tempering on the blockchain is impossible, thanks to the definition of Merkle tree and blockchain, as described in Section~\ref{sec:block}. Bitcoin is therefore resistant both to tempering and forgery.
 
-As mining is defined as a distributed process and due to the lack of any centralized ledger, nodes may share inconsistent views of the blockchain. This is the case if relayed blocks are not delivered to some nodes or two or more nodes mine a new block approximately at the same time.
+As mining is defined as a distributed process, and due to the lack of any central ledger, nodes may share inconsistent views of the blockchain. This is the case if relayed blocks are not delivered to some nodes or two or more nodes mine a new block approximately at the same time.
 
 \emph{Forks} on the blockchain that are not maliciously engineered are solved by themselves by following a simple rule: only the longest branch of the blockchain is considered valid.
 
 If two nodes are working on different branches of the same height, due to the random nature of mining, eventually one will release a new block before another. Hence its blockchain will be the longest and the only one considered correct.
 
-A fault-tolerant distributed consensus protocol ensures that all nodes agree on the order of the entries of the blockchain. More specifically the protocol states that:
+To ensure that all nodes agree on the order of the entries of the blockchain, some simple rules are defined. More specifically, they state that:
 \begin{enumerate}
 	\item input and output values are rational
 	\item transactions only spend unspent outputs
 	\item all inputs being spent have valid signatures
-	\item no coinbase transactions were spent within 100 blocks of their creation
 	\item no transactions spend inputs with a \texttt{time\_lock} before the block in which they are confirmed
 \end{enumerate} 
  
-The PoW based consensus algorithm is generally considered robust and extremely scalable, as no authorization is required to join the network and mine.
-
+Bitcoin's PoW-based distributed consensus algorithm is defined as probabilistic since it guarantees eventual consistency. Furthermore it is generally considered robust and extremely scalable, as no authorization is required to join the network and mine.
 
 
 \section{Bitcoin peer-to-peer protocol}\label{sec:netintro}
@@ -167,17 +151,25 @@ In order to establish a connection two peers need to exchange version messages o
 	\label{fig:btcconn}
 \end{figure}
 
-Each node is able to establish up to 8 outgoing connections and 117 ingoing connections, for a total of 125 connections. In order to keep its connections active, each peer sends a message to each neighbour at least once every thirty minutes. If more than ninety minutes pass without receiving anything from a neighbour, the connection is dropped. Each node always tries to keep eight outgoing connections active, therefore, upon dropping an outgoing connection, a node tries to connect to another address in its peer cache.
+Each node is able to establish up to 8 outgoing connections and 117 ingoing connections, for a total of 125 connections. In order to keep its connections active, each peer sends a message to each neighbour at least once every thirty minutes. If more than ninety minutes pass without receiving anything from a neighbour, the connection is dropped.
 
-Nodes on fresh bootstrap make use of hardcoded \emph{DNS seeds} as their first mean to discover other peers. DNS seed servers are maintained by community members and provide clients with a list of addresses that can be either dynamically gathered through a periodic scan of the network or manually updated by server administrators. As a fallback option the user is able to specify through command line a list of addresses the client can connect to. Were both these two options to fail the client has a hardcoded list of peers it can directly connect to, though this is considered the last resort for bootstrapping peers.
+Each node always tries to keep eight outgoing connections active, therefore, upon dropping an outgoing connection, a node tries to connect to another address in its peer cache.\\
+
+Nodes on fresh bootstrap make use of hardcoded \emph{DNS seeds} as their first mean to discover other peers. DNS seed servers are maintained by community members and provide clients with a list of addresses that can be either dynamically gathered through a periodic scan of the network or manually updated by server administrators.
+
+As a fallback option the user is able to specify through command line a list of addresses the client can connect to. Were both these two options to fail the client has a hardcoded list of peers it can directly connect to, though this is considered the last resort for bootstrapping peers.\\
 
 Nodes at startup that were previously on the network shall first lookup peer names in their local address database, implemented as "peer.dat". The database contains the address of each peer the node has come to know during its lifetime in the network.
 
 If the node has disconnected for a time too long, many of the addresses in the database may have become outdated or unreachable. A node that cannot connect to any address in the peer database or has spent up to eleven seconds trying to connect unsuccessfully to at least one of the peers in the database behaves as on fresh bootstrap and resolves to query a DNS first.
 
-The use of a local address database, also called \emph{peer cache}, provides reconnecting peers a fully-decentralized way to join the network and is the first line of defence against \emph{fake bootstrap attacks}; the topic along with other security concerns is discussed in Chapter \ref{netsec}.
+The use of a local address database, also called \emph{peer cache}, provides reconnecting peers a fully-decentralized way to join the network and is the first line of defence against \emph{fake bootstrap attacks}; the topic along with other security concerns is discussed in Chapter~\ref{sec:netsec}.\\
 
-Peer discovery after the first connection of a node is carried on through the exchange of \texttt{addr} messages containing the address and port number of other peers in the network. On connection set up the two nodes exchange \texttt{addr} messages, as shown in \emph{Fig.~\ref{fig:addr}}, providing each other with addresses from their local peer database.On top of that, every twenty-four hours each node advertises itself on the network with an \texttt{addr} message containing only its own address.
+Peer discovery after the first connection of a node is carried on through the exchange of \texttt{addr} messages containing the address and port number of other peers in the network~\cite{protocoldoc},~\cite{devguidep2p}.
+
+On connection set up the two nodes exchange \texttt{addr} messages, as shown in \emph{Fig.~\ref{fig:addr}}, providing each other with addresses from their local peer database.
+
+On top of that, every twenty-four hours each node advertises itself on the network with an \texttt{addr} message containing only its own address.
 
 \begin{figure}[h]
 	\includegraphics[width=.45\textwidth]{pict/BTCaddr.png}
@@ -186,7 +178,7 @@ Peer discovery after the first connection of a node is carried on through the ex
 	\label{fig:addr}
 \end{figure}
 
- \texttt{addr} messages can contain at most one thousand addresses; additionally those containing ten or fewer addresses are relayed. This behaviour contributes to the gossiping of self-advertisement messages even though messages are relayed only to a small subset of neighbours, namely to a couple of peers.
+\texttt{addr} messages can contain at most one thousand addresses; additionally those containing ten or fewer addresses are relayed. This behaviour contributes to the gossiping of self-advertisement messages even though messages are relayed only to a small subset of neighbours, namely to a couple of peers.
 
 \subsection{Peer database structure}\label{sec:cachestruct}
 The local peer database or cache serves the purpose of storing the addresses a node has come to know from \texttt{addr} messages and DNS seeds. The database is constituted of the \texttt{new} and the \texttt{tried} tables.
@@ -199,28 +191,38 @@ Peer caches have been widely implemented in distributed systems so far as they a
 
 \section{Bitcoin security concerns}\label{sec:securityintro}
 \subsection{Common security threats on cryptocurrecies}
-Bitcoin's decentralized, uncontrolled environment is open to a wide range of attacks, many of which can be applied to other cryptocurrencies as well. For this reason the following could be considered attack paradigms, with the same rationale, but different implementation amongst different cryptocurrency systems.
+Bitcoin's decentralized, uncontrolled environment is open to a wide range of attacks, many of which are common threats for other cryptocurrencies as well. For this reason, the attacks described here can be carried out other systems as well, with the same rationale, but different implementation.\\
 
-Attacks like \textit{double-spending} aim to exploit system deficiencies: a malicious user tries to spend, with different transactions, the same set of coins two times. Although proof-of-work consensus makes double-spending infeasible, the attack can be still executed through other approaches that manipulate peers, as with network partitions, or were other conditions to be met~\cite{doublespendfastpay}.
+Decentralized permissionless blockchains with PoW-based consensus algorithm are by definition vulnerable to \textit{51\%} or \textit{majority} attacks~\cite{nakamoto}. In these a user controls more than half of the computing power (often called \textit{hash rate}) available on the entire network~\cite{51atk}.
 
-Double-spending can be also carried out were an attacker to hold the majority of the computing power, this condition is known as \textit{51\%} or \textit{majority} attack~\cite{51atk}. With the majority of the network's hash rate an attacker would also be able to fork the blockchain to its own advantage and prevent transactions and blocks from being verified; this represents the worst security threat for any cryptocurrency.
+The attacker can thus subvert the consensus algorithm and validate harmful data, maliciously fork the blockchain or arbitrarily prevent blocks and transactions from verification.\\
 
-Blockchain forks can be exploited to engineer block races as in \textit{selfish mining} attacks, were the malicious user intentionally holds private his mined blocks~\cite{selfishmining},~\cite{leelavimolsilp2018selfish}. If the attacker successfully keeps his private chain longer than the public one it can release his mined blocks, thus claiming the rewards for himself and wasting other miners' computing power.
+Most of the malicious users that aim for a revenue from their attacks, often opt for \textit{double-spending} attacks. By definition, in double-spending attacks the same set of outputs is spent twice, hence the attacker gains Bitcoins or obtains resources from merchants for free.
 
-These are just a few attacks that can be driven onto Bitcoin, as this chapter serves only introductory purposes. In the following sections there is more on network attacks, which are the focus of this thesis. The interested reader can find complete security overviews in the works of Conti et al., Saad et al. and Wang et al.~\cite{completeattacksurvey},~\cite{saad2019attacksurface},~\cite{secpermissionlessblock}.
+Although proof-of-work consensus makes double-spending infeasible, since the transactions wouldn't be validated, the attack can be still executed with other approaches. As a case in point, double-spending can be executed  if the attacker can successfully partition the network (see Section~\ref{sec:sybil}, or were other conditions to be met~\cite{doublespendfastpay}.\\
+
+The way the correct state of the blockchain is elected, selecting the longest branch as the only valid, is exploitable from attacks that engineer block races.
+
+In block races two or more peers spend computing power mining different forks of the same height. By definition of Bitcoin's consensus, there will be a point at which only one branch will be selected as valid and all the others will be discarded.
+
+Block races can enable double-spending, as shown in Section~\ref{sec:sybil} and~\ref{sec:eclipse}, or for attacks as \textit{selfish mining}, where the malicious user holds private his mined blocks, thus forking the chain.
+
+For the time the private chain of the attacker is longer that the public one, it can be released on the network, thus claiming the rewards for himself and wasting other miners' computing power~\cite{selfishmining}.\\
+
+These are just a few attacks that can be driven onto Bitcoin, as this chapter serves only introductory purposes. In the following sections there is more on network attacks, which are the focus of this thesis. The interested reader can find complete security overviews in the works of Conti et al., Saad et al. and Wang et al.~\cite{contiatksurvey},~\cite{saad2019attacksurface},~\cite{secpermissionlessblock}.
 
 \subsection{Network security}\label{sec:netsec}
 Attacks that exploit vulnerabilities in the design and implementation of Bitcoin protocols and its peer-to-peer network fall under the category of network attacks.
 
-Bitcoin is exposed to all the common threats that affect other peer-to-peer systems; these have been widely studied in the literature as in Touceda et al, 2012~\cite{toucedafakeboot}. The aim of this section is to understand how these attacks apply to Bitcoin and what are its defences.
+Bitcoin is exposed to all the common threats that affect other peer-to-peer systems; these have been widely studied in the literature as in Touceda et al, 2012~\cite{toucedafakeboot}. The aim of this section is to understand how these attacks apply to Bitcoin and what are its defences\\
 
-The attacks reviewed in this chapter mainly focus on topology manipulation, with the exception of the \emph{DDoS} attack.
+In network attacks. often the goal of the attacker is to alter the view of the network of a node, or group of nodes, by sending false network information or by connecting a large number of adversary-controlled peers to the victim, with the purpose of monopolizing its connections.
 
-Often the goal of the attacker is to alter the view of the network of a node, or group of nodes, by sending false network information with the purpose of monopolizing its connections.
+In this way network partitions, or other states in which the attacker can effectively control the data received by the victim, are be created.
 
-Thus victims become isolated and a network partition is created. This condition, often referred to as the \textit{eclipsing} of node, is inherently dangerous for the attacker can alter the node's view of the blockchain, waste its computing power or simply cut off its communications.
+Nodes that become isolated from the network become vulnerable to\textit{N-confirmation double spending} or mining attacks, such as selfish mining or \textit{stubborn mining}~\cite{stubborn}. Furthermore 51\% attacks are easier to launch, since a part of the network computing power is cut off. 
 
-More specifically, eclipsed victims are vulnerable to \textit{N-confirmation double spending} and selfish mining attacks; furthermore 51\% attacks are easier to launch~\cite{eclipseatk}. For these reasons network attacks on topology are fundamental enablers for mining and spending attacks~\cite{dotan2020surveychallenges}.\\
+For these reasons, network attacks are fundamental enablers for mining and spending attacks~\cite{dotan2020surveychallenges}.\\
 
 In the following sections the reader can find both the attacks performed during the simulations reported in this thesis along with other network level attacks. These were added to better understand the mechanisms exploitable to carry out network attacks on cryptocurrencies.
 

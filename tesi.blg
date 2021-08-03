@@ -8,47 +8,47 @@ You're missing a field name---line 291 of file bib.bib
  :                                                                                                                                                                                                                                            ,  doi={10.1109/MCE.2020.2988031}}
 I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in protocoldoc
+Warning--to sort, need author or key in devguidep2p
 Warning--empty publisher in kedziora-sybil-ledgers
-Warning--empty journal in leelavimolsilp2018selfish
-You've used 21 entries,
+You've used 22 entries,
             2118 wiz_defined-function locations,
-            622 strings with 7660 characters,
-and the built_in function-call counts, 7543 in all, are:
-= -- 741
-> -- 336
-< -- 7
-+ -- 133
-- -- 110
-* -- 514
-:= -- 1207
-add.period$ -- 68
-call.type$ -- 21
-change.case$ -- 115
+            627 strings with 7812 characters,
+and the built_in function-call counts, 7944 in all, are:
+= -- 782
+> -- 342
+< -- 8
++ -- 136
+- -- 112
+* -- 534
+:= -- 1248
+add.period$ -- 71
+call.type$ -- 22
+change.case$ -- 119
 chr.to.int$ -- 0
-cite$ -- 24
-duplicate$ -- 292
-empty$ -- 602
-format.name$ -- 110
-if$ -- 1635
+cite$ -- 25
+duplicate$ -- 312
+empty$ -- 649
+format.name$ -- 112
+if$ -- 1741
 int.to.chr$ -- 0
-int.to.str$ -- 21
+int.to.str$ -- 22
 missing$ -- 19
-newline$ -- 110
+newline$ -- 115
 num.names$ -- 42
-pop$ -- 130
+pop$ -- 142
 preamble$ -- 1
-purify$ -- 95
+purify$ -- 98
 quote$ -- 0
-skip$ -- 231
+skip$ -- 249
 stack$ -- 0
-substring$ -- 482
-swap$ -- 84
-text.length$ -- 7
+substring$ -- 515
+swap$ -- 96
+text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 82
+type$ -- 86
 warning$ -- 3
-while$ -- 62
-width$ -- 23
-write$ -- 236
+while$ -- 64
+width$ -- 24
+write$ -- 247
 (There was 1 error message)
