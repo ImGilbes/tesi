@@ -250,15 +250,13 @@ In the latter scenario, Sybil nodes, upon receiving a new block, send \texttt{in
 	\label{fig:sybil}
 \end{figure}
 
-If the propagation is delayed long enough, the victim node could start mining the next block - in such scenario a block race can be engineered. Block races occur whenever the blockchain is forked and different subsets of peers work on different branches of the chain.
+If the propagation is delayed long enough, the victim node could start mining the next block - in such scenarios a block race can be engineered. Block races occur whenever the blockchain is forked and different subsets of peers work on different branches of the chain.
 
-Since only the longest chain stored among all peers is considered valid, thus all the other branches are dropped, the malicious user can exploit such forks to waste other peers' computing power or to perform double-spending~\cite{zhang-ds-sybil}.
+Since only the longest chain stored among all peers is considered valid, all the other branches are dropped. The malicious user can exploit such forks to waste other peers' computing power or to perform double-spending~\cite{zhang-ds-sybil}. 
 
-Let Tx 1 and Tx 2 be two different transaction released at the same time by the malicious user,  
+In the latter scenario, once the malicious user has successfully created a stale view of the blockchain in the victim, i.e. a fork, he releases two different transactions, Tx 1 and Tx 2, at the same time. Tx 1 is sent only to the victim node and Tx 2 is kept for its private chain, as shown in Fig. ~\ref{fig:race1}.
 
-In the latter scenario, once the malicious user has successfully created a stale view of the blockchain in the victim, thus a fork, he releases two different transactions, Tx 1 and Tx 2, at the same time. Tx 1 is sent only to the victim node and Tx 2 is kept for its private chain, as shown in Fig. ~\ref{fig:race1}.
-
-In the meanwhile Sybil nodes hamper the growth both of the public and victim's blockchain withholding blocks. As result the attacker can succeed at mining the next block first and then release the private blockchain therefore invalidating the victim's blockchain, as shown in Fig.~\ref{fig:race2}.
+In the meanwhile Sybil nodes hamper the growth both of the public and victim's blockchain by withholding blocks. As a result the attacker can mine the next block first and then release the private blockchain therefore invalidating the victim's blockchain, as shown in Fig.~\ref{fig:race2}.
 
 \begin{figure}[h!]
 	\includegraphics[width=.9\textwidth]{pict/blockrace1.png}
@@ -274,20 +272,20 @@ In the meanwhile Sybil nodes hamper the growth both of the public and victim's b
 	\label{fig:race2}
 \end{figure}
 
-Since Bitcoin requires no authentication or authorization process to join the network, there will always be the possibility for adversaries to create Sybils. Nevertheless countermeasures have been studied for different attacks based on Sybil attacks. For instance, setting a transaction block-confirmation timeout, have been suggested by Zhang et al.~\cite{zhang-sybil-mitigations}.
+Since Bitcoin requires no authentication or authorization to join the network, there will always be the possibility for adversaries to create Sybils. Nevertheless, countermeasures have been studied for different attacks based on Sybil attacks. For instance, setting a transaction block-confirmation timeout, have been suggested by Zhang et al.~\cite{zhang-sybil-mitigations}.
 
 Be that as it may, the implications of Sybil attacks are still a topic open to study. The interested reader can find more in the work of Iqbal et al.~\cite{iqbal-sybil}.
 
 \subsubsection{Eclipse attack}\label{sec:eclipse}
 The aim Eclipse attacks is to partition the network so that the attacker may be able to control all the data flow between the two partitions.
 
-In order to do that the malicious node, or a set malicious nodes, floods the victim with a multitude of incoming connections and feed it bogus network information (\texttt{addr} exchanges), i.e. peer addresses controlled by the adversary, that will fill up their peer cache.
+In order to do that the malicious node, or a set malicious nodes, floods the victim with a multitude of incoming connections and feed it bogus network information, i.e. peer addresses controlled by the adversary, with \texttt{addr} exchanges, that will fill up their peer cache.
 
 Upon restarting, with high probability the victim will form all of its eight outgoing connections with malicious IP addresses, thus finding itself isolated from the network.
 
-Successful Eclipse attacks enable the launch of mining and spending attacks. Namely, eclipsing a subset of peers eliminates their mining power, hence making 51\% attacks easier. Selfish mining attacks can be carried out as well.
+Successful Eclipse attacks enable mining and spending attacks. Namely, eclipsing a subset of peers eliminates their mining power, hence making 51\% attacks easier. Selfish mining attacks can be carried out as well.
 
-The attacker that successfully splits the network can also engineer block races to deliberately waste resources of other miners or attempt at double-spend attacks, as in Fig.~\ref{fig:race1} and Fig.~\ref{fig:race2}, described in Section~\ref{sec:sybil}.
+The attacker that successfully splits the network can also engineer block races to deliberately waste resources of other miners or attempt at double-spending attacks, as in Fig.~\ref{fig:race1} and Fig.~\ref{fig:race2}, described in Section~\ref{sec:sybil}.
 
 Depending on the victim's policies, the malicious user can launch a \textit{0-confirmation attack}, that is for the case in which the merchant decides to release goods before the transaction is confirmed. As in the case of Sybil based double-spend, the attacker releases two transactions and keeps the victim's view of the blockchain stale, so that it would be dropped later (Fig.~\ref{fig:0confirm}).
 
@@ -323,9 +321,13 @@ The results in Chapter~\ref{sec:res} show how feeding bogus information to a joi
 
 Prevention is done by ensuring a node can contact a trustworthy peer when joining the network. Peer caches and centralized bootstrap services serve this purpose, allowing joining nodes to make use of old neighbours while having central bootstrap servers as a fallback.
 
-Other solutions have been implemented and tested over time, though their drawbacks usually exceed the benefits. As an example, randomly probing the address space, scouting for peers, decentralizes the bootstrap process and increases the variance of the network knowledge, but may not work if peers are behind NATs or firewalls and increases the latency for joining the network~\cite{decentrbootstrapp2p}~\cite{localityaware}. In 2012,  Touceda et al. discuss fake bootstrapping along with other security threats in their survey~\cite{toucedafakeboot}.
+Other solutions have been implemented and tested over time, though their drawbacks usually exceed the benefits. As an example, randomly probing the address space, scouting for peers, decentralizes the bootstrap process and increases the variance of the network knowledge, but may not work if peers are behind NATs or firewalls and increases the latency for joining the network~\cite{decentrbootstrapp2p}~\cite{localityaware}.
 
-Bitcoin employs many countermeasures, and overcomes other bootstrap issues, with its peer cache implementation mixed with external mechanisms: each node contacts its stored addresses for successive connections and aims to establish multiple outgoing connections, thus it does not rely on a single bootstrap node. On top of that, DNS seeds provide a reliable external bootstrap service and the user is given the ability to manually insert addresses to connect to~\cite{mahmoud_netsec_boot}.
+In 2012,  Touceda et al. discuss fake bootstrapping along with other security threats in their survey~\cite{toucedafakeboot}.
+
+Bitcoin employs many countermeasures, and overcomes other bootstrap issues, with its peer cache implementation mixed with external mechanisms: each node contacts its stored addresses for successive connections and aims to establish multiple outgoing connections, thus it does not rely on a single bootstrap node.
+
+On top of that, DNS seeds provide a reliable external bootstrap service and the user is given the ability to manually insert addresses to connect to~\cite{mahmoud_netsec_boot}.
 
 
 \subsubsection{DDoS attack}\label{sec:ddos}

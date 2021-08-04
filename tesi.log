@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.19)  3 AUG 2021 21:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.19)  4 AUG 2021 12:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -498,11 +498,11 @@ re, tem-per-ing on the blockchain
  []
 
 [5 <./pict/blockchain-synch.png>]
-<pict/BTCconnection.png, id=132, 352.31625pt x 367.3725pt>
+<pict/BTCconnection.png, id=132, 351.3125pt x 338.26375pt>
 File: pict/BTCconnection.png Graphic file (type png)
 <use pict/BTCconnection.png>
 Package pdftex.def Info: pict/BTCconnection.png  used on input line 148.
-(pdftex.def)             Requested size: 211.38832pt x 220.41957pt.
+(pdftex.def)             Requested size: 211.38832pt x 203.54305pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
@@ -514,15 +514,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 160--161
  []
 
 [6 <./pict/BTCconnection.png>]
-
-LaTeX Warning: Reference `netsec' on page 7 undefined on input line 166.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
-<pict/BTCaddr.png, id=142, 351.3125pt x 294.09875pt>
+<pict/BTCaddr.png, id=143, 351.3125pt x 294.09875pt>
 File: pict/BTCaddr.png Graphic file (type png)
 <use pict/BTCaddr.png>
 Package pdftex.def Info: pict/BTCaddr.png  used on input line 175.
@@ -557,50 +553,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
  []
 
-<pict/network-partition.png, id=173, 591.20876pt x 263.98625pt>
+<pict/network-partition.png, id=175, 591.20876pt x 263.98625pt>
 File: pict/network-partition.png Graphic file (type png)
 <use pict/network-partition.png>
 Package pdftex.def Info: pict/network-partition.png  used on input line 230.
 (pdftex.def)             Requested size: 258.36668pt x 115.36882pt.
-[9 <./pict/network-partition.png>]
-<pict/sybil.png, id=190, 371.3875pt x 496.85625pt>
+
+Underfull \vbox (badness 1210) has occurred while \output is active []
+
+ [9 <./pict/network-partition.png>]
+<pict/sybil.png, id=191, 371.3875pt x 496.85625pt>
 File: pict/sybil.png Graphic file (type png)
 <use pict/sybil.png>
 Package pdftex.def Info: pict/sybil.png  used on input line 247.
 (pdftex.def)             Requested size: 187.89914pt x 251.38425pt.
 
-Overfull \hbox (4.93588pt too wide) in paragraph at lines 261--262
+Overfull \hbox (4.93588pt too wide) in paragraph at lines 259--260
 []\OT1/cmr/m/n/12 In the mean-while Sybil nodes ham-per the growth both of the 
 pub-lic and vic-tim's blockchain
  []
 
-[10 <./pict/sybil.png>]
-<pict/blockrace1.png, id=204, 901.3675pt x 176.66pt>
+<pict/blockrace1.png, id=195, 901.3675pt x 176.66pt>
 File: pict/blockrace1.png Graphic file (type png)
 <use pict/blockrace1.png>
-Package pdftex.def Info: pict/blockrace1.png  used on input line 264.
+Package pdftex.def Info: pict/blockrace1.png  used on input line 262.
 (pdftex.def)             Requested size: 422.77664pt x 82.86038pt.
-<pict/blockrace2.png, id=205, 1141.26375pt x 176.66pt>
+[10 <./pict/sybil.png>]
+<pict/blockrace2.png, id=206, 1141.26375pt x 176.66pt>
 File: pict/blockrace2.png Graphic file (type png)
 <use pict/blockrace2.png>
-Package pdftex.def Info: pict/blockrace2.png  used on input line 271.
+Package pdftex.def Info: pict/blockrace2.png  used on input line 269.
 (pdftex.def)             Requested size: 422.77664pt x 65.44135pt.
  [11 <./pict/blockrace1.png> <./pict/blockrace2.png>]
-<pict/0confirm-doublespend.png, id=221, 649.42625pt x 147.55125pt>
+<pict/0confirm-doublespend.png, id=223, 649.42625pt x 147.55125pt>
 File: pict/0confirm-doublespend.png Graphic file (type png)
 <use pict/0confirm-doublespend.png>
-Package pdftex.def Info: pict/0confirm-doublespend.png  used on input line 297.
+Package pdftex.def Info: pict/0confirm-doublespend.png  used on input line 295.
 
 (pdftex.def)             Requested size: 328.82707pt x 74.71204pt.
-<pict/nconfirm-doublespend.png, id=223, 743.77875pt x 423.5825pt>
+<pict/nconfirm-doublespend.png, id=225, 743.77875pt x 423.5825pt>
 File: pict/nconfirm-doublespend.png Graphic file (type png)
 <use pict/nconfirm-doublespend.png>
-Package pdftex.def Info: pict/nconfirm-doublespend.png  used on input line 308.
+Package pdftex.def Info: pict/nconfirm-doublespend.png  used on input line 306.
 
 (pdftex.def)             Requested size: 352.31625pt x 200.64793pt.
 
 [12 <./pict/0confirm-doublespend.png> <./pict/nconfirm-doublespend.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 322--323
+Underfull \hbox (badness 10000) in paragraph at lines 320--321
 
  []
 
@@ -611,25 +610,21 @@ tps : / / en . bitcoin . it / wiki / Protocol _
  []
 
 [13] [14])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 359.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 361.
  [15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 359.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 361.
  (./tesi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 359.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 359.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 361.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 361.
 Package rerunfilecheck Info: File `tesi.out' has not changed.
 (rerunfilecheck)             Checksum: F811324F4AD1D8F17FEE7E61D800C5FF;1224.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 359.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 361.
  ) 
 Here is how much of TeX's memory you used:
- 10029 strings out of 481239
- 158597 string characters out of 5920377
+ 10028 strings out of 481239
+ 158589 string characters out of 5920377
  433448 words of memory out of 5000000
- 25070 multiletter control sequences out of 15000+600000
+ 25069 multiletter control sequences out of 15000+600000
  538022 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,6n,42p,919b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -639,10 +634,10 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tesi.pdf (15 pages, 310275 bytes).
+Output written on tesi.pdf (15 pages, 304131 bytes).
 PDF statistics:
- 303 PDF objects out of 1000 (max. 8388607)
- 253 compressed objects within 3 object streams
+ 304 PDF objects out of 1000 (max. 8388607)
+ 254 compressed objects within 3 object streams
  72 named destinations out of 1000 (max. 500000)
  197 words of extra memory for PDF output out of 10000 (max. 10000000)
 
