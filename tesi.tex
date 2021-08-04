@@ -50,7 +50,7 @@ A subset of the nodes, called miners, compete against one another in a parallel 
 
 To create a block, miners have to solve an exponentially difficult computational problem and therefore have to employ their computational power for process. The miner that first creates the new block is rewarded with reward, that is included as a \emph{reward generating transaction} in the block, and with the \emph{transaction fees} paid by the users whose transactions have been confirmed.
 
-Once the transaction is included in the blockchain it is confirmed thus the receiver will be able to spend again the transferred coins.
+Once the transaction is included in the blockchain it is confirmed, thus the receiver will be able to spend again the transferred coins.
 
 \subsection{Transaction structure}\label{sec:tx}
 Transactions implement transfers and represent the entire set of coins available to users and its history, when collected and ordered in the blockchain. Hence, one can determine the balance of a certain wallet just by scanning the transactions on the blockchain~\cite{tschorsch-intro-survey}.
@@ -151,7 +151,7 @@ In order to establish a connection two peers need to exchange version messages o
 	\label{fig:btcconn}
 \end{figure}
 
-Each node is able to establish up to 8 outgoing connections and 117 ingoing connections, for a total of 125 connections. In order to keep its connections active, each peer sends a message to each neighbour at least once every thirty minutes. If more than ninety minutes pass without receiving anything from a neighbour, the connection is dropped.
+Each node is capable to establish up to 8 outgoing connections and 117 ingoing connections, for a total of 125 connections. In order to keep its connections active, each peer sends a message to each neighbour at least once every thirty minutes. If more than ninety minutes pass without receiving anything from a neighbour, the connection is dropped.
 
 Each node always tries to keep eight outgoing connections active, therefore, upon dropping an outgoing connection, a node tries to connect to another address in its peer cache.\\
 
