@@ -10,6 +10,11 @@ Bitcoin protocol documentation.
 \newblock \url{https://en.bitcoin.it/wiki/Protocol_documentation}.
 \newblock Accessed: 2021-8-2.
 
+\bibitem{btccode}
+Bitcoin source code.
+\newblock \url{https://github.com/bitcoin/bitcoin}.
+\newblock Accessed: 2021-8-2.
+
 \bibitem{contiatksurvey}
 Mauro Conti, E.~Sandeep~Kumar, Chhagan Lal, and Sushmita Ruj.
 \newblock A survey on security and privacy issues of bitcoin.
@@ -40,6 +45,12 @@ John~R Douceur.
 \newblock The sybil attack.
 \newblock In {\em International workshop on peer-to-peer systems}, pages
   251--260. Springer, 2002.
+
+\bibitem{lunes-paper}
+Gabriele D’Angelo and Stefano Ferretti.
+\newblock Highly intensive data dissemination in complex networks.
+\newblock {\em Journal of Parallel and Distributed Computing}, 99:28 -- 50,
+  2017.
 
 \bibitem{eclipseatk}
 Sharon~Goldberg Ethan Heilman. Alison~Kendler, Aviv~Zohar.

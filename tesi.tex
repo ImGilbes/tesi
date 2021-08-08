@@ -389,15 +389,6 @@ On top of that, DNS seeds provide a reliable external bootstrap service and the 
 --Enhancing performance of Sybil attacks with fake bootstrapping--
 
 \subsection{Threat model}\label{sec:threatmod}
-Sybil attack where malicious nodes drop all messages to and from a specified victim.
-
-Sybils spread bogus network information to honest nodes so that they would connect mostly to malicious nodes.
-
-The network connections are then formed in a bitcoin fashion: honest nodes create at most 8 outgoing connections. The graph is thus made more dense. 
-
-In a second attack malicious nodes are on fresh bootstrap and do not belong to the graph at the beginning of the simulations\\
-
-
 This study focuses on the influence that the dissemination of false network information has during the construction of the topology of the overlay network and how this enhances other network-level attacks.
 
 The attack performed is a Sybil attack, described in section~\ref{sec:sybil}. Sybil nodes are used to increase the connections with honest nodes the attacker has, thus to have greater control on the data flowing in the network.  
@@ -434,9 +425,7 @@ On top of that, each node self-advertises its address with an \texttt{addr} mess
 
 Once honest nodes cannot establish more connections, and the graph has become dense, the Sybil-based denial-of-service starts: Sybil nodes will drop all the transactions coming from the selected victim. 
 
-The Sybil attack has two different setting that lead to different results. In the first one, Sybil nodes cannot be on fresh bootstrap and are in network from the start.  In the second, the network is first created and only then Sybils start to join. More can be found in Section~\ref{sec:res}.
-
-
+The Sybil attack has two different setting that lead to different results. In the first one, Sybil nodes are all in network from the start.  In the second, all Sybil nodes are on fresh bootstrap. More can be found in Section~\ref{sec:res}.
 
 \subsection{Metrics and performance evaluation}\label{sec:metrics}
 coverage
@@ -446,14 +435,23 @@ definition of coverage for a dissemination protocol
 the coverage is studied in different simulations with an increasing number of malicious nodes in the network.
 
 \subsection{Software and implementation}\label{sec:softw}
-simulator and development process
+The adopted simulator is LUNES-blockchain, a discrete event cryptocurrency-system simulator~\cite{lunes-paper}.
 
-random graph network, generated with i graph c
+It consists of three main modules executed separately: topology creation, blockchain simulation and performance evaluation.
 
-simulation divided in epochs, in each epoch a different victim is specified
+Topology creation is managed with the C library i-graph. Ideally, for each simulation a different set of graphs is generated.
 
+Then the core simulation is run. Nodes mine blocks for the blockchain and exchange transactions and blocks with a previously specified dissemination protocol. The Sybil attack is carried out at this time.
 
+At the end of the simulation, some scripts parse the data logged during the simulation and evaluate the robustness of the dissemination protocol.
 
+The changes made to the behaviour of nodes apply only to the first part of the simulation: when nodes are still establishing outgoing connections. Only after this phase, the blockchain simulation is run and with the Sybil attack.
+
+It is relevant to point out that the behaviour of nodes has been made as close as possible to that of Bitcoin full nodes.
+
+The simulation proceeds as a series of epochs. In each epoch a different victim is randomly chosen among honest nodes, while the Sybil nodes are still the same from epoch to epoch.
+
+All the tests are a collection of simulations. From a simulation to another the number of Sybil nodes is increased by some proportion of the total number of nodes in the network.
 
 \section{Results}\label{sec:res}
 

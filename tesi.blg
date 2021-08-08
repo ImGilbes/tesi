@@ -9,46 +9,47 @@ You're missing a field name---line 291 of file bib.bib
 I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in protocoldoc
 Warning--to sort, need author or key in devguidep2p
+Warning--to sort, need author or key in btccode
 Warning--empty publisher in kedziora-sybil-ledgers
-You've used 22 entries,
+You've used 24 entries,
             2118 wiz_defined-function locations,
-            627 strings with 7812 characters,
-and the built_in function-call counts, 7944 in all, are:
-= -- 782
-> -- 342
+            638 strings with 8050 characters,
+and the built_in function-call counts, 8430 in all, are:
+= -- 831
+> -- 356
 < -- 8
-+ -- 136
-- -- 112
-* -- 534
-:= -- 1248
-add.period$ -- 71
-call.type$ -- 22
-change.case$ -- 119
++ -- 142
+- -- 116
+* -- 561
+:= -- 1321
+add.period$ -- 77
+call.type$ -- 24
+change.case$ -- 127
 chr.to.int$ -- 0
-cite$ -- 25
-duplicate$ -- 312
-empty$ -- 649
-format.name$ -- 112
-if$ -- 1741
+cite$ -- 28
+duplicate$ -- 330
+empty$ -- 698
+format.name$ -- 116
+if$ -- 1850
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 19
-newline$ -- 115
-num.names$ -- 42
-pop$ -- 142
+int.to.str$ -- 24
+missing$ -- 20
+newline$ -- 125
+num.names$ -- 44
+pop$ -- 155
 preamble$ -- 1
-purify$ -- 98
+purify$ -- 104
 quote$ -- 0
-skip$ -- 249
+skip$ -- 262
 stack$ -- 0
-substring$ -- 515
-swap$ -- 96
+substring$ -- 546
+swap$ -- 98
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 86
-warning$ -- 3
-while$ -- 64
-width$ -- 24
-write$ -- 247
+type$ -- 94
+warning$ -- 4
+while$ -- 67
+width$ -- 26
+write$ -- 267
 (There was 1 error message)
