@@ -417,12 +417,24 @@ In a series of rounds, nodes start to establish outgoing connections with addres
 
 Nodes on fresh bootstrap have to contact some DNS first. DNSs contain the data of a random subset of the nodes that were part of the network at the start. Their addresses will populate the bootstrapping node's peer database, that will then be able to connect to the network and start to establish more connections.
 
-Network information is spread through \texttt{addr} messages. These are exchanged upon establishing a connection.
+Network information is propagated through \texttt{addr} messages. These are exchanged upon establishing a connection. Bitcoin Core policy is to relay messages that contain at most ten addresses to a subset of neighbours~\cite{btccode}. For this reason, both attackers and honest nodes include in \texttt{addr} messages no more than ten addresses.
 
+In the attack, honest nodes fill \texttt{addr} messages with a random subset of addresses in the peer database, malicious nodes advertise only attacking nodes' addresses instead (Fig.~\ref{fig:atkadrr}).
 
-In the first attack scenario, Sybil nodes cannot be on fresh bootstrap and are in network from the start. 
+Moreover, Sybils do not relay incoming \texttt{addr} messages, thus hampering the propagation of honest nodes addresses. Attackers also work under the assumption that they share a common network knowledge, which means that once an attacker learns a new address, also all other attackers know it.
 
-In the second scenario, the network is first created and only then Sybils start to join.
+\begin{figure}[h!]
+	\includegraphics[width=.5\textwidth]{pict/atkaddr.png}
+	\centering
+	\caption{Peer discovery during the attack}
+	\label{fig:atkadrr}
+\end{figure}
+
+On top of that, each node self-advertises its address with an \texttt{addr} message sent to its neighbours. Malicious nodes behave exactly as described before, dropping honest messages.
+
+Once honest nodes cannot establish more connections, and the graph has become dense, the Sybil-based denial-of-service starts: Sybil nodes will drop all the transactions coming from the selected victim. 
+
+The Sybil attack has two different setting that lead to different results. In the first one, Sybil nodes cannot be on fresh bootstrap and are in network from the start.  In the second, the network is first created and only then Sybils start to join. More can be found in Section~\ref{sec:res}.
 
 
 
