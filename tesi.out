@@ -20,6 +20,7 @@
 \BOOKMARK [3][-]{subsubsection.4.2.4}{DDoS attack}{subsection.4.2}% 20
 \BOOKMARK [1][-]{section.5}{Enhancing the efficacy of Sybil attacks with fake bootstrapping}{}% 21
 \BOOKMARK [2][-]{subsection.5.1}{Threat model}{section.5}% 22
-\BOOKMARK [2][-]{subsection.5.2}{Metrics and performance evaluation}{section.5}% 23
-\BOOKMARK [2][-]{subsection.5.3}{Software and implementation}{section.5}% 24
-\BOOKMARK [1][-]{section.6}{Results}{}% 25
+\BOOKMARK [2][-]{subsection.5.2}{Attack details}{section.5}% 23
+\BOOKMARK [2][-]{subsection.5.3}{Metrics and performance evaluation}{section.5}% 24
+\BOOKMARK [2][-]{subsection.5.4}{Software and implementation}{section.5}% 25
+\BOOKMARK [1][-]{section.6}{Results}{}% 26
