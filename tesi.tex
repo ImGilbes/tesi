@@ -428,11 +428,13 @@ Once honest nodes cannot establish more connections, and the graph has become de
 The Sybil attack has two different setting that lead to different results. In the first one, Sybil nodes are all in network from the start.  In the second, all Sybil nodes are on fresh bootstrap. More can be found in Section~\ref{sec:res}.
 
 \subsection{Metrics and performance evaluation}\label{sec:metrics}
-coverage
+The tests performed aim to understand how the aforementioned changes in the behaviour of nodes affect the effectiveness of the Sybil-based DoS attacks when adopting different dissemination protocols.
 
-definition of coverage for a dissemination protocol
+The coverage of a message is defined as the percentage of nodes reached in the network while adopting a certain dissemination protocol.
 
-the coverage is studied in different simulations with an increasing number of malicious nodes in the network.
+To evaluate the robustness of fixed probability broadcast and Dandelion ++, the coverage of victims' messages are estimated.
+
+Coverage values of different protocols are carried out through different simulations, varying the number of attacking nodes and the underlying topology, as well as the number of attacking nodes.
 
 \subsection{Software and implementation}\label{sec:softw}
 The adopted simulator is LUNES-blockchain, a discrete event cryptocurrency-system simulator~\cite{lunes-paper}.
