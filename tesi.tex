@@ -458,6 +458,108 @@ All the tests are a collection of simulations. From a simulation to another the 
 \section{Results}\label{sec:res}
 
 
+Previous results: resilience of different dissemination protocols shown in the work of compare the results with~\cite{lunes-dissemination}.
+In a standard setting, sybil attack with no graph manipulation: show results.
+
+under my new setting the results show that:
+
+\begin{figure}[h!]
+	\includegraphics[width=.8\textwidth]{pict/results/in-cov.png}
+	\centering 
+	\caption{Coverage}
+	\label{fig:in-cov}
+\end{figure}
+
+describe the graph: there is no much difference between fixed probability dissemination 
+percentages, whilst dandelion ++ has still a greater resistence to sybil attacks.
+
+Other metrics, that are not only the coverage:
+
+average degree of honest nodes
+
+average degree of attackers
+
+average percentage of attackers in honest nodes neighbours
+
+
+\begin{figure}[h!]
+	\includegraphics[width=.8\textwidth]{pict/results/in-hon-avg-neigh.png}
+	\centering
+	\caption{Average degree of honest nodes}
+	\label{fig:degreehon}
+\end{figure}
+
+
+\begin{figure}[h!]
+	\includegraphics[width=.8\textwidth]{pict/results/in-hon-avg-neigh-atk.png}
+	\centering
+	\caption{Average percentage of Sybils among neighbours}
+	\label{fig:avgatk}
+\end{figure}
+
+
+\begin{figure}[h!]
+	\includegraphics[width=.8\textwidth]{pict/results/in-hon-avg-known-atk.png}
+	\centering
+	\caption{Average percentage of Sybils in the peer cache}
+	\label{fig:avgatk-known}
+\end{figure}
+
+Data about the attackers
+
+\begin{figure}[h!]
+	\includegraphics[width=.8\textwidth]{pict/results/in-atk-avg-degree.png}
+	\centering
+	\caption{Average degree of Sybil nodes}
+	\label{fig:in-atk-degree}
+\end{figure}
+
+\begin{figure}[h!]
+	\includegraphics[width=.8\textwidth]{pict/results/in-cluster.png}
+	\centering
+	\caption{Sample of degree distribution of Sybil nodes}
+	\label{fig:incluster}
+\end{figure}
+
+
+\paragraph{Alternative scenario}\label{sec:external}
+
+Coverage reached:
+
+\begin{figure}[h!]
+	\includegraphics[width=.8\textwidth]{pict/results/ext-cov.png}
+	\centering
+	\caption{Coverage}
+	\label{fig:ext-cov}
+\end{figure}
+
+the same metrics shown before are comparatively analysed with the ones for this new setting with external attackers only
+
+
+\begin{figure}[h!]
+	\includegraphics[width=.8\textwidth]{pict/results/ex-atk-avg-degree.png}
+	\centering
+	\caption{External Sybils average degree}
+	\label{fig:ex-atk-degree}
+\end{figure}
+
+\begin{figure}[h!]
+	\includegraphics[width=.8\textwidth]{pict/results/ex-atk-dd.png}
+	\centering
+	\caption{External degree distribution}
+	\label{fig:dd}
+\end{figure}
+
+\begin{figure}[h!]
+	\includegraphics[width=.8\textwidth]{pict/results/ext-hon-atk-neigh.png}
+	\centering
+	\caption{Percentage of Sybil neighbours}
+	\label{fig:ex-atk-neigh}
+\end{figure}
+
+\section{Conclusions}\label{sec:concl}
+
+
 
 
 

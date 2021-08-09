@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.19)  8 AUG 2021 20:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.19)  9 AUG 2021 13:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -460,12 +460,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-<pict/basicexample.png, id=123, 860.21375pt x 380.42125pt>
+<pict/basicexample.png, id=127, 860.21375pt x 380.42125pt>
 File: pict/basicexample.png Graphic file (type png)
 <use pict/basicexample.png>
 Package pdftex.def Info: pict/basicexample.png  used on input line 62.
 (pdftex.def)             Requested size: 422.77664pt x 186.97108pt.
-<pict/txstruct.png, id=127, 360.34625pt x 481.8pt>
+<pict/txstruct.png, id=131, 360.34625pt x 481.8pt>
 File: pict/txstruct.png Graphic file (type png)
 <use pict/txstruct.png>
 Package pdftex.def Info: pict/txstruct.png  used on input line 84.
@@ -477,7 +477,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 105.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 105.
-<pict/blockstruct.png, id=143, 598.235pt x 452.69125pt>
+<pict/blockstruct.png, id=147, 598.235pt x 452.69125pt>
 File: pict/blockstruct.png Graphic file (type png)
 <use pict/blockstruct.png>
 Package pdftex.def Info: pict/blockstruct.png  used on input line 114.
@@ -488,7 +488,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--124
  []
 
 [4 <./pict/blockstruct.png>]
-<pict/blockchain-synch.png, id=153, 349.305pt x 381.425pt>
+<pict/blockchain-synch.png, id=157, 349.305pt x 381.425pt>
 File: pict/blockchain-synch.png Graphic file (type png)
 <use pict/blockchain-synch.png>
 Package pdftex.def Info: pict/blockchain-synch.png  used on input line 134.
@@ -500,7 +500,7 @@ re, tem-per-ing on the blockchain
  []
 
 [5 <./pict/blockchain-synch.png>]
-<pict/BTCconnection.png, id=165, 351.3125pt x 338.26375pt>
+<pict/BTCconnection.png, id=169, 351.3125pt x 338.26375pt>
 File: pict/BTCconnection.png Graphic file (type png)
 <use pict/BTCconnection.png>
 Package pdftex.def Info: pict/BTCconnection.png  used on input line 187.
@@ -525,7 +525,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 205--206
  []
 
 [7 <./pict/BTCconnection.png>]
-<pict/BTCaddr.png, id=186, 351.3125pt x 294.09875pt>
+<pict/BTCaddr.png, id=190, 351.3125pt x 294.09875pt>
 File: pict/BTCaddr.png Graphic file (type png)
 <use pict/BTCaddr.png>
 Package pdftex.def Info: pict/BTCaddr.png  used on input line 214.
@@ -560,13 +560,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 276--277
 
  []
 
-<pict/network-partition.png, id=219, 591.20876pt x 263.98625pt>
+<pict/network-partition.png, id=223, 591.20876pt x 263.98625pt>
 File: pict/network-partition.png Graphic file (type png)
 <use pict/network-partition.png>
 Package pdftex.def Info: pict/network-partition.png  used on input line 281.
 (pdftex.def)             Requested size: 258.36668pt x 115.36882pt.
 [10 <./pict/network-partition.png>]
-<pict/sybil.png, id=234, 371.3875pt x 496.85625pt>
+<pict/sybil.png, id=238, 371.3875pt x 496.85625pt>
 File: pict/sybil.png Graphic file (type png)
 <use pict/sybil.png>
 Package pdftex.def Info: pict/sybil.png  used on input line 298.
@@ -577,7 +577,7 @@ Overfull \hbox (4.93588pt too wide) in paragraph at lines 310--311
 pub-lic and vic-tim's blockchain
  []
 
-<pict/blockrace1.png, id=238, 901.3675pt x 176.66pt>
+<pict/blockrace1.png, id=242, 901.3675pt x 176.66pt>
 File: pict/blockrace1.png Graphic file (type png)
 <use pict/blockrace1.png>
 Package pdftex.def Info: pict/blockrace1.png  used on input line 313.
@@ -585,7 +585,7 @@ Package pdftex.def Info: pict/blockrace1.png  used on input line 313.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<pict/blockrace2.png, id=239, 1141.26375pt x 176.66pt>
+<pict/blockrace2.png, id=243, 1141.26375pt x 176.66pt>
 File: pict/blockrace2.png Graphic file (type png)
 <use pict/blockrace2.png>
 Package pdftex.def Info: pict/blockrace2.png  used on input line 320.
@@ -594,7 +594,7 @@ Package pdftex.def Info: pict/blockrace2.png  used on input line 320.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [11 <./pict/sybil.png>]
-<pict/0confirm-doublespend.png, id=257, 649.42625pt x 147.55125pt>
+<pict/0confirm-doublespend.png, id=261, 649.42625pt x 147.55125pt>
 File: pict/0confirm-doublespend.png Graphic file (type png)
 <use pict/0confirm-doublespend.png>
 Package pdftex.def Info: pict/0confirm-doublespend.png  used on input line 346.
@@ -605,7 +605,7 @@ Package pdftex.def Info: pict/0confirm-doublespend.png  used on input line 346.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [12 <./pict/blockrace1.png> <./pict/blockrace2.png>]
-<pict/nconfirm-doublespend.png, id=266, 743.77875pt x 423.5825pt>
+<pict/nconfirm-doublespend.png, id=270, 743.77875pt x 423.5825pt>
 File: pict/nconfirm-doublespend.png Graphic file (type png)
 <use pict/nconfirm-doublespend.png>
 Package pdftex.def Info: pict/nconfirm-doublespend.png  used on input line 357.
@@ -618,7 +618,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 371--372
 
 [13 <./pict/0confirm-doublespend.png> <./pict/nconfirm-doublespend.png>]
 [14]
-<pict/atkaddr.png, id=294, 421.575pt x 396.48125pt>
+<pict/atkaddr.png, id=298, 421.575pt x 396.48125pt>
 File: pict/atkaddr.png Graphic file (type png)
 <use pict/atkaddr.png>
 Package pdftex.def Info: pict/atkaddr.png  used on input line 418.
@@ -627,31 +627,144 @@ Package pdftex.def Info: pict/atkaddr.png  used on input line 418.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[15] [16 <./pict/atkaddr.png>] (./tesi.bbl
+[15] [16 <./pict/atkaddr.png>]
+
+LaTeX Warning: Citation `lunes-dissemination' on page 17 undefined on input lin
+e 461.
+
+<pict/results/in-cov.png, id=314, 462.528pt x 346.896pt>
+File: pict/results/in-cov.png Graphic file (type png)
+<use pict/results/in-cov.png>
+Package pdftex.def Info: pict/results/in-cov.png  used on input line 467.
+(pdftex.def)             Requested size: 375.80544pt x 281.86818pt.
+<pict/results/in-hon-avg-neigh.png, id=315, 462.528pt x 346.896pt>
+File: pict/results/in-hon-avg-neigh.png Graphic file (type png)
+<use pict/results/in-hon-avg-neigh.png>
+Package pdftex.def Info: pict/results/in-hon-avg-neigh.png  used on input line 
+486.
+(pdftex.def)             Requested size: 375.80544pt x 281.86818pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<pict/results/in-hon-avg-neigh-atk.png, id=316, 462.528pt x 346.896pt>
+File: pict/results/in-hon-avg-neigh-atk.png Graphic file (type png)
+<use pict/results/in-hon-avg-neigh-atk.png>
+Package pdftex.def Info: pict/results/in-hon-avg-neigh-atk.png  used on input l
+ine 494.
+(pdftex.def)             Requested size: 375.80544pt x 281.86818pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<pict/results/in-hon-avg-known-atk.png, id=317, 462.528pt x 346.896pt>
+File: pict/results/in-hon-avg-known-atk.png Graphic file (type png)
+<use pict/results/in-hon-avg-known-atk.png>
+Package pdftex.def Info: pict/results/in-hon-avg-known-atk.png  used on input l
+ine 502.
+(pdftex.def)             Requested size: 375.80544pt x 281.86818pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<pict/results/in-atk-avg-degree.png, id=318, 462.528pt x 346.896pt>
+File: pict/results/in-atk-avg-degree.png Graphic file (type png)
+<use pict/results/in-atk-avg-degree.png>
+Package pdftex.def Info: pict/results/in-atk-avg-degree.png  used on input line
+ 511.
+(pdftex.def)             Requested size: 375.80544pt x 281.86818pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<pict/results/in-cluster.png, id=319, 462.528pt x 346.896pt>
+File: pict/results/in-cluster.png Graphic file (type png)
+<use pict/results/in-cluster.png>
+Package pdftex.def Info: pict/results/in-cluster.png  used on input line 518.
+(pdftex.def)             Requested size: 375.80544pt x 281.86818pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<pict/results/ext-cov.png, id=320, 462.528pt x 346.896pt>
+File: pict/results/ext-cov.png Graphic file (type png)
+<use pict/results/ext-cov.png>
+Package pdftex.def Info: pict/results/ext-cov.png  used on input line 530.
+(pdftex.def)             Requested size: 375.80544pt x 281.86818pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<pict/results/ex-atk-avg-degree.png, id=321, 462.528pt x 346.896pt>
+File: pict/results/ex-atk-avg-degree.png Graphic file (type png)
+<use pict/results/ex-atk-avg-degree.png>
+Package pdftex.def Info: pict/results/ex-atk-avg-degree.png  used on input line
+ 540.
+(pdftex.def)             Requested size: 375.80544pt x 281.86818pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<pict/results/ex-atk-dd.png, id=322, 462.528pt x 346.896pt>
+File: pict/results/ex-atk-dd.png Graphic file (type png)
+<use pict/results/ex-atk-dd.png>
+Package pdftex.def Info: pict/results/ex-atk-dd.png  used on input line 547.
+(pdftex.def)             Requested size: 375.80544pt x 281.86818pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<pict/results/ext-hon-atk-neigh.png, id=323, 462.528pt x 346.896pt>
+File: pict/results/ext-hon-atk-neigh.png Graphic file (type png)
+<use pict/results/ext-hon-atk-neigh.png>
+Package pdftex.def Info: pict/results/ext-hon-atk-neigh.png  used on input line
+ 554.
+(pdftex.def)             Requested size: 375.80544pt x 281.86818pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./tesi.bbl [17 <./pict/results/in-cov.png>]
+
+LaTeX Warning: Text page 18 contains only floats.
+
+[18 <./pict/results/in-hon-avg-neigh.png> <./pict/results/in-hon-avg-neigh-atk.
+png>]
+
+LaTeX Warning: Text page 19 contains only floats.
+
+[19 <./pict/results/in-hon-avg-known-atk.png> <./pict/results/in-atk-avg-degree
+.png>]
+
+LaTeX Warning: Text page 20 contains only floats.
+
+[20 <./pict/results/in-cluster.png> <./pict/results/ext-cov.png>]
+
+LaTeX Warning: Text page 21 contains only floats.
+
+[21 <./pict/results/ex-atk-avg-degree.png> <./pict/results/ex-atk-dd.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 9--12
 []\OT1/cmr/m/n/12 Bitcoin pro-to-col doc-u-men-ta-tion.  []$\OT1/cmtt/m/n/12 ht
 tps : / / en . bitcoin . it / wiki / Protocol _
  []
 
-[17])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 474.
- [18]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 474.
+[22 <./pict/results/ext-hon-atk-neigh.png>] [23])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 576.
+ [24]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 576.
  (./tesi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 474.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 474.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 576.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 576.
 Package rerunfilecheck Info: File `tesi.out' has not changed.
-(rerunfilecheck)             Checksum: EDE7F80722369BD26E81F27735DA1300;1944.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 474.
+(rerunfilecheck)             Checksum: D734EBE0835A91452B83AFE7751BDF20;1991.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 576.
  ) 
 Here is how much of TeX's memory you used:
- 10073 strings out of 481239
- 159189 string characters out of 5920377
- 434142 words of memory out of 5000000
- 25097 multiletter control sequences out of 15000+600000
+ 10165 strings out of 481239
+ 161533 string characters out of 5920377
+ 435797 words of memory out of 5000000
+ 25160 multiletter control sequences out of 15000+600000
  538359 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,42p,919b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,6n,42p,919b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dis
@@ -660,10 +773,10 @@ t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
 /public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200
 .pfb>
-Output written on tesi.pdf (18 pages, 335416 bytes).
+Output written on tesi.pdf (24 pages, 937341 bytes).
 PDF statistics:
- 374 PDF objects out of 1000 (max. 8388607)
- 317 compressed objects within 4 object streams
- 87 named destinations out of 1000 (max. 500000)
- 274 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 437 PDF objects out of 1000 (max. 8388607)
+ 354 compressed objects within 4 object streams
+ 105 named destinations out of 1000 (max. 500000)
+ 332 words of extra memory for PDF output out of 10000 (max. 10000000)
 
