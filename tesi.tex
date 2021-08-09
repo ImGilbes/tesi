@@ -386,9 +386,6 @@ On top of that, DNS seeds provide a reliable external bootstrap service and the 
 
 
 \section{Enhancing the efficacy of Sybil attacks with fake bootstrapping}\label{sec:atk}
---Enhancing performance of Sybil attacks with fake bootstrapping--
-
-\subsection{Threat model}\label{sec:threatmod}
 This study focuses on the influence that the dissemination of false network information has during the construction of the topology of the overlay network and how this enhances other network-level attacks.
 
 The attack performed is a Sybil attack, described in section~\ref{sec:sybil}. Sybil nodes are used to increase the connections with honest nodes the attacker has, thus to have greater control on the data flowing in the network.  
@@ -434,7 +431,14 @@ The coverage of a message is defined as the percentage of nodes reached in the n
 
 To evaluate the robustness of fixed probability broadcast and Dandelion ++, the coverage of victims' messages are estimated.
 
-Coverage values of different protocols are carried out through different simulations, varying the number of attacking nodes and the underlying topology, as well as the number of attacking nodes.
+Coverage values of different protocols are carried out through different simulations, varying the number of attacking nodes and the underlying topology, as well as the number of attacking nodes.\\
+
+Other metrics that are used to evaluate the efficacy of the new behaviour of Sybils are the average degree of malicious nodes and the average percentage of malicious neighbours for honest nodes.
+
+These can describe how effectively Sybil nodes have connected to honest nodes, thus influencing the effectiveness of the subsequent Sybils attack.
+
+Furthermore, the average percentage of Sybils in the peer cache is used to assess how well the bogus network information was disseminated.
+
 
 \subsection{Software and implementation}\label{sec:softw}
 The adopted simulator is LUNES-blockchain, a discrete event cryptocurrency-system simulator~\cite{lunes-paper}.
@@ -455,6 +459,10 @@ The simulation proceeds as a series of epochs. In each epoch a different victim 
 
 All the tests are a collection of simulations. From a simulation to another the number of Sybil nodes is increased by some proportion of the total number of nodes in the network.
 
+In the second attack scenario, when Sybils are all on fresh bootstrap, the number of total attackers in the network has been increased. Each run adds 100 Sybil nodes and the whole simulation is composed of 300 runs, for a total of 30000 attacking nodes.
+
+On top of that, Sybil nodes join sequentially the network in the same epoch. This information is relevant to understand the results in Section~\ref{sec:external}.
+
 \section{Results}\label{sec:res}
 The results of the work of Serena et al. show how both Dandelion ++ and fixed probability gossip achieve high coverage (above $80\%$) even with an extremely high percentage of attackers in the network ($70\%$)\cite{lunes-dissemination}.
 
@@ -464,77 +472,77 @@ Inserire grafico\\
 
 Changing the behaviour of Sybil nodes to disseminate bogus network information, as described in Section~\ref{sec:atkdetails}, yields the results shown in Fig.~\ref{fig:in-cov}.
 
-The results are similiar for every protcol: coverage drops steeply for each of them, thus confirming the efficacy of the new adopted behaviour.
+The results are similar for every protocol: coverage drops steeply for each of them, thus confirming the efficacy of the new adopted behaviour.
 
-The reader can also notice that even Dandelion ++ seems ineffective, although achieving the best coverage in previous results.
+The reader can also notice that even Dandelion ++ seems ineffective, although achieving the best coverage in previous results.\\
 
 \begin{figure}[h!]
-	\includegraphics[width=.8\textwidth]{pict/results/in-cov.png}
+	\includegraphics[width=.7\textwidth]{pict/results/in-cov.png}
 	\centering 
 	\caption{Coverage}
 	\label{fig:in-cov}
 \end{figure}
 
+The following metrics are reported in order to study the topology of the new network and to assess how well the new behaviour of malicious nodes has worked.
 
-
-describe the graph: there is no much difference between fixed probability dissemination 
-percentages, whilst dandelion ++ has still a greater resistence to sybil attacks.
-
-Other metrics, that are not only the coverage:
-
-average degree of honest nodes
-
-average degree of attackers
-
-average percentage of attackers in honest nodes neighbours
-
+The average degree of honest nodes reveals that each node is highly connected and has on average an higher degree than those in the results of Serena et al. (Fig...). \\
 
 \begin{figure}[h!]
-	\includegraphics[width=.8\textwidth]{pict/results/in-hon-avg-neigh.png}
+	\includegraphics[width=.7\textwidth]{pict/results/in-hon-avg-neigh.png}
 	\centering
 	\caption{Average degree of honest nodes}
 	\label{fig:degreehon}
 \end{figure}
 
+The average percentage of malicious neighbours is shown in Fig.~\ref{fig:avgatk}. It fundamental to evaluate the efficacy of the new Sybils behaviour.
+
+The data, despite seeming noisy, tells what happened during the simulations in detail. Most of the runs achieve an average percentage above $70\%$, thus showing great efficacy. 
+
+On the other hand, the steep falls highlight the runs in which the attack was not successful. These outcomes are possible due to the random nature of the simulations carried out.\\
 
 \begin{figure}[h!]
-	\includegraphics[width=.8\textwidth]{pict/results/in-hon-avg-neigh-atk.png}
+	\includegraphics[width=.7\textwidth]{pict/results/in-hon-avg-neigh-atk.png}
 	\centering
 	\caption{Average percentage of Sybils among neighbours}
 	\label{fig:avgatk}
 \end{figure}
 
+Furthermore, the reader can see how well false network information was spread in the graph shown in Fig.~\ref{fig:avgatk-known}, as it depicts the percentage of malicious nodes in the peer cache of honest nodes.\\
 
 \begin{figure}[h!]
-	\includegraphics[width=.8\textwidth]{pict/results/in-hon-avg-known-atk.png}
+	\includegraphics[width=.7\textwidth]{pict/results/in-hon-avg-known-atk.png}
 	\centering
 	\caption{Average percentage of Sybils in the peer cache}
 	\label{fig:avgatk-known}
 \end{figure}
 
-Data about the attackers
+The average degree of malicious nodes (Fig.~\ref{fig:in-atk-degree}) shows that Sybils are on average far more connected than honest nodes, thus influencing positively the outcome of the attack.
 
+With a sample of the degree distribution, Fig.~\ref{fig:incluster}, it is possible to understand how the topology of the underlying network was influenced. 
+
+Malicious nodes tend to create clusters of nodes around them, with some reaching extremely high degrees, whilst others are left poorly connected.\\
 \begin{figure}[h!]
-	\includegraphics[width=.8\textwidth]{pict/results/in-atk-avg-degree.png}
+	\includegraphics[width=.7\textwidth]{pict/results/in-atk-avg-degree.png}
 	\centering
 	\caption{Average degree of Sybil nodes}
 	\label{fig:in-atk-degree}
 \end{figure}
 
 \begin{figure}[h!]
-	\includegraphics[width=.8\textwidth]{pict/results/in-cluster.png}
+	\includegraphics[width=.7\textwidth]{pict/results/in-cluster.png}
 	\centering
 	\caption{Sample of degree distribution of Sybil nodes}
 	\label{fig:incluster}
 \end{figure}
 
 
-\paragraph{Alternative scenario}\label{sec:external}
+\subsection{Alternative attack scenario}\label{sec:external}
+In the second attack scenario all malicious nodes are on fresh bootstrap and have to join the network while it is still forming. The numbers of attacking nodes in these simulations has been increased up to 30000. A total of 300 simulations are run adding 100 attacking nodes at each.\\
 
-Coverage reached:
+The attack does not achieve any results in this scenario, as shown by the coverage in Fig.~\ref{fig:ext-cov}. The network is thus resistant to such Sybil attack.\\
 
 \begin{figure}[h!]
-	\includegraphics[width=.8\textwidth]{pict/results/ext-cov.png}
+	\includegraphics[width=.7\textwidth]{pict/results/ext-cov.png}
 	\centering
 	\caption{Coverage}
 	\label{fig:ext-cov}
@@ -542,19 +550,13 @@ Coverage reached:
 
 the same metrics shown before are comparatively analysed with the ones for this new setting with external attackers only
 
+The lower average degree of Sybils, Fig.~\ref{fig:ex-atk-degree}., and the lower average percentage of malicious Sybil neighbours, Fig.~\ref{fig:ex-atk-neigh}, are symptomatic of the low effectiveness of the attack.\\
 
 \begin{figure}[h!]
-	\includegraphics[width=.8\textwidth]{pict/results/ex-atk-avg-degree.png}
+	\includegraphics[width=.7\textwidth]{pict/results/ex-atk-avg-degree.png}
 	\centering
 	\caption{External Sybils average degree}
 	\label{fig:ex-atk-degree}
-\end{figure}
-
-\begin{figure}[h!]
-	\includegraphics[width=.8\textwidth]{pict/results/ex-atk-dd.png}
-	\centering
-	\caption{External degree distribution}
-	\label{fig:dd}
 \end{figure}
 
 \begin{figure}[h!]
@@ -564,8 +566,19 @@ the same metrics shown before are comparatively analysed with the ones for this 
 	\label{fig:ex-atk-neigh}
 \end{figure}
 
-\section{Conclusions}\label{sec:concl}
+Also the shape of the graph has changed. By looking at a sample degree distribution, Fig.~\ref{fig:dd}, the reader can see that only the Sybils that connect first are able to establish more connection, while the others are left in more sparse areas of the graph.
 
+\begin{figure}[h!]
+	\includegraphics[width=.7\textwidth]{pict/results/ex-atk-dd.png}
+	\centering
+	\caption{External degree distribution}
+	\label{fig:dd}
+\end{figure}
+
+
+
+\section{Conclusions}\label{sec:concl}
+It is necessary to point out that the new behaviour of Sybils achieves high efficacy despite working with a network far more dense than the one in the results of Serena et al. Their work assessed the importance of an high connected graph as a direct countermeasure to Sybil attacks of this kind.
 
 
 
