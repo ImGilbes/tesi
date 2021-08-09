@@ -399,7 +399,7 @@ As previously stated, malicious nodes disseminate bogus network information: the
 
 The setting of the attack is during the construction of the overlay topology: at the start the graph is only a tree and many nodes are on fresh bootstrap. Nodes will all try to setup eight outgoing connections, emulating the behaviour of full nodes (Sec.~\ref{sec:peerdisc}). The way the graph forms is influenced by the network data advertised in this phase.
 
-\subsection{Attack details}\label{sec:2}
+\subsection{Attack details}\label{sec:atkdetails}
 The attack starts during the creation of the overlay topology, when nodes still have to setup the majority of their connections.
 
 A group of at most $N$ nodes is on fresh bootstrap. The rest of the nodes are instead connected. The starting network graph is a tree, the choice comes from the need to have the sparsest graph possible.
@@ -456,12 +456,17 @@ The simulation proceeds as a series of epochs. In each epoch a different victim 
 All the tests are a collection of simulations. From a simulation to another the number of Sybil nodes is increased by some proportion of the total number of nodes in the network.
 
 \section{Results}\label{sec:res}
+The results of the work of Serena et al. show how both Dandelion ++ and fixed probability gossip achieve high coverage (above $80\%$) even with an extremely high percentage of attackers in the network ($70\%$)\cite{lunes-dissemination}.
 
+These results are confirmed with the following data obtained from new simulations shown in Fig..\\
 
-Previous results: resilience of different dissemination protocols shown in the work of compare the results with~\cite{lunes-dissemination}.
-In a standard setting, sybil attack with no graph manipulation: show results.
+Inserire grafico\\
 
-under my new setting the results show that:
+Changing the behaviour of Sybil nodes to disseminate bogus network information, as described in Section~\ref{sec:atkdetails}, yields the results shown in Fig.~\ref{fig:in-cov}.
+
+The results are similiar for every protcol: coverage drops steeply for each of them, thus confirming the efficacy of the new adopted behaviour.
+
+The reader can also notice that even Dandelion ++ seems ineffective, although achieving the best coverage in previous results.
 
 \begin{figure}[h!]
 	\includegraphics[width=.8\textwidth]{pict/results/in-cov.png}
@@ -469,6 +474,8 @@ under my new setting the results show that:
 	\caption{Coverage}
 	\label{fig:in-cov}
 \end{figure}
+
+
 
 describe the graph: there is no much difference between fixed probability dissemination 
 percentages, whilst dandelion ++ has still a greater resistence to sybil attacks.
