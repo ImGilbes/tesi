@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.19)  9 AUG 2021 17:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.19)  10 AUG 2021 12:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -509,12 +509,12 @@ Package pdftex.def Info: pict/BTCconnection.png  used on input line 187.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6]
+
 Underfull \hbox (badness 10000) in paragraph at lines 195--196
 
  []
 
-
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 199--200
 
  []
@@ -692,90 +692,81 @@ Underfull \hbox (badness 10000) in paragraph at lines 510--511
 
  []
 
-<pict/results/in-hon-avg-known-atk.png, id=322, 462.528pt x 346.896pt>
+[17]
+<pict/results/in-hon-avg-known-atk.png, id=329, 462.528pt x 346.896pt>
 File: pict/results/in-hon-avg-known-atk.png Graphic file (type png)
 <use pict/results/in-hon-avg-known-atk.png>
 Package pdftex.def Info: pict/results/in-hon-avg-known-atk.png  used on input l
 ine 513.
 (pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
-[17]
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [18 <./pict/results/in-cov.png> <./pict/results/in-hon-avg-neigh.png>]
-<pict/results/in-atk-avg-degree.png, id=342, 462.528pt x 346.896pt>
+<pict/results/in-atk-avg-degree.png, id=340, 462.528pt x 346.896pt>
 File: pict/results/in-atk-avg-degree.png Graphic file (type png)
 <use pict/results/in-atk-avg-degree.png>
 Package pdftex.def Info: pict/results/in-atk-avg-degree.png  used on input line
  525.
 (pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<pict/results/in-cluster.png, id=343, 462.528pt x 346.896pt>
+ [19 <./pict/results/in-hon-avg-neigh-atk.png> <./pict/results/in-hon-avg-known
+-atk.png>]
+<pict/results/in-cluster.png, id=349, 462.528pt x 346.896pt>
 File: pict/results/in-cluster.png Graphic file (type png)
 <use pict/results/in-cluster.png>
 Package pdftex.def Info: pict/results/in-cluster.png  used on input line 532.
 (pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 540--541
 
  []
 
 
-Underfull \vbox (badness 7047) has occurred while \output is active []
+Underfull \vbox (badness 1917) has occurred while \output is active []
 
- [19 <./pict/results/in-hon-avg-neigh-atk.png> <./pict/results/in-hon-avg-known
--atk.png>]
-[20 <./pict/results/in-atk-avg-degree.png> <./pict/results/in-cluster.png>]
+ [20 <./pict/results/in-atk-avg-degree.png> <./pict/results/in-cluster.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 542--543
 
  []
 
-<pict/results/ext-cov.png, id=359, 462.528pt x 346.896pt>
+<pict/results/ext-cov.png, id=357, 462.528pt x 346.896pt>
 File: pict/results/ext-cov.png Graphic file (type png)
 <use pict/results/ext-cov.png>
 Package pdftex.def Info: pict/results/ext-cov.png  used on input line 545.
 (pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 553--554
+Underfull \hbox (badness 10000) in paragraph at lines 551--552
 
  []
 
-<pict/results/ex-atk-avg-degree.png, id=362, 462.528pt x 346.896pt>
+<pict/results/ex-atk-avg-degree.png, id=360, 462.528pt x 346.896pt>
 File: pict/results/ex-atk-avg-degree.png Graphic file (type png)
 <use pict/results/ex-atk-avg-degree.png>
 Package pdftex.def Info: pict/results/ex-atk-avg-degree.png  used on input line
- 556.
+ 554.
 (pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<pict/results/ext-hon-atk-neigh.png, id=363, 462.528pt x 346.896pt>
+<pict/results/ext-hon-atk-neigh.png, id=361, 462.528pt x 346.896pt>
 File: pict/results/ext-hon-atk-neigh.png Graphic file (type png)
 <use pict/results/ext-hon-atk-neigh.png>
 Package pdftex.def Info: pict/results/ext-hon-atk-neigh.png  used on input line
- 563.
+ 561.
 (pdftex.def)             Requested size: 375.80544pt x 281.86818pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<pict/results/ex-atk-dd.png, id=365, 462.528pt x 346.896pt>
+<pict/results/ex-atk-dd.png, id=364, 462.528pt x 346.896pt>
 File: pict/results/ex-atk-dd.png Graphic file (type png)
 <use pict/results/ex-atk-dd.png>
-Package pdftex.def Info: pict/results/ex-atk-dd.png  used on input line 572.
+Package pdftex.def Info: pict/results/ex-atk-dd.png  used on input line 570.
 (pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./tesi.bbl
-Underfull \vbox (badness 2384) has occurred while \output is active []
-
- [21 <./pict/results/ext-cov.png>]
+(./tesi.bbl [21 <./pict/results/ext-cov.png>]
 Overfull \vbox (3.95284pt too high) has occurred while \output is active []
 
 
@@ -787,58 +778,40 @@ tps : / / en . bitcoin . it / wiki / Protocol _
  []
 
 [23 <./pict/results/ex-atk-dd.png>] [24])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 596.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 594.
  [25]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 596.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 594.
  (./tesi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 596.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 596.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 594.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 594.
+Package rerunfilecheck Info: File `tesi.out' has not changed.
+(rerunfilecheck)             Checksum: 5366EA941E327CE70EF30257D2857847;2006.
 
-
-Package rerunfilecheck Warning: File `tesi.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `tesi.out':
-(rerunfilecheck)             Before: D734EBE0835A91452B83AFE7751BDF20;1991
-(rerunfilecheck)             After:  5366EA941E327CE70EF30257D2857847;2006.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 596.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 594.
  ) 
 Here is how much of TeX's memory you used:
- 10168 strings out of 481239
- 161580 string characters out of 5920377
- 434861 words of memory out of 5000000
- 25160 multiletter control sequences out of 15000+600000
+ 10164 strings out of 481239
+ 161523 string characters out of 5920377
+ 434979 words of memory out of 5000000
+ 25159 multiletter control sequences out of 15000+600000
  538359 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,7n,42p,919b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{figure.caption.24} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.20} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.4} has been referenced but does not ex
-ist, replaced by a fixed one
-
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.p
-fb>
-Output written on tesi.pdf (25 pages, 935811 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200
+.pfb>
+Output written on tesi.pdf (25 pages, 868621 bytes).
 PDF statistics:
- 455 PDF objects out of 1000 (max. 8388607)
- 371 compressed objects within 4 object streams
- 108 named destinations out of 1000 (max. 500000)
+ 453 PDF objects out of 1000 (max. 8388607)
+ 369 compressed objects within 4 object streams
+ 105 named destinations out of 1000 (max. 500000)
  332 words of extra memory for PDF output out of 10000 (max. 10000000)
 
