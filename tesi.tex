@@ -516,7 +516,7 @@ Furthermore, the reader can see how well false network information was spread in
 	\label{fig:avgatk-known}
 \end{figure}
 
-The average degree of malicious nodes (Fig.~\ref{fig:in-atk-degree}) shows that Sybils are on average far more connected than honest nodes, thus influencing positively the outcome of the attack. The reader should mind that malicious nodes avoid making connections between themselves.
+The average degree of malicious nodes (Fig.~\ref{fig:in-atk-degree}) shows that Sybils are on average far more connected than honest nodes, thus influencing positively the outcome of the attack. The reader should mind that malicious nodes avoid making connections between themselves and that they have no upper bound on outgoing connections.
 
 With a sample of the degree distribution, Fig.~\ref{fig:incluster}, it is possible to understand how the topology of the underlying network was influenced. 
 
@@ -558,7 +558,7 @@ The lower average degree of Sybils, Fig.~\ref{fig:ex-atk-degree}., and the lower
 \end{figure}
 
 \begin{figure}[h!]
-	\includegraphics[width=.8\textwidth]{pict/results/ext-hon-atk-neigh.png}
+	\includegraphics[width=.7\textwidth]{pict/results/ext-hon-atk-neigh.png}
 	\centering
 	\caption{Percentage of Sybil neighbours in the second attack scenario}
 	\label{fig:ex-atk-neigh}
@@ -576,7 +576,25 @@ Also the shape of the graph has changed. By looking at a sample degree distribut
 
 
 \section{Conclusions}\label{sec:concl}
-It is necessary to point out that the new behaviour of Sybils achieves high efficacy despite working with a network far more dense than the one in the results of Serena et al. Their work assessed the importance of an high connected graph as a direct countermeasure to Sybil attacks of this kind.
+The way malicious nodes disseminate bogus network information makes the attack resemble fake bootstrapping. In particular, the adversary exploits Bitcoin's \texttt{addr} messages exchange and their relay policy to extensively disperse false network information, 
+
+The efficacy of the strategy has been proven high, as in the great majority of the executions the peer cache of honest nodes is filled with malicious addresses.
+
+Furthermore, the Sybil attack executed on the new overlay network is substantially more powerful, as it makes coverage drop steeply with less malicious nodes involved in the attack.
+
+It is necessary to point out that the new behaviour of Sybils achieves high efficacy despite working with a network far more dense than the one in the results of Serena et al. Their work assessed the importance of an highly connected graph as a direct countermeasure to Sybil attacks of this kind.
+
+Therefore, the results obtained imply an increased feasibility of the attack, since the adversary does not have control more than 50\% of the identities on the network. With just the 20\% of them he is able to make the coverage drop below 40\%.
+
+Nonetheless, the setting of the attack is ideal and cannot be compared to that of a real network. The positive outcome is influenced by the increased capability to spread network information during the time the graph topology is still forming.
+
+...
+
+On the other hand, in future work it is possibile to have a graph already formed and try to mix it with an eclipse attack described by heilman et al 2015
+
+Nonetheless, steep falls attack doesnt work properly
+
+Moreover, the second attack scenario has demonstrated that
 
 
 
