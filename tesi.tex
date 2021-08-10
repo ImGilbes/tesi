@@ -535,6 +535,14 @@ Malicious nodes tend to create clusters of nodes around them, with some reaching
 	\label{fig:incluster}
 \end{figure}
 
+Also DNS bootstrap peer lists played their role to determine the efficacy of the attack. In Fig.~\ref{fig:dns} the reader can see that in many cases the concentration of malicious addresses is high, thus increasing the chance of a node on fresh bootstrap connecting to a malicious node first.  
+
+\begin{figure}[h!]
+	\includegraphics[width=.7\textwidth]{pict/results/in-dns.png}
+	\centering
+	\caption{Percentage of Sybils in the DNSs}
+	\label{fig:dns}
+\end{figure}
 
 \subsection{Alternative attack scenario}\label{sec:external}
 In the second attack scenario all malicious nodes are on fresh bootstrap and have to join the network while it is still forming. The numbers of attacking nodes in these simulations has been increased up to 30000. A total of 300 simulations are run, 100 attacking nodes are added at each.\\
@@ -564,7 +572,7 @@ The lower average degree of Sybils, Fig.~\ref{fig:ex-atk-degree}., and the lower
 	\label{fig:ex-atk-neigh}
 \end{figure}
 
-Also the shape of the graph has changed. By looking at a sample degree distribution, Fig.~\ref{fig:dd}, the reader can see that only the Sybils that connect first (they connect sequentially Sec.~\ref{sec:softw}) are able to establish more connection, while the others are left in more sparse areas of the graph.
+Also the shape of the graph has changed. By looking at a sample degree distribution, Fig.~\ref{fig:dd}, the reader can see that only the Sybils that connect first (they connect sequentially Sec.~\ref{sec:softw}) are able to establish more connection, while the others are left in more sparse areas of the graph.\\
 
 \begin{figure}[h!]
 	\includegraphics[width=.7\textwidth]{pict/results/ex-atk-dd.png}
@@ -574,6 +582,14 @@ Also the shape of the graph has changed. By looking at a sample degree distribut
 \end{figure}
 
 
+\begin{figure}[h!]
+	\includegraphics[width=.7\textwidth]{pict/results/ex-hon-atk-known.png}
+	\centering
+	\caption{Percentage of Sybils in the peer cache}
+	\label{fig:ex-atk-known}
+\end{figure}
+
+In this scenario DNS peer lists did not have any attacker, since they cannot contain any node on fresh bootstrap.
 
 \section{Conclusions}\label{sec:concl}
 The way malicious nodes disseminate bogus network information makes the attack resemble fake bootstrapping. In particular, the adversary exploits Bitcoin's \texttt{addr} messages exchange and their relay policy to extensively disperse false network information, 
@@ -588,6 +604,13 @@ Therefore, the results obtained imply an increased feasibility of the attack, si
 
 Nonetheless, the setting of the attack is ideal and cannot be compared to that of a real network. The positive outcome is influenced by the increased capability to spread network information during the time the graph topology is still forming.
 
+Under no circumstances the real Bitcoin network could undergo such process. For this reason the attack has been carried out on a second scenario where all the malicious nodes are on fresh bootstrap.
+
+The results show how the attack was utterly ineffective even though the network was still being built at the time the Sybils started to join. The average percentage of attacinkg neighbours (Fig.~\ref{fig:ex-atk-neigh}) is significantly low.
+
+Despite that, there is no gap that big in the percentage of Sybils in the peer cache (Fig.~\ref{fig:ex-atk-known}) between the two attack scenarios, thus proving the attackers could disseminate well their addresses.
+
+This leads to two major conclusions: DNS and time at which the information is began to be spread.
 ...
 
 On the other hand, in future work it is possibile to have a graph already formed and try to mix it with an eclipse attack described by heilman et al 2015
