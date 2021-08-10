@@ -592,7 +592,7 @@ Also the shape of the graph has changed. By looking at a sample degree distribut
 In this scenario DNS peer lists did not have any attacker, since they cannot contain any node on fresh bootstrap.
 
 \section{Conclusions}\label{sec:concl}
-The way malicious nodes disseminate bogus network information makes the attack resemble fake bootstrapping. In particular, the adversary exploits Bitcoin's \texttt{addr} messages exchange and their relay policy to extensively disperse false network information, 
+The way malicious nodes disseminate bogus network information makes the attack resemble fake bootstrapping. In particular, the adversary exploits Bitcoin's \texttt{addr} messages exchange and their relay policy to extensively disperse false network information. 
 
 The efficacy of the strategy has been proven high, as in the great majority of the executions the peer cache of honest nodes is filled with malicious addresses.
 
@@ -600,17 +600,29 @@ Furthermore, the Sybil attack executed on the new overlay network is substantial
 
 It is necessary to point out that the new behaviour of Sybils achieves high efficacy despite working with a network far more dense than the one in the results of Serena et al. Their work assessed the importance of an highly connected graph as a direct countermeasure to Sybil attacks of this kind.
 
-Therefore, the results obtained imply an increased feasibility of the attack, since the adversary does not have control more than 50\% of the identities on the network. With just the 20\% of them he is able to make the coverage drop below 40\%.
+Therefore, the results obtained imply an increased feasibility of the attack, since the adversary does not have control more than 50\% of the identities on the network. With just the 20\% of them he is able to make the coverage drop below 40\%.\\
 
 Nonetheless, the setting of the attack is ideal and cannot be compared to that of a real network. The positive outcome is influenced by the increased capability to spread network information during the time the graph topology is still forming.
 
 Under no circumstances the real Bitcoin network could undergo such process. For this reason the attack has been carried out on a second scenario where all the malicious nodes are on fresh bootstrap.
 
-The results show how the attack was utterly ineffective even though the network was still being built at the time the Sybils started to join. The average percentage of attacinkg neighbours (Fig.~\ref{fig:ex-atk-neigh}) is significantly low.
+The results in Fig.~\ref{fig:ext-cov} show how the attack was utterly ineffective even though the network was still being built at the time the Sybils started to join. The average percentage of attacking neighbours (Fig.~\ref{fig:ex-atk-neigh}) is significantly lower.
 
-Despite that, there is no gap that big in the percentage of Sybils in the peer cache (Fig.~\ref{fig:ex-atk-known}) between the two attack scenarios, thus proving the attackers could disseminate well their addresses.
+Despite that, there is no gap that big in the percentage of Sybils in the peer cache (Fig.~\ref{fig:ex-atk-known}) between the two attack scenarios, thus stating the attackers could still disseminate well their addresses.
 
-This leads to two major conclusions: DNS and time at which the information is began to be spread.
+This means that the positive outcome of the attack in the first scenario was influenced by two factors: the presence of Sybils in the DNS lists and the time at which malicious addresses start to be disseminated.
+
+Although the first factor has been surely influential, it is required to assess the importance of the latter.
+
+The data in Fig.~\ref{fig:beginning} shows the percentage of malicious addresses in peer caches before the bootstrapping nodes start to join.
+
+\begin{figure}[h!]
+	\includegraphics[width=.7\textwidth]{pict/results/in-atkknown-beginning.png}
+	\centering
+	\caption{Percentage of Sybils in the peer cache at the beginning of the graph construction}
+	\label{fig:beginning}
+\end{figure}
+
 ...
 
 On the other hand, in future work it is possibile to have a graph already formed and try to mix it with an eclipse attack described by heilman et al 2015
