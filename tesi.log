@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.19)  10 AUG 2021 19:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.19)  11 AUG 2021 13:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -674,7 +674,7 @@ Package pdftex.def Info: pict/results/in-hon-avg-neigh.png  used on input line
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--502
+Underfull \hbox (badness 10000) in paragraph at lines 497--498
 
  []
 
@@ -682,127 +682,131 @@ Underfull \hbox (badness 10000) in paragraph at lines 501--502
 File: pict/results/in-hon-avg-neigh-atk.png Graphic file (type png)
 <use pict/results/in-hon-avg-neigh-atk.png>
 Package pdftex.def Info: pict/results/in-hon-avg-neigh-atk.png  used on input l
-ine 504.
+ine 500.
 (pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--511
+Underfull \hbox (badness 10000) in paragraph at lines 508--509
 
  []
 
-[17]
-<pict/results/in-hon-avg-known-atk.png, id=329, 462.528pt x 346.896pt>
+<pict/results/in-hon-avg-known-atk.png, id=322, 462.528pt x 346.896pt>
 File: pict/results/in-hon-avg-known-atk.png Graphic file (type png)
 <use pict/results/in-hon-avg-known-atk.png>
 Package pdftex.def Info: pict/results/in-hon-avg-known-atk.png  used on input l
-ine 513.
+ine 511.
 (pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[18 <./pict/results/in-cov.png> <./pict/results/in-hon-avg-neigh.png>]
+[17] [18 <./pict/results/in-cov.png> <./pict/results/in-hon-avg-neigh.png>]
 <pict/results/in-atk-avg-degree.png, id=340, 462.528pt x 346.896pt>
 File: pict/results/in-atk-avg-degree.png Graphic file (type png)
 <use pict/results/in-atk-avg-degree.png>
 Package pdftex.def Info: pict/results/in-atk-avg-degree.png  used on input line
- 525.
+ 527.
 (pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
- [19 <./pict/results/in-hon-avg-neigh-atk.png> <./pict/results/in-hon-avg-known
--atk.png>]
+
+[19 <./pict/results/in-hon-avg-neigh-atk.png> <./pict/results/in-hon-avg-known-
+atk.png>]
 <pict/results/in-cluster.png, id=349, 462.528pt x 346.896pt>
 File: pict/results/in-cluster.png Graphic file (type png)
 <use pict/results/in-cluster.png>
-Package pdftex.def Info: pict/results/in-cluster.png  used on input line 532.
+Package pdftex.def Info: pict/results/in-cluster.png  used on input line 534.
 (pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
  [20 <./pict/results/in-atk-avg-degree.png> <./pict/results/in-cluster.png>]
-<pict/results/in-dns.png, id=358, 462.528pt x 346.896pt>
+<pict/results/in-dns.png, id=357, 462.528pt x 346.896pt>
 File: pict/results/in-dns.png Graphic file (type png)
 <use pict/results/in-dns.png>
-Package pdftex.def Info: pict/results/in-dns.png  used on input line 541.
+Package pdftex.def Info: pict/results/in-dns.png  used on input line 543.
 (pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 548--549
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 550--551
 
  []
 
-<pict/results/ext-cov.png, id=360, 462.528pt x 346.896pt>
-File: pict/results/ext-cov.png Graphic file (type png)
-<use pict/results/ext-cov.png>
-Package pdftex.def Info: pict/results/ext-cov.png  used on input line 553.
-(pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 559--560
+Underfull \hbox (badness 10000) in paragraph at lines 552--553
 
  []
 
-<pict/results/ex-atk-avg-degree.png, id=363, 462.528pt x 346.896pt>
-File: pict/results/ex-atk-avg-degree.png Graphic file (type png)
-<use pict/results/ex-atk-avg-degree.png>
-Package pdftex.def Info: pict/results/ex-atk-avg-degree.png  used on input line
- 562.
+<pict/results/ext-cov.png, id=359, 462.528pt x 346.896pt>
+File: pict/results/ext-cov.png Graphic file (type png)
+<use pict/results/ext-cov.png>
+Package pdftex.def Info: pict/results/ext-cov.png  used on input line 555.
 (pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<pict/results/ext-hon-atk-neigh.png, id=364, 462.528pt x 346.896pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 563--564
+
+ []
+
+<pict/results/ext-hon-atk-neigh.png, id=361, 462.528pt x 346.896pt>
 File: pict/results/ext-hon-atk-neigh.png Graphic file (type png)
 <use pict/results/ext-hon-atk-neigh.png>
 Package pdftex.def Info: pict/results/ext-hon-atk-neigh.png  used on input line
- 569.
+ 566.
 (pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 575--576
+Underfull \hbox (badness 10000) in paragraph at lines 572--573
 
  []
 
-<pict/results/ex-atk-dd.png, id=367, 462.528pt x 346.896pt>
-File: pict/results/ex-atk-dd.png Graphic file (type png)
-<use pict/results/ex-atk-dd.png>
-Package pdftex.def Info: pict/results/ex-atk-dd.png  used on input line 578.
-(pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<pict/results/ex-hon-atk-known.png, id=368, 462.528pt x 346.896pt>
+<pict/results/ex-hon-atk-known.png, id=363, 462.528pt x 346.896pt>
 File: pict/results/ex-hon-atk-known.png Graphic file (type png)
 <use pict/results/ex-hon-atk-known.png>
 Package pdftex.def Info: pict/results/ex-hon-atk-known.png  used on input line 
-586.
+575.
 (pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[21 <./pict/results/in-dns.png>] [22 <./pict/results/ext-cov.png> <./pict/resul
-ts/ex-atk-avg-degree.png>] [23 <./pict/results/ext-hon-atk-neigh.png> <./pict/r
-esults/ex-atk-dd.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 603--604
+
+Underfull \hbox (badness 10000) in paragraph at lines 583--584
 
  []
 
+[21 <./pict/results/in-dns.png>]
+<pict/results/ex-atk-avg-degree.png, id=378, 462.528pt x 346.896pt>
+File: pict/results/ex-atk-avg-degree.png Graphic file (type png)
+<use pict/results/ex-atk-avg-degree.png>
+Package pdftex.def Info: pict/results/ex-atk-avg-degree.png  used on input line
+ 586.
+(pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
 
-LaTeX Warning: Reference `fig:beginning' on page 24 undefined on input line 617
-.
 
-[24 <./pict/results/ex-hon-atk-known.png>]
-<pict/results/in-atkknown-beginning.png, id=399, 462.528pt x 346.896pt>
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<pict/results/ex-atk-dd.png, id=379, 462.528pt x 346.896pt>
+File: pict/results/ex-atk-dd.png Graphic file (type png)
+<use pict/results/ex-atk-dd.png>
+Package pdftex.def Info: pict/results/ex-atk-dd.png  used on input line 593.
+(pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 7047) has occurred while \output is active []
+
+ [22 <./pict/results/ext-cov.png> <./pict/results/ext-hon-atk-neigh.png>] [23 <
+./pict/results/ex-hon-atk-known.png> <./pict/results/ex-atk-avg-degree.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 610--611
+
+ []
+
+[24 <./pict/results/ex-atk-dd.png>]
+<pict/results/in-atkknown-beginning.png, id=401, 462.528pt x 346.896pt>
 File: pict/results/in-atkknown-beginning.png Graphic file (type png)
 <use pict/results/in-atkknown-beginning.png>
 Package pdftex.def Info: pict/results/in-atkknown-beginning.png  used on input 
-line 620.
+line 629.
 (pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
  (./tesi.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 9--12
@@ -811,27 +815,24 @@ tps : / / en . bitcoin . it / wiki / Protocol _
  []
 
 [25 <./pict/results/in-atkknown-beginning.png>] [26])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 647.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 656.
  [27]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 647.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 656.
  (./tesi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 647.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 647.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 656.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 656.
 Package rerunfilecheck Info: File `tesi.out' has not changed.
 (rerunfilecheck)             Checksum: 5366EA941E327CE70EF30257D2857847;2006.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 647.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 656.
  ) 
 Here is how much of TeX's memory you used:
  10190 strings out of 481239
  162212 string characters out of 5920377
- 435117 words of memory out of 5000000
+ 435232 words of memory out of 5000000
  25177 multiletter control sequences out of 15000+600000
  538359 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -844,10 +845,10 @@ t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
 /public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200
 .pfb>
-Output written on tesi.pdf (27 pages, 623657 bytes).
+Output written on tesi.pdf (27 pages, 646860 bytes).
 PDF statistics:
- 476 PDF objects out of 1000 (max. 8388607)
- 384 compressed objects within 4 object streams
+ 478 PDF objects out of 1000 (max. 8388607)
+ 386 compressed objects within 4 object streams
  110 named destinations out of 1000 (max. 500000)
  347 words of extra memory for PDF output out of 10000 (max. 10000000)
 

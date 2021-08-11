@@ -472,9 +472,9 @@ Inserire grafico\\
 
 Changing the behaviour of Sybil nodes to disseminate bogus network information, as described in Section~\ref{sec:atkdetails}, yields the results shown in Fig.~\ref{fig:in-cov}.
 
-The outcome is similar for every protocol: coverage drops steeply for each of them, thus confirming the efficacy of the new adopted behaviour.
+The outcome is similar for every protocol: coverage drops steeply for each of them, thus confirming the efficacy of the new behaviour.
 
-The reader can also notice that even Dandelion ++ seems ineffective, although achieving the best coverage in previous results.\\
+Despite achieving the best coverage in previous results, even Dandelion ++ seems ineffective.\\
 
 \begin{figure}[h!]
 	\includegraphics[width=.7\textwidth]{pict/results/in-cov.png}
@@ -494,11 +494,7 @@ The average degree of honest nodes reveals that each node is highly connected an
 	\label{fig:degreehon}
 \end{figure}
 
-The average percentage of malicious neighbours is shown in Fig.~\ref{fig:avgatk}. It is fundamental to evaluate the efficacy of the new Sybils behaviour, as the closer they get to eclipse honest nodes the more effective a block-withholding attack would be.
-
-The data, despite seeming noisy, reveals what happened during the simulations in detail. Most of the runs achieve an average percentage above $70\%$, thus showing great efficacy. 
-
-On the other hand, the steep falls highlight the runs in which the attack was not successful. These outcomes are possible due to the random nature of the simulations.\\
+The average percentage of malicious neighbours is shown in Fig.~\ref{fig:avgatk}. It is fundamental to evaluate the efficacy of the new Sybils behaviour, as the closer they get to eclipse honest nodes the higher the chance of carrying out a block-withholding attack would be.\\
 
 \begin{figure}[h!]
 	\includegraphics[width=.7\textwidth]{pict/results/in-hon-avg-neigh-atk.png}
@@ -507,7 +503,9 @@ On the other hand, the steep falls highlight the runs in which the attack was no
 	\label{fig:avgatk}
 \end{figure}
 
-Furthermore, the reader can see how well false network information was spread in the graph shown in Fig.~\ref{fig:avgatk-known}, as it depicts the percentage of malicious nodes in the peer cache of honest nodes. The data can also be interpreted as the probability of a node connecting to a Sybil, since new connections are chosen uniformly at random from the cache.\\
+Furthermore, the reader can see how well false network information was spread in the graph shown in Fig.~\ref{fig:avgatk-known}, as it depicts the percentage of malicious nodes in the peer cache of honest nodes.
+
+The data can also be interpreted as the probability of a node connecting to a Sybil, since new connections are chosen uniformly at random from the cache.\\
 
 \begin{figure}[h!]
 	\includegraphics[width=.7\textwidth]{pict/results/in-hon-avg-known-atk.png}
@@ -516,11 +514,15 @@ Furthermore, the reader can see how well false network information was spread in
 	\label{fig:avgatk-known}
 \end{figure}
 
-The average degree of malicious nodes (Fig.~\ref{fig:in-atk-degree}) shows that Sybils are on average far more connected than honest nodes, thus influencing positively the outcome of the attack. The reader should mind that malicious nodes avoid making connections between themselves and that they have no upper bound on outgoing connections.
+The average degree of malicious nodes (Fig.~\ref{fig:in-atk-degree}) shows Sybils far more connected than honest nodes, especially when they fewer. This is due to the lack of an upper bound on outgoing connections.
 
-With a sample of the degree distribution, Fig.~\ref{fig:incluster}, it is possible to understand how the topology of the underlying network was influenced. 
+The descending trend of the degree is due to malicious nodes avoiding making connections between themselves. When the number of attacking nodes increases, that of honest nodes decreases proportionally, thus leaving fewer nodes to connect to.
 
-Malicious nodes tend to create clusters of nodes around them, with some reaching extremely high degrees, whilst others are left poorly connected.\\
+With a samples of the degree distribution, Fig.~\ref{fig:incluster}, it is possible to understand how the topology of the underlying network was influenced. 
+
+Where there is a low percentage of Sybils in the network malicious nodes tend to have on average an extremely high degree.
+
+As the percentage increases the tendency to create clusters emerges: some Sybils reach extremely high degrees, whilst others are left poorly connected.\\
 \begin{figure}[h!]
 	\includegraphics[width=.7\textwidth]{pict/results/in-atk-avg-degree.png}
 	\centering
@@ -535,7 +537,7 @@ Malicious nodes tend to create clusters of nodes around them, with some reaching
 	\label{fig:incluster}
 \end{figure}
 
-Also DNS bootstrap peer lists played their role to determine the efficacy of the attack. In Fig.~\ref{fig:dns} the reader can see that in many cases the concentration of malicious addresses is high, thus increasing the chance of a node on fresh bootstrap connecting to a malicious node first.  
+Also DNSs their role to determine the efficacy of the attack. The percentage of malicious addresses in their peer lists directly influence  the chance of a node on fresh bootstrap connecting to a malicious node first. Fig.~\ref{fig:dns} shows a steady increase in the percentage of malicious addresses.
 
 \begin{figure}[h!]
 	\includegraphics[width=.7\textwidth]{pict/results/in-dns.png}
@@ -545,7 +547,7 @@ Also DNS bootstrap peer lists played their role to determine the efficacy of the
 \end{figure}
 
 \subsection{Alternative attack scenario}\label{sec:external}
-In the second attack scenario all malicious nodes are on fresh bootstrap and have to join the network while it is still forming. The numbers of attacking nodes in these simulations has been increased up to 30000. A total of 300 simulations are run, 100 attacking nodes are added at each.\\
+In the second attack scenario all malicious nodes are on fresh bootstrap and have to join the network while it is still forming. The number of attacking nodes in these simulations has been increased up to 30000. A total of 300 simulations are run, 100 attacking nodes are added at each.\\
 
 The attack does not achieve any results in this scenario, as shown by the coverage in Fig.~\ref{fig:ext-cov}. The network is thus resistant to such Sybil attack.\\
 
@@ -556,7 +558,29 @@ The attack does not achieve any results in this scenario, as shown by the covera
 	\label{fig:ext-cov}
 \end{figure}
 
-The lower average degree of Sybils, Fig.~\ref{fig:ex-atk-degree}., and the lower average percentage of malicious Sybil neighbours, Fig.~\ref{fig:ex-atk-neigh}, are symptomatic of the low effectiveness of the attack.\\
+
+
+Also the the changes in the behaviour of Sybils have been ineffective, since rate of malicious neighbours is significantly lower (Fig.~\ref{fig:ex-atk-neigh}).\\
+
+\begin{figure}[h!]
+	\includegraphics[width=.7\textwidth]{pict/results/ext-hon-atk-neigh.png}
+	\centering
+	\caption{Percentage of Sybil neighbours in the second attack scenario}
+	\label{fig:ex-atk-neigh}
+\end{figure}
+
+Despite that, Sybils still managed to disseminate malicious addresses well, although achieving results worse than those in the previous setting (Fig.~\ref{fig:ex-atk-known}).\\
+
+\begin{figure}[h!]
+	\includegraphics[width=.7\textwidth]{pict/results/ex-hon-atk-known.png}
+	\centering
+	\caption{Percentage of Sybils in the peer cache}
+	\label{fig:ex-atk-known}
+\end{figure}
+
+Also the shape of the graph has changed. Sybils are less connected and face the same downward trend in the average degree, Fig.~\ref{fig:ex-atk-degree}, as a result of the increasing number of attackers.
+
+Moreover, by looking at a sample degree distribution, Fig.~\ref{fig:dd}, the reader can see that only the Sybils that connect first (they connect sequentially Sec.~\ref{sec:softw}) are able to establish more connections, while the others are left in sparser areas of the graph.\\
 
 \begin{figure}[h!]
 	\includegraphics[width=.7\textwidth]{pict/results/ex-atk-avg-degree.png}
@@ -566,55 +590,40 @@ The lower average degree of Sybils, Fig.~\ref{fig:ex-atk-degree}., and the lower
 \end{figure}
 
 \begin{figure}[h!]
-	\includegraphics[width=.7\textwidth]{pict/results/ext-hon-atk-neigh.png}
-	\centering
-	\caption{Percentage of Sybil neighbours in the second attack scenario}
-	\label{fig:ex-atk-neigh}
-\end{figure}
-
-Also the shape of the graph has changed. By looking at a sample degree distribution, Fig.~\ref{fig:dd}, the reader can see that only the Sybils that connect first (they connect sequentially Sec.~\ref{sec:softw}) are able to establish more connection, while the others are left in more sparse areas of the graph.\\
-
-\begin{figure}[h!]
 	\includegraphics[width=.7\textwidth]{pict/results/ex-atk-dd.png}
 	\centering
 	\caption{Sample of Sybils degree distribution in the second attack scenario}
 	\label{fig:dd}
 \end{figure}
 
-
-\begin{figure}[h!]
-	\includegraphics[width=.7\textwidth]{pict/results/ex-hon-atk-known.png}
-	\centering
-	\caption{Percentage of Sybils in the peer cache}
-	\label{fig:ex-atk-known}
-\end{figure}
-
-In this scenario DNS peer lists did not have any attacker, since they cannot contain any node on fresh bootstrap.
+In this scenario DNS peer lists did not have any attacker, since they cannot contain nodes on fresh bootstrap.
 
 \section{Conclusions}\label{sec:concl}
-The way malicious nodes disseminate bogus network information makes the attack resemble fake bootstrapping. In particular, the adversary exploits Bitcoin's \texttt{addr} messages exchange and their relay policy to extensively disperse false network information. 
+The way malicious nodes disseminate bogus network information makes the attack resemble fake bootstrapping. In particular, the adversary exploits \texttt{addr} messages exchanges and their relay policy to extensively disperse false network information. 
 
-The efficacy of the strategy has been proven high, as in the great majority of the executions the peer cache of honest nodes is filled with malicious addresses.
+The efficacy of the strategy has been proven high, as with just 10\% of the identities on the network the adversary can fill peer caches with malicious addresses.
 
 Furthermore, the Sybil attack executed on the new overlay network is substantially more powerful, as it makes coverage drop steeply with less malicious nodes involved in the attack.
 
-It is necessary to point out that the new behaviour of Sybils achieves high efficacy despite working with a network far more dense than the one in the results of Serena et al. Their work assessed the importance of an highly connected graph as a direct countermeasure to Sybil attacks of this kind.
+It is necessary to point out that the new Sybil attack achieves high efficacy despite working with a network far more dense than the one in the results of Serena et al. Their work assessed the importance of an highly connected graphs as a direct countermeasure to Sybil attacks of this kind.
 
-Therefore, the results obtained imply an increased feasibility of the attack, since the adversary does not have control more than 50\% of the identities on the network. With just the 20\% of them he is able to make the coverage drop below 40\%.\\
+Therefore, the results obtained imply an increased feasibility of the attack, since the adversary needs to control fewer identities to disrupt honest activities. With just the 20\% of the nodes it is possible to make coverage drop below 40\%.\\
 
 Nonetheless, the setting of the attack is ideal and cannot be compared to that of a real network. The positive outcome is influenced by the increased capability to spread network information during the time the graph topology is still forming.
 
 Under no circumstances the real Bitcoin network could undergo such process. For this reason the attack has been carried out on a second scenario where all the malicious nodes are on fresh bootstrap.
 
-The results in Fig.~\ref{fig:ext-cov} show how the attack was utterly ineffective even though the network was still being built at the time the Sybils started to join. The average percentage of attacking neighbours (Fig.~\ref{fig:ex-atk-neigh}) is significantly lower.
+The results in Fig.~\ref{fig:ext-cov} show how the attack was utterly ineffective even though the network was still being built at the time the Sybils started to join.
+ 
+Furthermore, also the new behaviiour of Sybils did not work, since the average percentage of attacking neighbours (Fig.~\ref{fig:ex-atk-neigh}) is significantly lower.
 
-Despite that, there is no gap that big in the percentage of Sybils in the peer cache (Fig.~\ref{fig:ex-atk-known}) between the two attack scenarios, thus stating the attackers could still disseminate well their addresses.
+Despite that, there is no gap that big in the rate of Sybils in the peer cache (Fig.~\ref{fig:ex-atk-known}) between the two attack scenarios, thus stating the attackers could still disseminate rather well their addresses.
 
 This means that the positive outcome of the attack in the first scenario was influenced by two factors: the presence of Sybils in the DNS lists and the time at which malicious addresses start to be disseminated.
 
-Although the first factor has been surely influential, it is required to assess the importance of the latter.
+Although the first factor has been surely influential in later stages of the simulation, when the number of attackers increased, it is required to assess the importance of the latter.
 
-The data in Fig.~\ref{fig:beginning} shows the percentage of malicious addresses in peer caches before the bootstrapping nodes start to join.
+The data in Fig.~\ref{fig:beginning} shows the percentage of malicious addresses in peer caches before bootstrapping nodes start to join.
 
 \begin{figure}[h!]
 	\includegraphics[width=.7\textwidth]{pict/results/in-atkknown-beginning.png}
