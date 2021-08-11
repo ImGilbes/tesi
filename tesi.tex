@@ -623,23 +623,34 @@ This means that the positive outcome of the attack in the first scenario was inf
 
 Although the first factor has been surely influential in later stages of the simulation, when the number of attackers increased, it is required to assess the importance of the latter.
 
-The data in Fig.~\ref{fig:beginning} shows the percentage of malicious addresses in peer caches before bootstrapping nodes start to join.
+The data in Fig.~\ref{fig:beginning} shows the percentage of malicious addresses in peer caches before bootstrapping nodes start to join in the first attack scenario. In the second no Sybils can be in any peer cache, since they have to join the network first.\\
 
 \begin{figure}[h!]
 	\includegraphics[width=.7\textwidth]{pict/results/in-atkknown-beginning.png}
 	\centering
-	\caption{Percentage of Sybils in the peer cache at the beginning of the graph construction}
+	\caption{Percentage of Sybils in the peer cache at the beginning of the graph construction in the first attack scenario}
 	\label{fig:beginning}
 \end{figure}
 
+It is evident that honest nodes have a good probability of connecting to a malicious nodes as their first or second neighbour.
+
+Whenever this happens their caches are filled with malicious addresses. From that point on the chance of connecting to another malicious address will be extremely high.
+
+For this reason, the sooner a node connects to a malicious address the more likely it is that it will be eclipsed or have an high amount of Sybils amongst its neighbours.
+
+This cannot happen in the second scenario. Most of the honest nodes have already at least one honest peer at the time malicious nodes start to join. Therefore it is likely that a their second neighbour will be another honest node. Such network is naturally difficult to attack.
+
+Moreover, in this phase \texttt{addr} exchanges between honest nodes cannot contain Sybil addresses.
+
+Lastly, malicious nodes cannot carry out fake bootstrapping, since their addresses are not in DNS lists and as a result bootstrapping honest nodes will surely contact other honest nodes first.
+
+All of these reasons concurrently hinder the success of the attack.
+
 ...
 
+To conclude, the major factor for the success of the attack was the presence of Sybils in the network before the attack started.
+
 On the other hand, in future work it is possibile to have a graph already formed and try to mix it with an eclipse attack described by heilman et al 2015
-
-Nonetheless, steep falls attack doesnt work properly
-
-Moreover, the second attack scenario has demonstrated that
-
 
 
 
