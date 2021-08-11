@@ -81,6 +81,11 @@ Michal Kedziora, Patryk Kozlowski, and Piotr Jozwiak.
   Context of the Sybil Attack}, pages 407--418.
 \newblock 09 2020.
 
+\bibitem{bgp}
+Leslie Lamport, Robert Shostak, and Marshall Pease.
+\newblock The byzantine generals problem.
+\newblock {\em ACM Trans. Program. Lang. Syst.}, 4(3):382–401, July 1982.
+
 \bibitem{mahmoud_netsec_boot}
 Mahmoud Mostafa.
 \newblock Bitcoin’s blockchain peer-to-peer network security attacks and
@@ -111,6 +116,17 @@ Sarwar Sayeed and Hector Marco-Gisbert.
 \newblock Assessing blockchain consensus and security mechanisms against the
   51\% attack.
 \newblock {\em Applied Sciences}, 9(9), 2019.
+
+\bibitem{lunes-dissemination}
+Luca Serena, Gabriele D'Angelo, and Stefano Ferretti.
+\newblock Implication of dissemination strategies on the security of
+  distributed ledgers.
+\newblock {\em CoRR}, abs/2007.15260, 2020.
+
+\bibitem{Sunyaev2020}
+Ali Sunyaev.
+\newblock {\em Distributed Ledger Technology}, pages 265--299.
+\newblock Springer International Publishing, Cham, 2020.
 
 \bibitem{toucedafakeboot}
 Diego~Suarez Touceda, Jose~M. Sierra, Antonio Izquierdo, and Henning

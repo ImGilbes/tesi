@@ -24,19 +24,32 @@
 \begin{itemize}
 	\item Definition of distributed system
 
-	\item definition of ledger
+	\item definition of ledger (centralized)
 
-	\item definition of distributed ledger
+	\item A distributed ledger is a distributed database that allows data to be only appended or read~\cite{Sunyaev2020}. 
 
 	\item implementations of distributed ledgers and their deployment
 \end{itemize}
 
 \subsection{Addressing the issues of distributed ledgers}\label{ledgerproblems}
-security issues with distributed ledgers
+The desired property  for distributed data storages is \emph{data consistency}, which implies synchronization and guarantees that the result of reads and writes will be predictable and the same for all peers.
 
+Cryptocurrencies adopt \emph{eventual data consistency}, a relaxed definition of data consistency, which grants that if the ledger is not updated for a time long enough, all peers eventually agree on the state of the memory.
 
+To grant data consistency, distributed architectures need a \emph{consensus mechanism} so that peers would agree on the current memory state.
 
-definition of consensus and data consistency, probabilistic consensus + eventual data consistency
+Nevertheless, achieving consensus is not trivial, since nodes communicate through an unreliable network.
+
+Furthermore, no assumption can be made on the activity of nodes. Peer can undergo failures, be unreachable or, in the worst case scenario, act maliciously. In the latter case, nodes could even try to alter the content of database.
+
+The set of failures to which the system is exposed when no assumptions on the network and on the behaviour of peers can be made are called \emph{Byzantine failures}. The name is derived from the famous Byzantine Generals' Problem~\cite{bgp}.
+
+The problem states that:....
+
+Different protocols and algorithms have been introduced in the past to achieve consensus in case of Byzantine failures, like RAFT and Paxos.
+
+Despite that it is often hard to handle all the security threats incoming from malicious users, both on the network and application level. Consequently, most distributed databases used to be run on controlled networks, with authenticated nodes only.
+
 
 
 
@@ -51,6 +64,8 @@ come bitcoin risolve le problematiche descritte dei distributed ledgers + defini
 Bitcoin is a cryptocurrency and an electronic payment system built on a fully-decentralized peer-to-peer network.
 
 It uses a permissionless blockchain as ledger and relies on \emph{Proof-of-Work} (PoW) based probabilistic consensus algorithm to achieve eventual data consistency~\cite{nakamoto}.
+
+The blockchain is a public tamperproof append-only list where all the transactions are stored.
 
 A Proof-of-work is a computational task given to peers, which solution is necessary to validate data appended to the blockchain. The high amount of time required to solve PoW puzzles makes attacks on the consensus algorithm infeasible, under the assumption that no user holds more than 50\% of the computing power on the network (see section~\ref{sec:securityintro}).
 
