@@ -27,6 +27,11 @@ Alex Biryukov, Dmitry Khovratovich, and Ivan Pustogarov.
   Communications Security}, CCS '14, page 15–29, New York, NY, USA, 2014.
   Association for Computing Machinery.
 
+\bibitem{dand}
+Shaileshh Bojja~Venkatakrishnan, Giulia Fanti, and Pramod Viswanath.
+\newblock Dandelion: Redesigning the bitcoin network for anonymity.
+\newblock {\em Proc. ACM Meas. Anal. Comput. Syst.}, 1(1), June 2017.
+
 \bibitem{contiatksurvey}
 Mauro Conti, E.~Sandeep~Kumar, Chhagan Lal, and Sushmita Ruj.
 \newblock A survey on security and privacy issues of bitcoin.
@@ -82,6 +87,13 @@ Ittay Eyal and Emin~G\"{u}n Sirer.
 \newblock Majority is not enough: Bitcoin mining is vulnerable.
 \newblock {\em Commun. ACM}, 61(7):95–102, June 2018.
 
+\bibitem{dandplus}
+Giulia Fanti, Shaileshh~Bojja Venkatakrishnan, Surya Bakshi, Bradley Denby,
+  Shruti Bhargava, Andrew Miller, and Pramod Viswanath.
+\newblock Dandelion++: Lightweight cryptocurrency networking with formal
+  anonymity guarantees.
+\newblock {\em SIGMETRICS Perform. Eval. Rev.}, 46(1):5–7, June 2018.
+
 \bibitem{iqbal-sybil}
 Mubashar Iqbal and Raimundas Matulevičius.
 \newblock Exploring sybil and double-spending risks in blockchain systems.
@@ -99,6 +111,13 @@ Michal Kedziora, Patryk Kozlowski, and Piotr Jozwiak.
 \newblock {\em Security of Blockchain Distributed Ledger Consensus Mechanism in
   Context of the Sybil Attack}, pages 407--418.
 \newblock 09 2020.
+
+\bibitem{koshy2014deanon}
+Philip Koshy, Diana Koshy, and Patrick McDaniel.
+\newblock An analysis of anonymity in bitcoin using p2p network traffic.
+\newblock In Nicolas Christin and Reihaneh Safavi-Naini, editors, {\em
+  Financial Cryptography and Data Security}, pages 469--485, Berlin,
+  Heidelberg, 2014. Springer Berlin Heidelberg.
 
 \bibitem{bgp}
 Leslie Lamport, Robert Shostak, and Marshall Pease.

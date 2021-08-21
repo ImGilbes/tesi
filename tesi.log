@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.19)  21 AUG 2021 12:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.19)  21 AUG 2021 14:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -551,218 +551,209 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8 <./pict/BTCconnection.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 265--266
-
- []
-
-[9 <./pict/BTCaddr.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
+ [8 <./pict/BTCconnection.png>] [9 <./pict/BTCaddr.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 267--268
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 273--274
+Underfull \hbox (badness 10000) in paragraph at lines 274--275
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--282
+Underfull \hbox (badness 10000) in paragraph at lines 278--279
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 288--289
+Underfull \hbox (badness 10000) in paragraph at lines 282--283
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 296--297
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
 
  []
 
-<pict/network-partition.png, id=230, 591.20876pt x 263.98625pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 305--306
+
+ []
+
+<pict/network-partition.png, id=235, 591.20876pt x 263.98625pt>
 File: pict/network-partition.png Graphic file (type png)
 <use pict/network-partition.png>
-Package pdftex.def Info: pict/network-partition.png  used on input line 301.
+Package pdftex.def Info: pict/network-partition.png  used on input line 310.
 (pdftex.def)             Requested size: 258.36668pt x 115.36882pt.
-<pict/sybil.png, id=234, 371.3875pt x 496.85625pt>
+[11 <./pict/network-partition.png>]
+<pict/sybil.png, id=252, 371.3875pt x 496.85625pt>
 File: pict/sybil.png Graphic file (type png)
 <use pict/sybil.png>
-Package pdftex.def Info: pict/sybil.png  used on input line 318.
+Package pdftex.def Info: pict/sybil.png  used on input line 327.
 (pdftex.def)             Requested size: 187.89914pt x 251.38425pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[11 <./pict/network-partition.png>]
-Overfull \hbox (4.93588pt too wide) in paragraph at lines 330--331
+Overfull \hbox (4.93588pt too wide) in paragraph at lines 339--340
 []\OT1/cmr/m/n/12 In the mean-while Sybil nodes ham-per the growth both of the 
 pub-lic and vic-tim's blockchain
  []
 
-<pict/blockrace1.png, id=250, 901.3675pt x 176.66pt>
+<pict/blockrace1.png, id=256, 901.3675pt x 176.66pt>
 File: pict/blockrace1.png Graphic file (type png)
 <use pict/blockrace1.png>
-Package pdftex.def Info: pict/blockrace1.png  used on input line 333.
+Package pdftex.def Info: pict/blockrace1.png  used on input line 342.
 (pdftex.def)             Requested size: 422.77664pt x 82.86038pt.
-<pict/blockrace2.png, id=251, 1141.26375pt x 176.66pt>
+[12 <./pict/sybil.png>]
+<pict/blockrace2.png, id=267, 1141.26375pt x 176.66pt>
 File: pict/blockrace2.png Graphic file (type png)
 <use pict/blockrace2.png>
-Package pdftex.def Info: pict/blockrace2.png  used on input line 340.
+Package pdftex.def Info: pict/blockrace2.png  used on input line 349.
 (pdftex.def)             Requested size: 422.77664pt x 65.44135pt.
-[12 <./pict/sybil.png> <./pict/blockrace1.png> <./pict/blockrace2.png>]
-<pict/0confirm-doublespend.png, id=267, 649.42625pt x 147.55125pt>
+ [13 <./pict/blockrace1.png> <./pict/blockrace2.png>]
+<pict/0confirm-doublespend.png, id=284, 649.42625pt x 147.55125pt>
 File: pict/0confirm-doublespend.png Graphic file (type png)
 <use pict/0confirm-doublespend.png>
-Package pdftex.def Info: pict/0confirm-doublespend.png  used on input line 366.
+Package pdftex.def Info: pict/0confirm-doublespend.png  used on input line 375.
 
 (pdftex.def)             Requested size: 328.82707pt x 74.71204pt.
-<pict/nconfirm-doublespend.png, id=269, 743.77875pt x 423.5825pt>
+<pict/nconfirm-doublespend.png, id=286, 743.77875pt x 423.5825pt>
 File: pict/nconfirm-doublespend.png Graphic file (type png)
 <use pict/nconfirm-doublespend.png>
-Package pdftex.def Info: pict/nconfirm-doublespend.png  used on input line 377.
+Package pdftex.def Info: pict/nconfirm-doublespend.png  used on input line 386.
 
 (pdftex.def)             Requested size: 352.31625pt x 200.64793pt.
 
-[13 <./pict/0confirm-doublespend.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 391--392
+[14 <./pict/0confirm-doublespend.png> <./pict/nconfirm-doublespend.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 400--401
 
  []
 
-[14 <./pict/nconfirm-doublespend.png>] [15]
-<pict/atkaddr.png, id=304, 421.575pt x 396.48125pt>
+[15]
+<pict/atkaddr.png, id=314, 421.575pt x 396.48125pt>
 File: pict/atkaddr.png Graphic file (type png)
 <use pict/atkaddr.png>
-Package pdftex.def Info: pict/atkaddr.png  used on input line 435.
+Package pdftex.def Info: pict/atkaddr.png  used on input line 444.
 (pdftex.def)             Requested size: 234.8775pt x 220.89667pt.
 
-Underfull \vbox (badness 1137) has occurred while \output is active []
 
- [16 <./pict/atkaddr.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 454--455
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
- []
-
-[17]
-Underfull \hbox (badness 10000) in paragraph at lines 489--490
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 491--492
+[17 <./pict/atkaddr.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 498--499
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--498
+Underfull \hbox (badness 10000) in paragraph at lines 500--501
 
  []
 
-<pict/results/in-cov.png, id=324, 462.528pt x 346.896pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 506--507
+
+ []
+
+<pict/results/in-cov.png, id=334, 462.528pt x 346.896pt>
 File: pict/results/in-cov.png Graphic file (type png)
 <use pict/results/in-cov.png>
-Package pdftex.def Info: pict/results/in-cov.png  used on input line 500.
+Package pdftex.def Info: pict/results/in-cov.png  used on input line 509.
 (pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 508--509
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
- []
-
-[18 <./pict/results/in-cov.png>]
-<pict/results/in-hon-avg-neigh.png, id=332, 462.528pt x 346.896pt>
-File: pict/results/in-hon-avg-neigh.png Graphic file (type png)
-<use pict/results/in-hon-avg-neigh.png>
-Package pdftex.def Info: pict/results/in-hon-avg-neigh.png  used on input line 
-511.
-(pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 517--518
 
  []
 
-<pict/results/in-hon-avg-neigh-atk.png, id=334, 462.528pt x 346.896pt>
+<pict/results/in-hon-avg-neigh.png, id=335, 462.528pt x 346.896pt>
+File: pict/results/in-hon-avg-neigh.png Graphic file (type png)
+<use pict/results/in-hon-avg-neigh.png>
+Package pdftex.def Info: pict/results/in-hon-avg-neigh.png  used on input line 
+520.
+(pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 526--527
+
+ []
+
+[18]
+<pict/results/in-hon-avg-neigh-atk.png, id=342, 462.528pt x 346.896pt>
 File: pict/results/in-hon-avg-neigh-atk.png Graphic file (type png)
 <use pict/results/in-hon-avg-neigh-atk.png>
 Package pdftex.def Info: pict/results/in-hon-avg-neigh-atk.png  used on input l
-ine 520.
+ine 529.
 (pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 528--529
+[19 <./pict/results/in-cov.png> <./pict/results/in-hon-avg-neigh.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 537--538
 
  []
 
-<pict/results/in-hon-avg-known-atk.png, id=336, 462.528pt x 346.896pt>
+<pict/results/in-hon-avg-known-atk.png, id=353, 462.528pt x 346.896pt>
 File: pict/results/in-hon-avg-known-atk.png Graphic file (type png)
 <use pict/results/in-hon-avg-known-atk.png>
 Package pdftex.def Info: pict/results/in-hon-avg-known-atk.png  used on input l
-ine 531.
-(pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<pict/results/in-atk-avg-degree.png, id=339, 462.528pt x 346.896pt>
-File: pict/results/in-atk-avg-degree.png Graphic file (type png)
-<use pict/results/in-atk-avg-degree.png>
-Package pdftex.def Info: pict/results/in-atk-avg-degree.png  used on input line
- 547.
-(pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
-[19 <./pict/results/in-hon-avg-neigh.png>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<pict/results/in-cluster.png, id=351, 462.528pt x 346.896pt>
-File: pict/results/in-cluster.png Graphic file (type png)
-<use pict/results/in-cluster.png>
-Package pdftex.def Info: pict/results/in-cluster.png  used on input line 554.
-(pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<pict/results/in-dns.png, id=353, 462.528pt x 346.896pt>
-File: pict/results/in-dns.png Graphic file (type png)
-<use pict/results/in-dns.png>
-Package pdftex.def Info: pict/results/in-dns.png  used on input line 563.
+ine 540.
 (pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
 [20 <./pict/results/in-hon-avg-neigh-atk.png> <./pict/results/in-hon-avg-known-
 atk.png>]
+<pict/results/in-atk-avg-degree.png, id=363, 462.528pt x 346.896pt>
+File: pict/results/in-atk-avg-degree.png Graphic file (type png)
+<use pict/results/in-atk-avg-degree.png>
+Package pdftex.def Info: pict/results/in-atk-avg-degree.png  used on input line
+ 556.
+(pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
+<pict/results/in-cluster.png, id=364, 462.528pt x 346.896pt>
+File: pict/results/in-cluster.png Graphic file (type png)
+<use pict/results/in-cluster.png>
+Package pdftex.def Info: pict/results/in-cluster.png  used on input line 563.
+(pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<pict/results/in-dns.png, id=366, 462.528pt x 346.896pt>
+File: pict/results/in-dns.png Graphic file (type png)
+<use pict/results/in-dns.png>
+Package pdftex.def Info: pict/results/in-dns.png  used on input line 572.
+(pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 570--571
+Underfull \hbox (badness 10000) in paragraph at lines 579--580
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [21 <./pict/results/in-atk-avg-degree.png> <./pict/results/in-cluster.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 572--573
+Underfull \hbox (badness 10000) in paragraph at lines 581--582
 
  []
 
-<pict/results/ext-cov.png, id=368, 462.528pt x 346.896pt>
+[21 <./pict/results/in-atk-avg-degree.png>]
+<pict/results/ext-cov.png, id=376, 462.528pt x 346.896pt>
 File: pict/results/ext-cov.png Graphic file (type png)
 <use pict/results/ext-cov.png>
-Package pdftex.def Info: pict/results/ext-cov.png  used on input line 575.
+Package pdftex.def Info: pict/results/ext-cov.png  used on input line 584.
 (pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 583--584
-
- []
-
-<pict/results/ext-hon-atk-neigh.png, id=370, 462.528pt x 346.896pt>
-File: pict/results/ext-hon-atk-neigh.png Graphic file (type png)
-<use pict/results/ext-hon-atk-neigh.png>
-Package pdftex.def Info: pict/results/ext-hon-atk-neigh.png  used on input line
- 586.
-(pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -771,54 +762,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 592--593
 
  []
 
-<pict/results/ex-hon-atk-known.png, id=372, 462.528pt x 346.896pt>
+<pict/results/ext-hon-atk-neigh.png, id=378, 462.528pt x 346.896pt>
+File: pict/results/ext-hon-atk-neigh.png Graphic file (type png)
+<use pict/results/ext-hon-atk-neigh.png>
+Package pdftex.def Info: pict/results/ext-hon-atk-neigh.png  used on input line
+ 595.
+(pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
+[22 <./pict/results/in-cluster.png> <./pict/results/in-dns.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 601--602
+
+ []
+
+<pict/results/ex-hon-atk-known.png, id=388, 462.528pt x 346.896pt>
 File: pict/results/ex-hon-atk-known.png Graphic file (type png)
 <use pict/results/ex-hon-atk-known.png>
 Package pdftex.def Info: pict/results/ex-hon-atk-known.png  used on input line 
-595.
+604.
 (pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 603--604
+[23 <./pict/results/ext-cov.png> <./pict/results/ext-hon-atk-neigh.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 612--613
 
  []
 
-<pict/results/ex-atk-avg-degree.png, id=376, 462.528pt x 346.896pt>
+<pict/results/ex-atk-avg-degree.png, id=399, 462.528pt x 346.896pt>
 File: pict/results/ex-atk-avg-degree.png Graphic file (type png)
 <use pict/results/ex-atk-avg-degree.png>
 Package pdftex.def Info: pict/results/ex-atk-avg-degree.png  used on input line
- 606.
+ 615.
 (pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<pict/results/ex-atk-dd.png, id=377, 462.528pt x 346.896pt>
+<pict/results/ex-atk-dd.png, id=400, 462.528pt x 346.896pt>
 File: pict/results/ex-atk-dd.png Graphic file (type png)
 <use pict/results/ex-atk-dd.png>
-Package pdftex.def Info: pict/results/ex-atk-dd.png  used on input line 613.
+Package pdftex.def Info: pict/results/ex-atk-dd.png  used on input line 622.
 (pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[22 <./pict/results/in-dns.png>] [23 <./pict/results/ext-cov.png> <./pict/resul
-ts/ext-hon-atk-neigh.png>] [24 <./pict/results/ex-hon-atk-known.png> <./pict/re
-sults/ex-atk-avg-degree.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 630--631
+
+Underfull \hbox (badness 10000) in paragraph at lines 639--640
 
  []
 
-[25 <./pict/results/ex-atk-dd.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 646--647
+[24 <./pict/results/ex-hon-atk-known.png>] [25 <./pict/results/ex-atk-avg-degre
+e.png> <./pict/results/ex-atk-dd.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 655--656
 
  []
 
-<pict/results/in-atkknown-beginning.png, id=410, 462.528pt x 346.896pt>
+<pict/results/in-atkknown-beginning.png, id=419, 462.528pt x 346.896pt>
 File: pict/results/in-atkknown-beginning.png Graphic file (type png)
 <use pict/results/in-atkknown-beginning.png>
 Package pdftex.def Info: pict/results/in-atkknown-beginning.png  used on input 
-line 649.
+line 658.
 (pdftex.def)             Requested size: 328.82707pt x 246.63135pt.
 [26 <./pict/results/in-atkknown-beginning.png>] (./tesi.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 9--12
@@ -827,24 +828,24 @@ tps : / / en . bitcoin . it / wiki / Protocol _
  []
 
 [27] [28])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 680.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 689.
  [29]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 680.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 689.
  (./tesi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 680.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 680.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 689.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 689.
 Package rerunfilecheck Info: File `tesi.out' has not changed.
 (rerunfilecheck)             Checksum: CF05AF836B1CCE17699C38D48CC8A472;1837.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 680.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 689.
  ) 
 Here is how much of TeX's memory you used:
- 10199 strings out of 481239
- 162391 string characters out of 5920377
- 435440 words of memory out of 5000000
- 25180 multiletter control sequences out of 15000+600000
+ 10205 strings out of 481239
+ 162466 string characters out of 5920377
+ 435537 words of memory out of 5000000
+ 25183 multiletter control sequences out of 15000+600000
  538359 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,42p,919b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,7n,42p,919b,451s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dis
@@ -853,10 +854,10 @@ t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
 /public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200
 .pfb>
-Output written on tesi.pdf (29 pages, 621234 bytes).
+Output written on tesi.pdf (29 pages, 624801 bytes).
 PDF statistics:
- 492 PDF objects out of 1000 (max. 8388607)
- 398 compressed objects within 4 object streams
- 116 named destinations out of 1000 (max. 500000)
+ 502 PDF objects out of 1000 (max. 8388607)
+ 407 compressed objects within 5 object streams
+ 119 named destinations out of 1000 (max. 500000)
  331 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -8,45 +8,45 @@ Warning--to sort, need author or key in totknownfullnodes
 Warning--to sort, need author or key in devguidep2p
 Warning--to sort, need author or key in btccode
 Warning--empty publisher in kedziora-sybil-ledgers
-You've used 30 entries,
+You've used 33 entries,
             2118 wiz_defined-function locations,
-            674 strings with 9133 characters,
-and the built_in function-call counts, 10502 in all, are:
-= -- 1043
-> -- 436
-< -- 11
-+ -- 175
-- -- 142
-* -- 685
-:= -- 1636
-add.period$ -- 96
-call.type$ -- 30
-change.case$ -- 157
+            690 strings with 9797 characters,
+and the built_in function-call counts, 11782 in all, are:
+= -- 1164
+> -- 518
+< -- 12
++ -- 207
+- -- 170
+* -- 790
+:= -- 1851
+add.period$ -- 106
+call.type$ -- 33
+change.case$ -- 179
 chr.to.int$ -- 0
-cite$ -- 35
-duplicate$ -- 425
-empty$ -- 865
-format.name$ -- 142
-if$ -- 2317
+cite$ -- 38
+duplicate$ -- 469
+empty$ -- 948
+format.name$ -- 170
+if$ -- 2581
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 26
-newline$ -- 155
-num.names$ -- 54
-pop$ -- 194
+int.to.str$ -- 33
+missing$ -- 29
+newline$ -- 170
+num.names$ -- 62
+pop$ -- 214
 preamble$ -- 1
-purify$ -- 129
+purify$ -- 148
 quote$ -- 0
-skip$ -- 340
+skip$ -- 374
 stack$ -- 0
-substring$ -- 662
-swap$ -- 133
-text.length$ -- 11
+substring$ -- 725
+swap$ -- 145
+text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 116
+type$ -- 128
 warning$ -- 5
-while$ -- 84
-width$ -- 32
-write$ -- 335
+while$ -- 95
+width$ -- 35
+write$ -- 370
 (There were 5 warnings)
