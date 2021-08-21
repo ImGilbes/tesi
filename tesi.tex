@@ -32,44 +32,42 @@
 \end{itemize}
 
 \subsection{Addressing the issues of distributed ledgers}\label{ledgerproblems}
-The desired property  for distributed data storages is \emph{data consistency}, which implies synchronization and guarantees that the result of reads and writes will be predictable and the same for all peers.
+The desired property  for distributed data storages is \emph{data consistency}, which guarantees that the result of reads and writes will be predictable and the same for all peers. As an implication, local data has to be up-to-date.
 
-Cryptocurrencies adopt \emph{eventual data consistency}, a relaxed definition of data consistency, which grants that if the ledger is not updated for a time long enough, all peers eventually agree on the state of the memory.
+Cryptocurrencies adopt \emph{eventual data consistency}, a relaxed definition of data consistency, which ensures that if the ledger is not updated for a time long enough, all peers eventually agree on the state of the memory.
 
-To grant data consistency, distributed architectures need a \emph{consensus mechanism} so that peers would agree on the current memory state.
+In order to grant data consistency, distributed architectures need a \emph{consensus mechanism} so that peers would agree on the current memory state.
 
-Nevertheless, achieving consensus is not trivial, since nodes communicate through an unreliable network.
+Nevertheless, achieving consensus is not trivial, since nodes communicate through an unreliable network and no assumption can be made on the activity of nodes.
 
-Furthermore, no assumption can be made on the activity of nodes. Peer can undergo failures, be unreachable or, in the worst case scenario, act maliciously. In the latter case, nodes could even try to alter the content of database.
+Peers can undergo failures, be unreachable or, in the worst case scenario, act maliciously. In the latter case, nodes could even try to alter the content of database.
 
-The set of failures to which the system is exposed when no assumptions on the network and on the behaviour of peers can be made are called \emph{Byzantine failures}. The name is derived from the famous Byzantine Generals' Problem~\cite{bgp}.
+The failures to which the system is exposed when no assumption on the network and on the behaviour of peers can be made are called \emph{Byzantine failures}. The name derives from the famous Byzantine Generals Problem~\cite{bgp}.
 
-The problem states that:....
+Ensuring data consistency is the main goal of any distributed database system. Different protocols and algorithms have been introduced in the past to achieve consensus in case of Byzantine failures, like RAFT and Paxos.
 
-Different protocols and algorithms have been introduced in the past to achieve consensus in case of Byzantine failures, like RAFT and Paxos.
+Despite that, it is often hard to handle all the security threats incoming from malicious users, both on the network and application level. Consequently, most distributed databases used to be run on controlled networks, with authenticated nodes only.
 
-Despite that it is often hard to handle all the security threats incoming from malicious users, both on the network and application level. Consequently, most distributed databases used to be run on controlled networks, with authenticated nodes only.
+Cryptocurrencies take a different approach on the subject and handle open, authorization-free environments. Despite being exposed to Byzantine failures, they still manage to grant data consistency, and for this reason they have been widely studied in the past decade.
 
-
-
-
-achieving consensus, attacchi alla data consistency, permissionless, sybils, attacchi di rete\\
-
-nel capitolo seguente:
-
-come bitcoin risolve le problematiche descritte dei distributed ledgers + definizione di pow + esempi di utilizzi di pow
-
+In the following chapters the reader can find an introduction to Bitcoin basic concepts that are mostly shared with all other cryptocurrencies.
 
 \section{Introduction to Bitcoin}\label{sec:introbtc}
 Bitcoin is a cryptocurrency and an electronic payment system built on a fully-decentralized peer-to-peer network.
 
-It uses a permissionless blockchain as ledger and relies on \emph{Proof-of-Work} (PoW) based probabilistic consensus algorithm to achieve eventual data consistency~\cite{nakamoto}.
+It uses a \textit{permissionless} blockchain as ledger and relies on \emph{Proof-of-Work} (PoW) based probabilistic consensus algorithm to achieve eventual data consistency.
 
-The blockchain is a public tamperproof append-only list where all the transactions are stored.
+The blockchain is a public tamperproof append-only list where all the transactions are stored. The resistance to tampering comes from the blockchain structure, as shown in Section~\ref{fig:blockstruct}. Each block contains the hash of the previous one, thus makeing tampering infeasible, thus ensuring data integrity.
 
-A Proof-of-work is a computational task given to peers, which solution is necessary to validate data appended to the blockchain. The high amount of time required to solve PoW puzzles makes attacks on the consensus algorithm infeasible, under the assumption that no user holds more than 50\% of the computing power on the network (see section~\ref{sec:securityintro}).
+A Proof-of-work is a computational task given to peers, which solution is necessary to validate data appended to the blockchain. The high amount of time required to solve PoW puzzles makes attacks on the consensus algorithm infeasible, under the assumption that no user holds more than 50\% of the computing power on the network (see section~\ref{sec:securityintro}).\\
 
-Moreover the structure of the blockchain, as shown in Section~\ref{fig:blockstruct}, makes tempering infeasible, thus ensuring the integrity of the data in blockchain.\\
+Under the assumption that no user holds more than 50\% of the computing power on the network, the PoW-based consensus algorithm achieves Byzantine fault-tolerance~\cite{nakamoto}.
+
+While the consensus algorithm makes peers agree on the order of blocks and transactions in the ledger, the proof-of-work ensures that no adversary that owns multiple identities is capable of validating and verifying its own forged blocks.
+
+In order to validate its own blocks the adversary would need the computational power and the time required to solve the PoW puzzle. Therefore having multiple network identities is not enough to subvert the consensus algorithm. 
+
+Although, this implies that the result does not hold were the attacker to hold most of the computing power on the network. If that is the case, the adversary can simply keep building up its own ledger and eventually its blockchain will be authentic, generally accepted one.
 
 In the following sections the reader will find an introduction to the Bitcoin network, where its main components and their function are analysed.
 
