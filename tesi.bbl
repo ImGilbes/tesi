@@ -15,6 +15,18 @@ Bitcoin source code.
 \newblock \url{https://github.com/bitcoin/bitcoin}.
 \newblock Accessed: 2021-8-2.
 
+\bibitem{totknownfullnodes}
+Reachable bitcoin nodes.
+\newblock \url{https://bitnodes.io}.
+\newblock Accessed: 2021-8-21.
+
+\bibitem{biryukov2014deanonymisation}
+Alex Biryukov, Dmitry Khovratovich, and Ivan Pustogarov.
+\newblock Deanonymisation of clients in bitcoin p2p network.
+\newblock In {\em Proceedings of the 2014 ACM SIGSAC Conference on Computer and
+  Communications Security}, CCS '14, page 15–29, New York, NY, USA, 2014.
+  Association for Computing Machinery.
+
 \bibitem{contiatksurvey}
 Mauro Conti, E.~Sandeep~Kumar, Chhagan Lal, and Sushmita Ruj.
 \newblock A survey on security and privacy issues of bitcoin.
@@ -26,6 +38,13 @@ C.~Cramer, K.~Kutzner, and T.~Fuhrmann.
 \newblock In {\em Proceedings. 2004 12th IEEE International Conference on
   Networks (ICON 2004) (IEEE Cat. No.04EX955)}, volume~1, pages 357--361 vol.1,
   2004.
+
+\bibitem{Deshpande2018BTCmapMB}
+Varun Deshpande, H.~Badis, and L.~George.
+\newblock Btcmap: Mapping bitcoin peer-to-peer network topology.
+\newblock {\em 2018 IFIP/IEEE International Conference on Performance
+  Evaluation and Modeling in Wired and Wireless Networks (PEMWN)}, pages 1--6,
+  2018.
 
 \bibitem{decentrbootstrapp2p}
 Jochen Dinger and Oliver~P. Waldhorst.

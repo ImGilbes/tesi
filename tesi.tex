@@ -182,22 +182,24 @@ To ensure that all nodes agree on the order of the entries of the blockchain, so
 Bitcoin's PoW-based distributed consensus algorithm is defined as probabilistic since it guarantees eventual consistency. Furthermore it is generally considered robust and extremely scalable, as no authorization is required to join the network and mine.
 
 
-\section{Bitcoin peer-to-peer protocol}\label{sec:netintro}
+\section{Bitcoin peer-to-peer network}\label{sec:netintro}
 
-\subsection{Nodes and overlay topology}\label{sec:overlay}
+Bitcoin nodes form an overlay network and communicate through a specific application-level protocol.
 
-bitcoin works on an overlay netowork
+The topology of the Bitcoin network is unknown, but is generally considered to be structured as a random graph. Topology information is kept hidden as it can enable attacks on privacy~\cite{biryukov2014deanonymisation}.
+~\cite{Deshpande2018BTCmapMB}\\
 
-the overlay topology is unknown even though studied in the past
+The Bitcoin network is extremely diverse as different kind of nodes can join. The Bitcoin Reference Client developed by Nakatomo is provided with a \textit{wallet}, an applicative module for payments, has a network interface, stores all the blockchain and is a miner at the same time. These can be defined as \textit{full nodes}.
 
-there are different kind of nodes that are part of the network, most of them do not take part in mining and stay behind NATs and dont accept incoming connections
+Nonetheless, not all nodes may want to store the blockchain or mine. Some miners often store only the headers of the blockchain in order to save space. Other users install only the wallet and do not take part in mining and verification at all.
 
-Definition of full node
+An important exception are the non reachable nodes. These nodes work behind a NAT and often mine together in \textit{mining pools}. A central server manages all the incoming traffic and shares the mining rewards among pool workers.
 
-how many reachable nodes are out there https://bitnodes.io
+Nowadays most of the users that want to have a revenue from mining work in pools and therefore the number of the reachable nodes is not representative of the dimension of the network. In general the number of reachable nodes is always around ten thousand~\cite{totknownfullnodes}.\\ 
 
-In this work only full nodes are considered
+In this work only full nodes are considered as they are the ones that have an active role on the network.
 
+The following chapters provide a complete overview of the Bitcoin protocol.
 
 \subsection{Connection and peer discovery}\label{sec:peerdisc}
 In order to establish a connection two peers need to exchange version messages over an unencrypted TCP channel in a handshake fashion as shown in Fig.~\ref{fig:btcconn}. The node that first sends a \texttt{version} message establishes an \emph{outgoing connection}. The receiving node sets up an \emph{ingoing connection} instead. Once the handshake is completed the connection is fully set up.
@@ -260,7 +262,6 @@ dandelion ++
 
 
 \section{Bitcoin security concerns}\label{sec:securityintro}
-\subsection{Common security threats on cryptocurrecies}
 Bitcoin's decentralized, uncontrolled environment is open to a wide range of attacks, many of which are common threats for other cryptocurrencies as well. For this reason, the attacks described here can be carried out on other systems as well. These attacks have the same rationale, but different implementations.\\
 
 Decentralized permissionless blockchains with PoW-based consensus algorithms are by definition vulnerable to \textit{51\%} or \textit{majority} attacks~\cite{nakamoto}. In these a user controls more than half of the computing power (often called \textit{hash rate}) available on the entire network~\cite{51atk}.

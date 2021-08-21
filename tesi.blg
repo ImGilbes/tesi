@@ -3,53 +3,50 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: tesi.aux
 The style file: plain.bst
 Database file #1: bib.bib
-You're missing a field name---line 327 of file bib.bib
- : @article{zhang-sybil-mitigations,  author={Zhang, Shijie and Lee, Jong-Hyouk},  journal={IEEE Consumer Electronics Magazine},   title={Mitigations on Sybil-based Double-spend Attacks in Bitcoin},   year={2020},  volume={},  number={}, 
- :                                                                                                                                                                                                                                            ,  doi={10.1109/MCE.2020.2988031}}
-I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in protocoldoc
+Warning--to sort, need author or key in totknownfullnodes
 Warning--to sort, need author or key in devguidep2p
 Warning--to sort, need author or key in btccode
 Warning--empty publisher in kedziora-sybil-ledgers
-You've used 27 entries,
+You've used 30 entries,
             2118 wiz_defined-function locations,
-            657 strings with 8553 characters,
-and the built_in function-call counts, 9485 in all, are:
-= -- 936
-> -- 399
-< -- 9
-+ -- 160
-- -- 130
-* -- 633
-:= -- 1491
-add.period$ -- 86
-call.type$ -- 27
-change.case$ -- 142
+            674 strings with 9133 characters,
+and the built_in function-call counts, 10502 in all, are:
+= -- 1043
+> -- 436
+< -- 11
++ -- 175
+- -- 142
+* -- 685
+:= -- 1636
+add.period$ -- 96
+call.type$ -- 30
+change.case$ -- 157
 chr.to.int$ -- 0
-cite$ -- 31
-duplicate$ -- 373
-empty$ -- 782
-format.name$ -- 130
-if$ -- 2076
+cite$ -- 35
+duplicate$ -- 425
+empty$ -- 865
+format.name$ -- 142
+if$ -- 2317
 int.to.chr$ -- 0
-int.to.str$ -- 27
-missing$ -- 24
-newline$ -- 140
-num.names$ -- 50
-pop$ -- 171
+int.to.str$ -- 30
+missing$ -- 26
+newline$ -- 155
+num.names$ -- 54
+pop$ -- 194
 preamble$ -- 1
-purify$ -- 117
+purify$ -- 129
 quote$ -- 0
-skip$ -- 295
+skip$ -- 340
 stack$ -- 0
-substring$ -- 621
-swap$ -- 110
-text.length$ -- 9
+substring$ -- 662
+swap$ -- 133
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 104
-warning$ -- 4
-while$ -- 77
-width$ -- 29
-write$ -- 301
-(There was 1 error message)
+type$ -- 116
+warning$ -- 5
+while$ -- 84
+width$ -- 32
+write$ -- 335
+(There were 5 warnings)
