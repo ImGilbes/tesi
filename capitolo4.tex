@@ -1,15 +1,15 @@
 \chapter{Bitcoin security concerns}
 \label{sec:securityintro}
 
-Bitcoin's decentralized, uncontrolled environment is open to a wide range of attacks, many of which are common threats for other cryptocurrencies as well. For this reason, the attacks described here can be carried out on other systems as well. These attacks have the same rationale, but different implementations.\\
+Bitcoin's decentralized, uncontrolled environment is open to a wide range of attacks, many of which are common threats for other cryptocurrencies as well. For this reason, the attacks described here can be carried out on other systems as well. These attacks have the same rationale, but different implementations.\par
 
 Decentralized permissionless blockchains with PoW-based consensus algorithms are by definition vulnerable to \textit{51\%} or \textit{majority} attacks~\cite{nakamoto}. In these a user controls more than half of the computing power (often called \textit{hash rate}) available on the entire network~\cite{51atk}.
 
-The attacker can thus subvert the consensus algorithm and validate harmful data, maliciously fork the blockchain or arbitrarily prevent blocks and transactions from verification.\\
+The attacker can thus subvert the consensus algorithm and validate harmful data, maliciously fork the blockchain or arbitrarily prevent blocks and transactions from verification.\par
 
 Most of the malicious users that aim for a revenue from their attacks opt for \textit{double-spending} attacks. By definition, in double-spending attacks the same set of outputs is spent twice, hence the attacker gains Bitcoins or obtains resources from merchants for free.
 
-Although proof-of-work consensus makes double-spending infeasible, since the transactions would not be validated, the attack can be still executed through other approaches. As a case in point, double-spending can be executed  if the attacker can successfully partition the network (see Section~\ref{sec:sybil}, or were other conditions to be met~\cite{doublespendfastpay}).\\
+Although proof-of-work consensus makes double-spending infeasible, since the transactions would not be validated, the attack can be still executed through other approaches. As a case in point, double-spending can be executed  if the attacker can successfully partition the network (see Section~\ref{sec:sybil}, or were other conditions to be met~\cite{doublespendfastpay}).\par
 
 The way the correct state of the blockchain is elected, selecting the longest branch as the only valid, is exploitable for attacks that engineer block races.
 
@@ -17,14 +17,14 @@ In block races two or more peers spend computing power mining different forks of
 
 Block races can enable double-spending, as shown in Section~\ref{sec:sybil} and~\ref{sec:eclipse}, or mining attacks such as \textit{selfish mining}, where the malicious user holds private his mined blocks, thus forking the chain.
 
-For the time the private chain of the attacker is longer that the public one, it can be released on the network, thus claiming the rewards for himself and wasting other miners' computing power~\cite{selfishmining}.\\
+For the time the private chain of the attacker is longer that the public one, it can be released on the network, thus claiming the rewards for himself and wasting other miners' computing power~\cite{selfishmining}.\par
 
 Since this chapter serves only introductory purposes, these are just a few attacks that can be driven onto Bitcoin. In the following sections there is more on network attacks, which are the focus of this thesis. The interested reader can find complete security overviews in the works of Conti et al., Saad et al. and Wang et al.~\cite{contiatksurvey},~\cite{saad2019attacksurface},~\cite{secpermissionlessblock}.
 
 \section{Network security}\label{sec:netsec}
 Attacks that exploit vulnerabilities in the design and implementation of the Bitcoin protocol and its peer-to-peer network fall under the category of network attacks.
 
-Bitcoin is exposed to all the common threats that affect other peer-to-peer systems; these have been widely studied in the literature as in Touceda et al, 2012~\cite{toucedafakeboot}. The aim of this section is to understand how these attacks apply to Bitcoin and what are its defences\\
+Bitcoin is exposed to all the common threats that affect other peer-to-peer systems; these have been widely studied in the literature as in Touceda et al, 2012~\cite{toucedafakeboot}. The aim of this section is to understand how these attacks apply to Bitcoin and what are its defences\par
 
 In network attacks. often the goal of the attacker is to alter the view of the network of a node, or group of nodes, by sending false network information or by connecting a large number of adversary-controlled peers to the victim, with the purpose of monopolizing its connections.
 
@@ -32,7 +32,7 @@ In this way network partitions, or other states in which the attacker can effect
 
 Nodes that become isolated from the network become vulnerable to \textit{N-confirmation double spending} or mining attacks, such as selfish mining or \textit{stubborn mining}~\cite{stubborn}. Furthermore 51\% attacks are easier to launch, since a part of the network computing power is cut off. 
 
-For these reasons, network attacks are fundamental enablers for mining and spending attacks~\cite{dotan2020surveychallenges}.\\
+For these reasons, network attacks are fundamental enablers for mining and spending attacks~\cite{dotan2020surveychallenges}.\par
 
 In the following sections the reader can find both the attacks performed during the simulations reported in this thesis along with other network level attacks. These were added to better understand the mechanisms exploitable to carry out network attacks on cryptocurrencies.
 
@@ -127,7 +127,7 @@ Every peer-to-peer system needs some mean to let nodes join the network: in Bitc
 
 In a fake bootstrapping attack the peers contacted while a node is still initiating its connections, and hence its knowledge of the network, flood the bootstrapping peer with malicious addresses.
 
-The results in Chapter~\ref{sec:res} show how feeding bogus information to a joining node can seriously influence its view of the network and lead to network partitions and peer eclipsing. This condition would also increase the efficacy of other network-level attacks, such as a DDoS, and the success rate of spending and mining attacks~\cite{eclipseatk}.\\
+The results in Chapter~\ref{sec:res} show how feeding bogus information to a joining node can seriously influence its view of the network and lead to network partitions and peer eclipsing. This condition would also increase the efficacy of other network-level attacks, such as a DDoS, and the success rate of spending and mining attacks~\cite{eclipseatk}.\par
 
 Prevention is done by ensuring a node can contact a trustworthy peer when joining the network. Peer caches and centralized bootstrap services serve this purpose, allowing joining nodes to make use of old neighbours while having central bootstrap servers as a fallback.
 

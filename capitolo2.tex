@@ -7,7 +7,7 @@ It uses a \textit{permissionless} blockchain as ledger and relies on \emph{Proof
 
 The blockchain is a public tamperproof append-only list where all the transactions are stored. The resistance to tampering comes from the blockchain structure, as shown in Section~\ref{fig:blockstruct}. Each block contains the hash of the previous one, thus makeing tampering infeasible, thus ensuring data integrity.
 
-A Proof-of-work is a computational task given to peers, which solution is necessary to validate data appended to the blockchain. The high amount of time required to solve PoW puzzles makes attacks on the consensus algorithm infeasible, under the assumption that no user holds more than 50\% of the computing power on the network (see section~\ref{sec:securityintro}).\\
+A Proof-of-work is a computational task given to peers, which solution is necessary to validate data appended to the blockchain. The high amount of time required to solve PoW puzzles makes attacks on the consensus algorithm infeasible, under the assumption that no user holds more than 50\% of the computing power on the network (see section~\ref{sec:securityintro}).\par
 
 Under the assumption that no user holds more than 50\% of the computing power on the network, the PoW-based consensus algorithm achieves Byzantine fault-tolerance~\cite{nakamoto}.
 
@@ -85,7 +85,7 @@ Fig.~\ref{fig:blockstruct} shows the main fields stored in a block.
 \section{Miners behaviour}\label{sec:miners}
 The subset of peers that concurrently try to mine blocks by finding the right nonce are called miners, as described in Section~\ref{sec:block}. What motivates the miners to invest their computational power are mining rewards and transaction fees.
 
-The mining reward is implemented as a transaction to the miner's wallet address that is included in the new block by the miner itself. Transaction fees are instead an amount of Bitcoins that the issuer of a transaction discretionally gives to the miners as an incentive for their work. Transactions with low transaction fees may incur in long processing times, since miners prioritize high rewards.\\
+The mining reward is implemented as a transaction to the miner's wallet address that is included in the new block by the miner itself. Transaction fees are instead an amount of Bitcoins that the issuer of a transaction discretionally gives to the miners as an incentive for their work. Transactions with low transaction fees may incur in long processing times, since miners prioritize high rewards.\par
 
 Transactions and blocks are gossiped through the network. Although each node has its own relay policy, it is in their interest, as honest miners, to get to know most of the pending transactions available for mining and to keep the view of the blockchain consistent at each node.
 
@@ -125,4 +125,4 @@ To ensure that all nodes agree on the order of the entries of the blockchain, so
 	\item no transactions spend inputs with a \texttt{time\_lock} before the block in which they are confirmed
 \end{enumerate} 
  
-Bitcoin's PoW-based distributed consensus algorithm is defined as probabilistic since it guarantees eventual consistency. Furthermore it is generally considered robust and extremely scalable, as no authorization is required to join the network and mine.\\
+Bitcoin's PoW-based distributed consensus algorithm is defined as probabilistic since it guarantees eventual consistency. Furthermore it is generally considered robust and extremely scalable, as no authorization is required to join the network and mine.\par

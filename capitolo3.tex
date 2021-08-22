@@ -4,7 +4,7 @@
 Bitcoin nodes form an overlay network and communicate through a specific application-level protocol.
 
 The topology of the Bitcoin network is unknown, but is generally considered to be structured as a random graph. Topology information is kept hidden as it can enable attacks on privacy~\cite{biryukov2014deanonymisation}.
-~\cite{Deshpande2018BTCmapMB}\\
+~\cite{Deshpande2018BTCmapMB}\par
 
 The Bitcoin network is extremely diverse as different kind of nodes can join. The Bitcoin Reference Client developed by Nakatomo is provided with a \textit{wallet}, an applicative module for payments, has a network interface, stores all the blockchain and is a miner at the same time. These can be defined as \textit{full nodes}.
 
@@ -12,7 +12,7 @@ Nonetheless, not all nodes may want to store the blockchain or mine. Some miners
 
 An important exception are the non reachable nodes. These nodes work behind a NAT and often mine together in \textit{mining pools}. A central server manages all the incoming traffic and shares the mining rewards among pool workers.
 
-Nowadays most of the users that want to have a revenue from mining work in pools and therefore the number of the reachable nodes is not representative of the dimension of the network. In general the number of reachable nodes is always around ten thousand~\cite{totknownfullnodes}.\\ 
+Nowadays most of the users that want to have a revenue from mining work in pools and therefore the number of the reachable nodes is not representative of the dimension of the network. In general the number of reachable nodes is always around ten thousand~\cite{totknownfullnodes}.\par
 
 In this work only full nodes are considered as they are the ones that have an active role on the network.
 
@@ -30,17 +30,17 @@ In order to establish a connection two peers need to exchange version messages o
 
 Each node is capable to establish up to 8 outgoing connections and 117 ingoing connections, for a total of 125 connections. In order to keep its connections active, each peer sends a message to each neighbour at least once every thirty minutes. If more than ninety minutes pass without receiving anything from a neighbour, the connection is dropped.
 
-Each node always tries to keep eight outgoing connections active, therefore, upon dropping an outgoing connection, a node tries to connect to another address in its peer cache.\\
+Each node always tries to keep eight outgoing connections active, therefore, upon dropping an outgoing connection, a node tries to connect to another address in its peer cache.\par
 
 Nodes on fresh bootstrap make use of hardcoded \emph{DNS seeds} as their first mean to discover other peers. DNS seed servers are maintained by community members and provide clients with a list of addresses that can be either dynamically gathered through a periodic scan of the network or manually updated by server administrators.
 
-As a fallback option the user is able to specify through command line a list of addresses the client can connect to. Were both these two options to fail the client has a hardcoded list of peers it can directly connect to, though this is considered the last resort for bootstrapping peers.\\
+As a fallback option the user is able to specify through command line a list of addresses the client can connect to. Were both these two options to fail the client has a hardcoded list of peers it can directly connect to, though this is considered the last resort for bootstrapping peers.\par
 
 Nodes at startup that were previously on the network shall first lookup peer names in their local address database, implemented as "peer.dat". The database contains the address of each peer the node has come to know during its lifetime in the network.
 
 If the node has disconnected for a time too long, many of the addresses in the database may have become outdated or unreachable. A node that cannot connect to any address in the peer database, or has spent up to eleven seconds trying to connect unsuccessfully to at least one of the peers in the database, behaves as on fresh bootstrap and resolves to query a DNS first.
 
-The use of a local address database, also called \emph{peer cache}, provides reconnecting peers a fully-decentralized way to join the network and is the first line of defence against \emph{fake bootstrap attacks}; the topic along with other security concerns is discussed in Chapter~\ref{sec:netsec}.\\
+The use of a local address database, also called \emph{peer cache}, provides reconnecting peers a fully-decentralized way to join the network and is the first line of defence against \emph{fake bootstrap attacks}; the topic along with other security concerns is discussed in Chapter~\ref{sec:netsec}.\par
 
 Peer discovery after the first connection of a node is carried on through the exchange of \texttt{addr} messages containing the address and port number of other peers in the network~\cite{protocoldoc},~\cite{devguidep2p}.
 
@@ -81,6 +81,6 @@ Dropping a message during the stem phase loses the data completely, thus the pro
 
 For this reason, \textit{Dandelion ++} was developed. In this version, honest nodes forwarding data during the stem phase set a timer. If they do not see the forwarded message come back in fluff phase by the end of the timer, they broadcast the message themselves, forcing fluff phase~\cite{dandplus}.
 
-With this simple change, Dandelion ++ greatly improves Dandelion robustness~\cite{lunes-dissemination}.\\
+With this simple change, Dandelion ++ greatly improves Dandelion robustness~\cite{lunes-dissemination}.\par
 
 In this work, the tests are carried out using \textit{fixed probability} gossip, where a message is sent to each neighbour with a fixed probability, and Dandelion ++.
