@@ -1,0 +1,34 @@
+\chapter*{Sommario} % senza numerazione
+\label{sommario}
+
+\addcontentsline{toc}{chapter}{Sommario} % da aggiungere comunque all'indice
+In the past decade cryptocurrencies have become increasingly popular and widespread, up to the point of becoming a good alternative to commonly used currencies.
+
+The first and most popular cryptocurrency is Bitcoin, that in little more than ten years has gained millions of users.
+
+The strength of cryptocurrencies lies in their strong cryptographic guarantees that make transactions tamperproof, and their open, free-to-join networks. Users are incentivized to take part in transaction verification as they get a revenue out of it.
+ 
+Furthermore, cryptocurrencies have demonstrated to be a game-changer in the field of distributed systems as they take a completely different approach on Byzantine fault tolerance.
+
+As a result, the rise of cryptocurrencies has entailed a great number of studies both on their theoretical foundations and on their security.
+
+A great deal of attention has been driven onto cryptocurrencies network security, as their fully-decentralized, open environments are vulnerable to a large number of attacks, ranging from common flooding denial-of-service and Sybil attacks to more sophisticated linkage deanonymisation attacks.
+
+In this work we study the security of Bitcoin peer-to-peer network and address its vulnerabilities.
+
+More specifically, we try to enhance the efficacy of a block-withholding Sybil attack by disseminating false network information during the formation of the network topology. 
+
+For the purpose, a discrete-time event-based blockchain simulator named LUNES-blockchain has been used.
+
+The behaviour of the malicious simulated entities has been changed so that they would advertise other attacking nodes during peer discovery, thus increasing the probability of honest nodes connecting to malicious nodes.
+
+Results show how the efficacy of the Sybil attack launched after the topology has formed is greatly increased. As a case in point, the messages created by honest nodes have an extremely low coverage, despite only a small number of attackers is on the network. 
+
+Nevertheless, we also show how the timing of the attack in fundamental. In a second attack scenario the Sybil nodes are on fresh bootstrap, thus honest nodes start first in building their own honest-only network.
+
+The strategy of the adversary fails in this case, as honest nodes have enough time to build a small, sparse network of their own, before their caches are flooded with false network information.
+
+The Sybil attack in this latter scenario is utterly not effective.
+
+
+

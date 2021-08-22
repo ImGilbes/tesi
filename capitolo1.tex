@@ -1,0 +1,34 @@
+\chapter{Addressing the problems with distributed ledger technologies}
+\label{intro}
+
+\begin{itemize}
+	\item Definition of distributed system
+
+	\item definition of ledger (centralized)
+
+	\item A distributed ledger is a distributed database that allows data to be only appended or read~\cite{Sunyaev2020}. 
+
+	\item implementations of distributed ledgers and their deployment
+\end{itemize}
+
+\section{Addressing the issues of distributed ledgers}\label{ledgerproblems}
+The desired property  for distributed data storages is \emph{data consistency}, which guarantees that the result of reads and writes will be predictable and the same for all peers. As an implication, local data has to be up-to-date.
+
+Cryptocurrencies adopt \emph{eventual data consistency}, a relaxed definition of data consistency, which ensures that if the ledger is not updated for a time long enough, all peers eventually agree on the state of the memory.
+
+In order to grant data consistency, distributed architectures need a \emph{consensus mechanism} so that peers would agree on the current memory state.
+
+Nevertheless, achieving consensus is not trivial, since nodes communicate through an unreliable network and no assumption can be made on the activity of nodes.
+
+Peers can undergo failures, be unreachable or, in the worst case scenario, act maliciously. In the latter case, nodes could even try to alter the content of database.
+
+The failures to which the system is exposed when no assumption on the network and on the behaviour of peers can be made are called \emph{Byzantine failures}. The name derives from the famous Byzantine Generals Problem~\cite{bgp}.
+
+Ensuring data consistency is the main goal of any distributed database system. Different protocols and algorithms have been introduced in the past to achieve consensus in case of Byzantine failures, like RAFT and Paxos.
+
+Despite that, it is often hard to handle all the security threats incoming from malicious users, both on the network and application level. Consequently, most distributed databases used to be run on controlled networks, with authenticated nodes only.
+
+Cryptocurrencies take a different approach on the subject and handle open, authorization-free environments. Despite being exposed to Byzantine failures, they still manage to grant data consistency, and for this reason they have been widely studied in the past decade.
+
+In the following chapters the reader can find an introduction to Bitcoin basic concepts that are mostly shared with all other cryptocurrencies.
+
