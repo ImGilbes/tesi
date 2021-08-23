@@ -1,15 +1,19 @@
 \chapter{Conclusions}
 \label{sec:concl}
 
-The way malicious nodes disseminate bogus network information makes the attack resemble fake bootstrapping. In particular, the adversary exploits \texttt{addr} messages exchanges and their relay policy to extensively disperse false network information. 
+The way malicious nodes disseminate bogus network information makes the attack resemble fake bootstrapping.
 
-The efficacy of the strategy has been proven high, as with just 10\% of the identities on the network the adversary can fill peer caches with malicious addresses.
+In particular, the adversary exploits \texttt{addr} messages exchanges and their relay policy to extensively disseminate false network information. Most \texttt{addr} messages are exchanged when peers setup connections, thus the attack efficacy is proportional to the number of connections made over time.
+
+On top of that, the adversary takes advantage Bitcoin's unique \texttt{addr} relay policy, that allows the to further spread malicious addresses.
+
+The efficacy of the strategy has been proven high, as with just 10\% of the identities on the network the adversary can completely fill peer caches with malicious addresses (Fig.~\ref{fig:avgatk-known}).
 
 Furthermore, the Sybil attack executed on the new overlay network is substantially more powerful, as it makes coverage drop steeply with less malicious nodes involved in the attack.
 
 It is necessary to point out that the new Sybil attack achieves high efficacy despite working with a network far more dense than the one in the results of Serena et al. Their work assessed the importance of an highly connected graphs as a direct countermeasure to Sybil attacks of this kind.
 
-Therefore, the results obtained imply an increased feasibility of the attack, since the adversary needs to control fewer identities to disrupt honest activities. With just the 20\% of the nodes it is possible to make coverage drop below 40\%.\par
+Therefore, the results obtained imply an increased feasibility of the attack, since the adversary needs to control fewer identities to disrupt honest activities. With just the 20\% of the nodes it is possible to make coverage drop below 40\% (~\ref{fig:in-cov}).\par
 
 Nonetheless, the setting of the attack is ideal and cannot be compared to that of a real network. The positive outcome is influenced by the increased capability to spread network information during the time the graph topology is still forming.
 
@@ -17,15 +21,17 @@ Under no circumstances the real Bitcoin network could undergo such process. For 
 
 The results in Fig.~\ref{fig:ext-cov} show how the attack was utterly ineffective even though the network was still being built at the time the Sybils started to join.
  
-Furthermore, also the new behaviiour of Sybils did not work, since the average percentage of attacking neighbours (Fig.~\ref{fig:ex-atk-neigh}) is significantly lower.
+Furthermore, Sybils did not achieve their objective during network creation, since the average percentage of attacking neighbours (Fig.~\ref{fig:ex-atk-neigh}) is significantly lower.
 
 Despite that, there is no gap that big in the rate of Sybils in the peer cache (Fig.~\ref{fig:ex-atk-known}) between the two attack scenarios, thus stating the attackers could still disseminate rather well their addresses.
 
 This means that the positive outcome of the attack in the first scenario was influenced by two factors: the presence of Sybils in the DNS lists and the time at which malicious addresses start to be disseminated.
 
-Although the first factor has been surely influential in later stages of the simulation, when the number of attackers increased, it is required to assess the importance of the latter.
+Although the first factor has been surely influential in later stages of the simulation, when the number of attackers increased, from Fig.--- and --- is possible to see how the steep decrease in coverage is not proportional to the increase in the percentage of attackers as DNS seeds.
 
-The data in Fig.~\ref{fig:beginning} shows the percentage of malicious addresses in peer caches before bootstrapping nodes start to join in the first attack scenario. In the second no Sybils can be in any peer cache, since they have to join the network first.\par
+On the other hand, the reader can now see how timing is essential for the good outcome of the attack, as starting the attack late allows honest nodes to form their own sparse network.
+
+The data in Fig.~\ref{fig:beginning}, relative to the first attack scenario, shows the percentage of malicious addresses in peer caches before bootstrapping nodes start to join. In the second scenario, no Sybils can be in any peer cache at the start, since they have to join the network first.\par
 
 \begin{figure}[h!]
 	\includegraphics[width=.7\textwidth]{pict/results/in-atkknown-beginning.png}
@@ -34,21 +40,28 @@ The data in Fig.~\ref{fig:beginning} shows the percentage of malicious addresses
 	\label{fig:beginning}
 \end{figure}
 
-It is evident that honest nodes have a good probability of connecting to a malicious nodes as their first or second neighbour.
+It is evident that honest nodes have a good probability of connecting to a malicious nodes as their first or second neighbour, with just a few Sybils in the network.
 
 Whenever this happens their caches are filled with malicious addresses. From that point on the chance of connecting to another malicious address will be extremely high.
 
 For this reason, the sooner a node connects to a malicious address the more likely it is that it will be eclipsed or have an high amount of Sybils amongst its neighbours.
 
-This cannot happen in the second scenario. Most of the honest nodes have already at least one honest peer at the time malicious nodes start to join. Therefore it is likely that a their second neighbour will be another honest node. Such network is naturally difficult to attack.
+This condition will further enhance the efficacy of the attack from then on. As a honest node connects to another, it is likely that it will send mostly malicious addresses to it, thus helping the adversary disseminating bogus information.
 
-Moreover, in this phase \texttt{addr} exchanges between honest nodes cannot contain Sybil addresses.
+The sooner this chain of exchanges starts, the better for the attacker, as more and more nodes find only malicious addresses in their caches.
+
+Although, the network develops differently in the second scenario. Most of the honest nodes have already at least one honest neighbour at the time malicious nodes start to join. Therefore it is likely that a their second neighbour will be another honest node.
+
+This creates a sparse honest-only subgraph that, despite being well connected with the Sybils subgraph, is entirely resistant to the attack.
+
+Moreover, in this phase \texttt{addr} exchanges between honest nodes cannot contain Sybil addresses, as they are bootstrapping. This decreases the probability of connecting to a Sybil as second or third connection, therefore making the honest-only subgraph even more dense.
 
 Lastly, malicious nodes cannot carry out fake bootstrapping, since their addresses are not in DNS lists and as a result bootstrapping honest nodes will surely contact other honest nodes first.
 
-All of these reasons concurrently hinder the success of the attack.
+All of these reasons concurrently hinder the success of the attack. Despite succeeding at disseminating false network information, Fig.~\ref{fig:ex-atk-known}, the adversary can never make enough connections with honest nodes (Fig.~\ref{fig:ex-atk-neigh}).
+Thus, the data from the victim to the rest of the network cannot be blocked.
 
-...
+The result holds even with and extremely large number of Sybils, which become as much as three times the total of honest nodes.
 
 To conclude, the major factor for the success of the attack was the presence of Sybils in the network before the attack started.
 
