@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.19)  22 AUG 2021 13:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.19)  25 AUG 2021 18:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -355,7 +355,7 @@ Missing character: There is no [ in font nullfont!
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
 l.7 ~\cite{Deshpande2018BTCmapMB}
-                                 \\
+                                 \par
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -368,17 +368,17 @@ e 7.
 
 Missing character: There is no ] in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 6--8
+Overfull \hbox (20.0pt too wide) in paragraph at lines 6--7
 []
  []
 
 
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 6--8
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 6--7
 []
  []
 
 
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 6--8
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 6--7
 [] 
  []
 
@@ -1319,7 +1319,7 @@ Missing character: There is no [ in font nullfont!
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
 l.15 ...ound ten thousand~\cite{totknownfullnodes}
-                                                  .\\
+                                                  .\par
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -1333,12 +1333,12 @@ LaTeX Warning: Citation `totknownfullnodes' on page  undefined on input line 15
 Missing character: There is no ] in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 15--16
+Overfull \hbox (20.0pt too wide) in paragraph at lines 15--15
 []
  []
 
 
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 15--16
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 15--15
 [] 
  []
 
@@ -2536,7 +2536,7 @@ Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 33--34
+Overfull \hbox (20.0pt too wide) in paragraph at lines 33--33
 []
  []
 
@@ -3083,7 +3083,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no s in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 37--38
+Overfull \hbox (20.0pt too wide) in paragraph at lines 37--37
 []
  []
 
@@ -3850,7 +3850,7 @@ Missing character: There is no r in font nullfont!
 <write> ...eference `sec:netsec' on page \thepage 
                                                   \space undefined\on@line .
 l.43 ...s is discussed in Chapter~\ref{sec:netsec}
-                                                  .\\
+                                                  .\par
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -3862,47 +3862,47 @@ LaTeX Warning: Reference `sec:netsec' on page  undefined on input line 43.
 
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 43--44
+Overfull \hbox (20.0pt too wide) in paragraph at lines 43--43
 []
  []
 
 
-Overfull \hbox (17.50539pt too wide) in paragraph at lines 43--44
+Overfull \hbox (17.50539pt too wide) in paragraph at lines 43--43
 \OT1/cmr/m/it/10 peer
  []
 
 
-Overfull \hbox (23.51093pt too wide) in paragraph at lines 43--44
+Overfull \hbox (23.51093pt too wide) in paragraph at lines 43--43
 \OT1/cmr/m/it/10 cache
  []
 
 
-Overfull \hbox (17.37766pt too wide) in paragraph at lines 43--44
+Overfull \hbox (17.37766pt too wide) in paragraph at lines 43--43
 \OT1/cmr/m/it/10 fake
  []
 
 
-Overfull \hbox (20.69981pt too wide) in paragraph at lines 43--44
+Overfull \hbox (20.69981pt too wide) in paragraph at lines 43--43
 \OT1/cmr/m/it/10 boot-
  []
 
 
-Overfull \hbox (21.33873pt too wide) in paragraph at lines 43--44
+Overfull \hbox (21.33873pt too wide) in paragraph at lines 43--43
 \OT1/cmr/m/it/10 strap
  []
 
 
-Overfull \hbox (12.01102pt too wide) in paragraph at lines 43--44
+Overfull \hbox (12.01102pt too wide) in paragraph at lines 43--43
 \OT1/cmr/m/it/10 at-
  []
 
 
-Overfull \hbox (21.72206pt too wide) in paragraph at lines 43--44
+Overfull \hbox (21.72206pt too wide) in paragraph at lines 43--43
 \OT1/cmr/m/it/10 tacks
  []
 
 
-Overfull \hbox (10.86105pt too wide) in paragraph at lines 43--44
+Overfull \hbox (10.86105pt too wide) in paragraph at lines 43--43
 [] 
  []
 
@@ -4064,7 +4064,7 @@ Missing character: There is no [ in font nullfont!
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
 l.45 ...er peers in the network~\cite{protocoldoc}
-                                                  ,~\cite{devguidep2p}.
+                                                  ~\cite{devguidep2p}.
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -4075,13 +4075,12 @@ and I'll forget about whatever was undefined.
 LaTeX Warning: Citation `protocoldoc' on page  undefined on input line 45.
 
 Missing character: There is no ] in font nullfont!
-Missing character: There is no , in font nullfont!
 Missing character: There is no [ in font nullfont!
 \citation{devguidep2p}
 ! Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
-l.45 ...ork~\cite{protocoldoc},~\cite{devguidep2p}
+l.45 ...work~\cite{protocoldoc}~\cite{devguidep2p}
                                                   .
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -7412,7 +7411,7 @@ Missing character: There is no [ in font nullfont!
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .
 l.84 ...lion robustness~\cite{lunes-dissemination}
-                                                  .\\
+                                                  .\par
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -7426,12 +7425,12 @@ LaTeX Warning: Citation `lunes-dissemination' on page  undefined on input line
 Missing character: There is no ] in font nullfont!
 Missing character: There is no . in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 84--85
+Overfull \hbox (20.0pt too wide) in paragraph at lines 84--84
 []
  []
 
 
-Overfull \hbox (5.43053pt too wide) in paragraph at lines 84--85
+Overfull \hbox (5.43053pt too wide) in paragraph at lines 84--84
 [] 
  []
 

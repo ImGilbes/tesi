@@ -1,0 +1,200 @@
+\begin{thebibliography}{10}
+
+\bibitem{devguidep2p}
+Bitcoin p2p network documentation.
+\newblock \url{https://developer.bitcoin.org/devguide/p2p_network.html}.
+\newblock Accessed: 2021-8-2.
+
+\bibitem{protocoldoc}
+Bitcoin protocol documentation.
+\newblock \url{https://en.bitcoin.it/wiki/Protocol_documentation}.
+\newblock Accessed: 2021-8-2.
+
+\bibitem{btccode}
+Bitcoin source code.
+\newblock \url{https://github.com/bitcoin/bitcoin}.
+\newblock Accessed: 2021-8-2.
+
+\bibitem{totknownfullnodes}
+Reachable bitcoin nodes.
+\newblock \url{https://bitnodes.io}.
+\newblock Accessed: 2021-8-21.
+
+\bibitem{biryukov2014deanonymisation}
+Alex Biryukov, Dmitry Khovratovich, and Ivan Pustogarov.
+\newblock Deanonymisation of clients in bitcoin p2p network.
+\newblock In {\em Proceedings of the 2014 ACM SIGSAC Conference on Computer and
+  Communications Security}, CCS '14, page 15–29, New York, NY, USA, 2014.
+  Association for Computing Machinery.
+
+\bibitem{dand}
+Shaileshh Bojja~Venkatakrishnan, Giulia Fanti, and Pramod Viswanath.
+\newblock Dandelion: Redesigning the bitcoin network for anonymity.
+\newblock {\em Proc. ACM Meas. Anal. Comput. Syst.}, 1(1), June 2017.
+
+\bibitem{contiatksurvey}
+Mauro Conti, E.~Sandeep~Kumar, Chhagan Lal, and Sushmita Ruj.
+\newblock A survey on security and privacy issues of bitcoin.
+\newblock {\em IEEE Communications Surveys Tutorials}, 20(4):3416--3452, 2018.
+
+\bibitem{localityaware}
+C.~Cramer, K.~Kutzner, and T.~Fuhrmann.
+\newblock Bootstrapping locality-aware p2p networks.
+\newblock In {\em Proceedings. 2004 12th IEEE International Conference on
+  Networks (ICON 2004) (IEEE Cat. No.04EX955)}, volume~1, pages 357--361 vol.1,
+  2004.
+
+\bibitem{Deshpande2018BTCmapMB}
+Varun Deshpande, H.~Badis, and L.~George.
+\newblock Btcmap: Mapping bitcoin peer-to-peer network topology.
+\newblock {\em 2018 IFIP/IEEE International Conference on Performance
+  Evaluation and Modeling in Wired and Wireless Networks (PEMWN)}, pages 1--6,
+  2018.
+
+\bibitem{decentrbootstrapp2p}
+Jochen Dinger and Oliver~P. Waldhorst.
+\newblock Decentralized bootstrapping of p2p systems: A practical view.
+\newblock In Luigi Fratta, Henning Schulzrinne, Yutaka Takahashi, and Otto
+  Spaniol, editors, {\em NETWORKING 2009}, pages 703--715, Berlin, Heidelberg,
+  2009. Springer Berlin Heidelberg.
+
+\bibitem{dotan2020surveychallenges}
+Maya Dotan, Yvonne-Anne Pignolet, Stefan Schmid, Saar Tochner, and Aviv Zohar.
+\newblock Survey on blockchain networking: Context, state-of-the-art,
+  challenges.
+\newblock {\em ACM Comput. Surv.}, 54(5), May 2021.
+
+\bibitem{douceur2002sybil}
+John~R Douceur.
+\newblock The sybil attack.
+\newblock In {\em International workshop on peer-to-peer systems}, pages
+  251--260. Springer, 2002.
+
+\bibitem{lunes-paper}
+Gabriele D’Angelo and Stefano Ferretti.
+\newblock Highly intensive data dissemination in complex networks.
+\newblock {\em Journal of Parallel and Distributed Computing}, 99:28 -- 50,
+  2017.
+
+\bibitem{eclipseatk}
+Sharon~Goldberg Ethan Heilman. Alison~Kendler, Aviv~Zohar.
+\newblock Eclipse attacks on bitcoin’s peer-to-peer network.
+\newblock Cryptology ePrint Archive, Report 2015/263, 2015.
+\newblock \url{https://eprint.iacr.org/2015/263}.
+
+\bibitem{selfishmining}
+Ittay Eyal and Emin~G\"{u}n Sirer.
+\newblock Majority is not enough: Bitcoin mining is vulnerable.
+\newblock {\em Commun. ACM}, 61(7):95–102, June 2018.
+
+\bibitem{dandplus}
+Giulia Fanti, Shaileshh~Bojja Venkatakrishnan, Surya Bakshi, Bradley Denby,
+  Shruti Bhargava, Andrew Miller, and Pramod Viswanath.
+\newblock Dandelion++: Lightweight cryptocurrency networking with formal
+  anonymity guarantees.
+\newblock {\em SIGMETRICS Perform. Eval. Rev.}, 46(1):5–7, June 2018.
+
+\bibitem{iqbal-sybil}
+Mubashar Iqbal and Raimundas Matulevičius.
+\newblock Exploring sybil and double-spending risks in blockchain systems.
+\newblock {\em IEEE Access}, 9:76153--76177, 2021.
+
+\bibitem{doublespendfastpay}
+Ghassan~O. Karame, Elli Androulaki, and Srdjan Capkun.
+\newblock Double-spending fast payments in bitcoin.
+\newblock In {\em Proceedings of the 2012 ACM Conference on Computer and
+  Communications Security}, CCS '12, page 906–917, New York, NY, USA, 2012.
+  Association for Computing Machinery.
+
+\bibitem{kedziora-sybil-ledgers}
+Michal Kedziora, Patryk Kozlowski, and Piotr Jozwiak.
+\newblock {\em Security of Blockchain Distributed Ledger Consensus Mechanism in
+  Context of the Sybil Attack}, pages 407--418.
+\newblock 09 2020.
+
+\bibitem{koshy2014deanon}
+Philip Koshy, Diana Koshy, and Patrick McDaniel.
+\newblock An analysis of anonymity in bitcoin using p2p network traffic.
+\newblock In Nicolas Christin and Reihaneh Safavi-Naini, editors, {\em
+  Financial Cryptography and Data Security}, pages 469--485, Berlin,
+  Heidelberg, 2014. Springer Berlin Heidelberg.
+
+\bibitem{bgp}
+Leslie Lamport, Robert Shostak, and Marshall Pease.
+\newblock The byzantine generals problem.
+\newblock {\em ACM Trans. Program. Lang. Syst.}, 4(3):382–401, July 1982.
+
+\bibitem{mahmoud_netsec_boot}
+Mahmoud Mostafa.
+\newblock Bitcoin’s blockchain peer-to-peer network security attacks and
+  countermeasures.
+\newblock {\em Indian Journal of Science and Technology}, 13:767--786, 02 2020.
+
+\bibitem{nakamoto}
+Satoshi Nakamoto.
+\newblock Bitcoin: A peer-to-peer electronic cash system.
+\newblock \url{https://bitcoin.org/bitcoin.pdf}, 2008.
+\newblock Accessed: 2021-8-2.
+
+\bibitem{stubborn}
+Kartik Nayak, Srijan Kumar, Andrew Miller, and Elaine Shi.
+\newblock Stubborn mining: Generalizing selfish mining and combining with an
+  eclipse attack.
+\newblock In {\em 2016 IEEE European Symposium on Security and Privacy (EuroS
+  P)}, pages 305--320, 2016.
+
+\bibitem{saad2019attacksurface}
+Muhammad Saad, Jeffrey Spaulding, Laurent Njilla, Charles Kamhoua, Sachin
+  Shetty, DaeHun Nyang, and David Mohaisen.
+\newblock Exploring the attack surface of blockchain: A comprehensive survey.
+\newblock {\em IEEE Communications Surveys Tutorials}, 22(3):1977--2008, 2020.
+
+\bibitem{51atk}
+Sarwar Sayeed and Hector Marco-Gisbert.
+\newblock Assessing blockchain consensus and security mechanisms against the
+  51\% attack.
+\newblock {\em Applied Sciences}, 9(9), 2019.
+
+\bibitem{lunes-dissemination}
+Luca Serena, Gabriele D'Angelo, and Stefano Ferretti.
+\newblock Implication of dissemination strategies on the security of
+  distributed ledgers.
+\newblock {\em CoRR}, abs/2007.15260, 2020.
+
+\bibitem{Sunyaev2020}
+Ali Sunyaev.
+\newblock {\em Distributed Ledger Technology}, pages 265--299.
+\newblock Springer International Publishing, Cham, 2020.
+
+\bibitem{toucedafakeboot}
+Diego~Suarez Touceda, Jose~M. Sierra, Antonio Izquierdo, and Henning
+  Schulzrinne.
+\newblock Survey of attacks and defenses on p2psip communications.
+\newblock {\em IEEE Communications Surveys Tutorials}, 14(3):750--783, 2012.
+
+\bibitem{tschorsch-intro-survey}
+Florian Tschorsch and Björn Scheuermann.
+\newblock Bitcoin and beyond: A technical survey on decentralized digital
+  currencies.
+\newblock {\em IEEE Communications Surveys Tutorials}, 18(3):2084--2123, 2016.
+
+\bibitem{secpermissionlessblock}
+Hao Wang, Chunpeng Ge, and Zhe Liu.
+\newblock On the security of permissionless blockchain systems: Challenges and
+  research perspective.
+\newblock In {\em 2021 IEEE Conference on Dependable and Secure Computing
+  (DSC)}, pages 1--8, 2021.
+
+\bibitem{zhang-ds-sybil}
+Shijie Zhang and Jong-Hyouk Lee.
+\newblock Double-spending with a sybil attack in the bitcoin decentralized
+  network.
+\newblock {\em IEEE Transactions on Industrial Informatics}, 15(10):5715--5722,
+  2019.
+
+\bibitem{zhang-sybil-mitigations}
+Shijie Zhang and Jong-Hyouk Lee.
+\newblock Mitigations on sybil-based double-spend attacks in bitcoin.
+\newblock {\em IEEE Consumer Electronics Magazine}, 2020.
+
+\end{thebibliography}

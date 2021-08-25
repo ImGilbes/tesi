@@ -42,7 +42,7 @@ If the node has disconnected for a time too long, many of the addresses in the d
 
 The use of a local address database, also called \emph{peer cache}, provides reconnecting peers a fully-decentralized way to join the network and is the first line of defence against \emph{fake bootstrap attacks}; the topic along with other security concerns is discussed in Chapter~\ref{sec:netsec}.\par
 
-Peer discovery after the first connection of a node is carried on through the exchange of \texttt{addr} messages containing the address and port number of other peers in the network~\cite{protocoldoc},~\cite{devguidep2p}.
+Peer discovery after the first connection of a node is carried on through the exchange of \texttt{addr} messages containing the address and port number of other peers in the network~\cite{protocoldoc}~\cite{devguidep2p}.
 
 On connection set up the two nodes exchange \texttt{addr} messages, as shown in \emph{Fig.~\ref{fig:addr}}, providing each other with addresses from their local peer database.
 
