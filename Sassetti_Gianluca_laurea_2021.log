@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.19)  25 AUG 2021 18:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.19)  26 AUG 2021 11:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -418,13 +418,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2
 
-]
-Overfull \hbox (16.43973pt too wide) in paragraph at lines 33--34
-[]\OT1/cmr/m/n/12 Cryptocurrencies take a dif-fer-ent ap-proach on the sub-ject
- and han-dle open, authorization-
- []
-
-) (./capitolo2.tex
+])
+(./capitolo2.tex
 Chapter 2.
 
 Overfull \hbox (2.04405pt too wide) in paragraph at lines 4--5
@@ -432,71 +427,80 @@ Overfull \hbox (2.04405pt too wide) in paragraph at lines 4--5
 em built on a fully-decentralized
  []
 
-[3]
+
+Underfull \vbox (badness 1924) has occurred while \output is active []
+
+ [3]
 <pict/basicexample.png, id=179, 860.21375pt x 380.42125pt>
 File: pict/basicexample.png Graphic file (type png)
 <use pict/basicexample.png>
-Package pdftex.def Info: pict/basicexample.png  used on input line 27.
+Package pdftex.def Info: pict/basicexample.png  used on input line 29.
 (pdftex.def)             Requested size: 407.66833pt x 180.28983pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [4]
+Overfull \hbox (16.32677pt too wide) in paragraph at lines 46--47
+\OT1/cmr/m/n/12 Transactions im-ple-ment trans-fers. Valid trans-ac-tions are c
+ol-lected to-gether in the blockchain,
+ []
+
 <pict/txstruct.png, id=190, 360.34625pt x 481.8pt>
 File: pict/txstruct.png Graphic file (type png)
 <use pict/txstruct.png>
-Package pdftex.def Info: pict/txstruct.png  used on input line 49.
+Package pdftex.def Info: pict/txstruct.png  used on input line 51.
 (pdftex.def)             Requested size: 181.18439pt x 242.2521pt.
- [5 <./pict/basicexample.png> <./pict/txstruct.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5 <./pict/basicexample.png>]
 <pict/blockstruct.png, id=201, 598.235pt x 452.69125pt>
 File: pict/blockstruct.png Graphic file (type png)
 <use pict/blockstruct.png>
-Package pdftex.def Info: pict/blockstruct.png  used on input line 79.
+Package pdftex.def Info: pict/blockstruct.png  used on input line 81.
 (pdftex.def)             Requested size: 249.13371pt x 188.52647pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6]
+[6 <./pict/txstruct.png>]
 <pict/blockchain-synch.png, id=211, 349.305pt x 381.425pt>
 File: pict/blockchain-synch.png Graphic file (type png)
 <use pict/blockchain-synch.png>
-Package pdftex.def Info: pict/blockchain-synch.png  used on input line 99.
+Package pdftex.def Info: pict/blockchain-synch.png  used on input line 101.
 (pdftex.def)             Requested size: 158.54152pt x 173.11795pt.
-
-Underfull \vbox (badness 3428) has occurred while \output is active []
-
  [7 <./pict/blockstruct.png> <./pict/blockchain-synch.png>]) (./capitolo3.tex
 Chapter 3.
 [8]
-<pict/BTCconnection.png, id=237, 351.3125pt x 338.26375pt>
+<pict/BTCconnection.png, id=235, 351.3125pt x 338.26375pt>
 File: pict/BTCconnection.png Graphic file (type png)
 <use pict/BTCconnection.png>
 Package pdftex.def Info: pict/BTCconnection.png  used on input line 25.
 (pdftex.def)             Requested size: 203.83417pt x 196.27052pt.
- [9 <./pict/BTCconnection.png>]
-<pict/BTCaddr.png, id=249, 351.3125pt x 294.09875pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9]
+<pict/BTCaddr.png, id=248, 351.3125pt x 294.09875pt>
 File: pict/BTCaddr.png Graphic file (type png)
 <use pict/BTCaddr.png>
 Package pdftex.def Info: pict/BTCaddr.png  used on input line 52.
 (pdftex.def)             Requested size: 203.83417pt x 170.6447pt.
 
-Underfull \vbox (badness 2671) has occurred while \output is active []
 
- [10 <./pict/BTCaddr.png>]) (./capitolo4.tex
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10 <./pict/BTCconnection.png>] [11 <./pict/BTCaddr.png>]) (./capitolo4.tex
 Chapter 4.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [11]
 [12]
-<pict/network-partition.png, id=298, 591.20876pt x 263.98625pt>
+<pict/network-partition.png, id=297, 591.20876pt x 263.98625pt>
 File: pict/network-partition.png Graphic file (type png)
 <use pict/network-partition.png>
 Package pdftex.def Info: pict/network-partition.png  used on input line 40.
 (pdftex.def)             Requested size: 249.13371pt x 111.24002pt.
-<pict/sybil.png, id=302, 371.3875pt x 496.85625pt>
+<pict/sybil.png, id=301, 371.3875pt x 496.85625pt>
 File: pict/sybil.png Graphic file (type png)
 <use pict/sybil.png>
 Package pdftex.def Info: pict/sybil.png  used on input line 57.
@@ -517,13 +521,13 @@ File: pict/blockrace2.png Graphic file (type png)
 Package pdftex.def Info: pict/blockrace2.png  used on input line 79.
 (pdftex.def)             Requested size: 407.66833pt x 63.10425pt.
  [14 <./pict/sybil.png> <./pict/blockrace1.png> <./pict/blockrace2.png>]
-<pict/0confirm-doublespend.png, id=338, 649.42625pt x 147.55125pt>
+<pict/0confirm-doublespend.png, id=337, 649.42625pt x 147.55125pt>
 File: pict/0confirm-doublespend.png Graphic file (type png)
 <use pict/0confirm-doublespend.png>
 Package pdftex.def Info: pict/0confirm-doublespend.png  used on input line 105.
 
 (pdftex.def)             Requested size: 317.07614pt x 72.04181pt.
-<pict/nconfirm-doublespend.png, id=340, 743.77875pt x 423.5825pt>
+<pict/nconfirm-doublespend.png, id=339, 743.77875pt x 423.5825pt>
 File: pict/nconfirm-doublespend.png Graphic file (type png)
 <use pict/nconfirm-doublespend.png>
 Package pdftex.def Info: pict/nconfirm-doublespend.png  used on input line 116.
@@ -533,12 +537,10 @@ Package pdftex.def Info: pict/nconfirm-doublespend.png  used on input line 116.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[15 <./pict/0confirm-doublespend.png>]) (./capitolo5.tex
+[15 <./pict/0confirm-doublespend.png>]) [16 <./pict/nconfirm-doublespend.png>]
+(./capitolo5.tex
 Chapter 5.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16 <./pict/nconfirm-doublespend.png>] [17]
+[17]
 <pict/atkaddr.png, id=375, 421.575pt x 396.48125pt>
 File: pict/atkaddr.png Graphic file (type png)
 <use pict/atkaddr.png>
@@ -709,13 +711,17 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 164.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 164.
 Package rerunfilecheck Info: File `Sassetti_Gianluca_laurea_2021.out' has not c
 hanged.
-(rerunfilecheck)             Checksum: 46EAA31EEB9AB52DFEA4464AF878CE1A;1746.
+(rerunfilecheck)             Checksum: 483A752A9CD1BBE3758C528B9B3635C3;1694.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 164.
  ) 
 Here is how much of TeX's memory you used:
  7785 strings out of 481239
  124673 string characters out of 5920377
- 394871 words of memory out of 5000000
+ 394819 words of memory out of 5000000
  22755 multiletter control sequences out of 15000+600000
  539309 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -729,7 +735,7 @@ ts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type
 c/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Sassetti_Gianluca_laurea_2021.pdf (34 pages, 904856 bytes).
+Output written on Sassetti_Gianluca_laurea_2021.pdf (34 pages, 905510 bytes).
 PDF statistics:
  584 PDF objects out of 1000 (max. 8388607)
  475 compressed objects within 5 object streams

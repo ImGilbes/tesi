@@ -1,15 +1,15 @@
 \contentsline {chapter}{Sommario}{2}{chapter*.3}%
-\contentsline {chapter}{\numberline {1}Addressing the problems with distributed ledger technologies}{3}{chapter.1}%
+\contentsline {chapter}{\numberline {1}Distributed data storages}{3}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Addressing the issues of distributed ledgers}{3}{section.1.1}%
 \contentsline {chapter}{\numberline {2}Introduction to Bitcoin}{4}{chapter.2}%
-\contentsline {section}{\numberline {2.1}An introductory example to Bitcoin usage}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.1}An introductory example}{4}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Transaction structure}{5}{section.2.2}%
 \contentsline {section}{\numberline {2.3}Block structure and blockchain}{6}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Miners behaviour}{6}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Proof-of-Work and Consensus protocol}{8}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Bitcoin peer-to-peer network}{8}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Bitcoin peer-to-peer network}{9}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Connection and peer discovery}{9}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Peer database structure}{11}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Peer database structure}{10}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Data dissemination}{11}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Bitcoin security concerns}{12}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Network security}{12}{section.4.1}%

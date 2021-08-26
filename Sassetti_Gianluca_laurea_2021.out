@@ -1,8 +1,8 @@
 \BOOKMARK [0][-]{chapter*.3}{Sommario}{}% 1
-\BOOKMARK [0][-]{chapter.1}{Addressing the problems with distributed ledger technologies}{}% 2
+\BOOKMARK [0][-]{chapter.1}{Distributed data storages}{}% 2
 \BOOKMARK [1][-]{section.1.1}{Addressing the issues of distributed ledgers}{chapter.1}% 3
 \BOOKMARK [0][-]{chapter.2}{Introduction to Bitcoin}{}% 4
-\BOOKMARK [1][-]{section.2.1}{An introductory example to Bitcoin usage}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.1}{An introductory example}{chapter.2}% 5
 \BOOKMARK [1][-]{section.2.2}{Transaction structure}{chapter.2}% 6
 \BOOKMARK [1][-]{section.2.3}{Block structure and blockchain}{chapter.2}% 7
 \BOOKMARK [1][-]{section.2.4}{Miners behaviour}{chapter.2}% 8
