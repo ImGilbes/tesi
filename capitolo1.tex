@@ -1,28 +1,31 @@
 \chapter{Distributed data storages}
 \label{intro}
+The reasons to choose to store data in a distributed database over a centralized one are many. The choice may come from the need for greater scalability, to enforce availability guarantees, since the system does not a single point-of-failure, or directly derive from the architecture of the system, since they the most natural choice for peer-to-peer systems.
 
-\begin{itemize}
-	\item Definition of distributed system
+The distributed approach to databases has been taken multiple times over time, with different architectures and assumptions on the system. A common and clear example of distributed database is the Domain Name System.
 
-	\item definition of ledger (centralized)
+Also cryptocurrencies, which are the main topic of this work, manage a particular kind of distributed database, that allows data to be only read or appended, called ledger~\cite{Sunyaev2020}. 
 
-	\item A distributed ledger is a distributed database that allows data to be only appended or read~\cite{Sunyaev2020}. 
+Be that as it may, from distributing data storages comes new challenges, that derive from the kind of failures the system may undergo. The architecture of fully-decentralized peer-to-peer systems makes them exposed to the biggest class of failures, hence reliable, secure implementations are harder to develop.
 
-	\item implementations of distributed ledgers and their deployment
-\end{itemize}
+In the next chapter the reader can find a brief introduction to the problems concerning distributed databases with some key concepts, that are fundamental to understand Distributed Ledger Technologies and cryptocurrencies. 
 
 \section{Addressing the issues of distributed ledgers}\label{ledgerproblems}
-The desired property  for distributed data storages is \emph{data consistency}, which guarantees that the result of reads and writes will be predictable and the same for all peers. As an implication, local data has to be up-to-date.
+The desired property  for distributed data storages is \emph{data consistency}, which guarantees that the result of reads and writes will be predictable and the same for all peers. As an implication, local data has to be up-to-date. 
 
 Cryptocurrencies adopt \emph{eventual data consistency}, a relaxed definition of data consistency, which ensures that if the ledger is not updated for a time long enough, all peers eventually agree on the state of the memory.
 
 In order to grant data consistency, distributed architectures need a \emph{consensus mechanism} so that peers would agree on the current memory state.
 
-Nevertheless, achieving consensus is not trivial, since nodes communicate through an unreliable network and no assumption can be made on the activity of nodes.
+Nevertheless, achieving consensus, and consistency, is not trivial, since nodes communicate through an unreliable network and no assumption can be made on the activity of nodes.
 
 Peers can undergo failures, be unreachable or, in the worst case scenario, act maliciously. In the latter case, nodes could even try to alter the content of database.
 
-The failures to which the system is exposed when no assumption on the network and on the behaviour of peers can be made are called \emph{Byzantine failures}. The name derives from the famous Byzantine Generals Problem~\cite{bgp}.
+Different solutions to the problem depend on the set of assumptions on the system, and the reliability of its nodes and channels. Naturally, the fewer the assumptions on the system, the harder it is to find a solution for consensus, even with relaxed definitions.
+
+The class of failures to which the system is exposed when no assumption on the network and on the behaviour of peers can be made are called \emph{Byzantine failures}. The name derives from the famous Byzantine Generals Problem~\cite{bgp}.
+
+The systems considered in this work undergo Byzantine failures.
 
 Ensuring data consistency is the main goal of any distributed database system. Different protocols and algorithms have been introduced in the past to achieve consensus in case of Byzantine failures, like Practical Byzantine Fault Tolerance or Byzantine Paxos.
 
