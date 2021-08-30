@@ -2,20 +2,20 @@
 \label{sec:atk}
 This study focuses on the influence that the dissemination of false network information has during the construction of the topology of the overlay network. This is supposed to consequently enhance other network-level attacks.
 
-The performed attack is a Sybil attack, described in section~\ref{sec:sybil}. Sybil nodes are used to increase the connections with honest nodes the attacker has, thus to have greater control on the data flowing between honest nodes.  
+The performed attack is a Sybil attack, described in Section~\ref{sec:sybil}. Sybil nodes are used to increase the connections with honest nodes the attacker has, thus to have greater control on the data flowing between honest nodes.  
 
 In this study, Sybil nodes drop all transactions to and from a chosen victim to perform a denial-of-service. The reader can infer that the same results are applicable for block-withholding attacks.
 
 As previously stated, malicious nodes disseminate bogus network information: they try to advertise as much as possible the addresses of other attackers through \texttt{addr} messages. Consequently, honest nodes are more likely to connect to malicious nodes.
 
-The setting of the attack is during the construction of the overlay topology: at the start the graph is only a tree and many nodes are on fresh bootstrap. Peers try to setup eight outgoing connections, emulating the behaviour of full nodes (Sec.~\ref{sec:peerdisc}). The way the graph forms is influenced by the network data advertised in this phase.
+The setting of the attack is during the construction of the overlay topology: at the start the graph is only a tree and many nodes are on fresh bootstrap. Peers try to setup eight outgoing connections, emulating the behaviour of full nodes (Section~\ref{sec:peerdisc}). The way the graph forms is influenced by the network data advertised in this phase.
 
 \section{Attack details}\label{sec:atkdetails}
 The attack starts during the creation of the overlay topology, when nodes still have to setup most of their connections.
 
 A group of randomly picked nodes is on fresh bootstrap. The rest of the nodes are instead connected. The starting network graph is a tree, the choice comes from the need to have the sparsest graph possible.
 
-In a series of rounds, nodes start to establish outgoing connections with addresses in their peer database. For honest nodes the upper bound on outgoing connections is eight, whereas there is no limitation for malicious nodes, that can therefore start connections with how many nodes they want. Sybil nodes prioritize connections with honest nodes, avoiding connections between each other.
+In a series of rounds, nodes start to establish outgoing connections with addresses in their peer database. For honest nodes, the upper bound on outgoing connections is eight, whereas there is no limitation for malicious nodes, that can therefore start connections with how many nodes they want. Sybil nodes prioritize connections with honest nodes, avoiding connections between each other.
 
 Nodes on fresh bootstrap have to contact some DNS first. DNSs contain the data of a random subset of the nodes that were part of the network at the start. Their addresses will populate the bootstrapping node's peer database, that will then be able to connect to the network and start establishing more connections.
 

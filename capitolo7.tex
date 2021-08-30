@@ -62,9 +62,11 @@ Thus, the data from the victim to the rest of the network cannot be blocked.
 
 The result holds even with and extremely large number of Sybils, that in the tests are as much as three times the total of honest nodes.
 
-To conclude, the major factor for the success of the attack was the presence of Sybils in the network before the attack started. This has given a chance to the adversary to get inside DNSs seed lists and to start disseminating false information early on, thus completely changing the way the network forms.
+To conclude, the major factor for the success of the attack was the presence of Sybil nodes in the network before the attack started. This has given a chance to the adversary to get inside DNSs seed lists and to start disseminating false information early on, thus completely changing the way the network forms.
 
-Although it is likely that the attack would not be effective on the real Bitcoin network, this work has demonstrated how effective disseminating fake network information in the can be. This is particularly true if the adversary stays in the network long enough, thus disseminating fake information for longer and having a chance eclipse bootstrapping victims.
+However, it is likely that the attack would not be effective on the real Bitcoin network, since the topology has already formed, connections are set up and peer caches are full of honest nodes. The adversary would have to wait for nodes to leave and join to disseminate bogus data, and try to fake bootstrap unfortunate peers, thus slowing down the set up for the attack. Further work may try to assess the feasibility and efficacy of such attacks on the real Bitcoin network.
+
+Be that as it may, this work has demonstrated how effective disseminating fake network information can be. This is particularly true if the adversary stays in the network long enough, thus disseminating fake information for longer and having a chance to eclipse bootstrapping victims.
 
 The danger of fake bootstrapping for new, isolated nodes is real. An adversary that manages to keep these nodes isolated long enough may create multiple network partitions, or a single, larger partition that can be exploited for selfish mining or N-confirmations double-spending attacks.
 
