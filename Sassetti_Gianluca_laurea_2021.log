@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.19)  30 AUG 2021 17:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.19)  3 SEP 2021 19:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -375,7 +375,7 @@ verted-to.pdf>
 t_202002-eps-converted-to.pdf marchio_unitrento_colore_it_202002.eps>
 (epstopdf)             \includegraphics on input line 7.
 Package epstopdf Info: Output file is already uptodate.
-<marchio_unitrento_colore_it_202002-eps-converted-to.pdf, id=108, 369.7815pt x 
+<marchio_unitrento_colore_it_202002-eps-converted-to.pdf, id=112, 369.7815pt x 
 114.6684pt>
 File: marchio_unitrento_colore_it_202002-eps-converted-to.pdf Graphic file (typ
 e pdf)
@@ -427,7 +427,7 @@ Overfull \hbox (2.04405pt too wide) in paragraph at lines 4--5
 em built on a fully-decentralized
  []
 
-<pict/basicexample.png, id=178, 860.21375pt x 380.42125pt>
+<pict/basicexample.png, id=183, 860.21375pt x 380.42125pt>
 File: pict/basicexample.png Graphic file (type png)
 <use pict/basicexample.png>
 Package pdftex.def Info: pict/basicexample.png  used on input line 29.
@@ -441,7 +441,7 @@ Overfull \hbox (16.32677pt too wide) in paragraph at lines 46--47
 ol-lected to-gether in the blockchain,
  []
 
-<pict/txstruct.png, id=188, 360.34625pt x 481.8pt>
+<pict/txstruct.png, id=193, 360.34625pt x 481.8pt>
 File: pict/txstruct.png Graphic file (type png)
 <use pict/txstruct.png>
 Package pdftex.def Info: pict/txstruct.png  used on input line 51.
@@ -450,12 +450,12 @@ Package pdftex.def Info: pict/txstruct.png  used on input line 51.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5 <./pict/basicexample.png>] [6 <./pict/txstruct.png>]
-<pict/blockstruct.png, id=206, 598.235pt x 452.69125pt>
+<pict/blockstruct.png, id=211, 598.235pt x 452.69125pt>
 File: pict/blockstruct.png Graphic file (type png)
 <use pict/blockstruct.png>
 Package pdftex.def Info: pict/blockstruct.png  used on input line 81.
 (pdftex.def)             Requested size: 249.13371pt x 188.52647pt.
-<pict/blockchain-synch.png, id=210, 349.305pt x 381.425pt>
+<pict/blockchain-synch.png, id=215, 349.305pt x 381.425pt>
 File: pict/blockchain-synch.png Graphic file (type png)
 <use pict/blockchain-synch.png>
 Package pdftex.def Info: pict/blockchain-synch.png  used on input line 101.
@@ -467,7 +467,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [7 <./pict/blockstruct.png>] [8 <./pict/blockchain-synch.png>])
 (./capitolo3.tex
 Chapter 3.
-<pict/BTCconnection.png, id=231, 351.3125pt x 338.26375pt>
+<pict/BTCconnection.png, id=236, 351.3125pt x 338.26375pt>
 File: pict/BTCconnection.png Graphic file (type png)
 <use pict/BTCconnection.png>
 Package pdftex.def Info: pict/BTCconnection.png  used on input line 24.
@@ -476,7 +476,7 @@ Package pdftex.def Info: pict/BTCconnection.png  used on input line 24.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [9]
-<pict/BTCaddr.png, id=247, 351.3125pt x 294.09875pt>
+<pict/BTCaddr.png, id=252, 351.3125pt x 294.09875pt>
 File: pict/BTCaddr.png Graphic file (type png)
 <use pict/BTCaddr.png>
 Package pdftex.def Info: pict/BTCaddr.png  used on input line 51.
@@ -488,18 +488,18 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [10 <./pict/BTCconnection.png>] [11 <./pict/BTCaddr.png>]) (./capitolo4.tex
 Chapter 4.
 [12]
-<pict/network-partition.png, id=291, 591.20876pt x 263.98625pt>
+<pict/network-partition.png, id=296, 591.20876pt x 263.98625pt>
 File: pict/network-partition.png Graphic file (type png)
 <use pict/network-partition.png>
 Package pdftex.def Info: pict/network-partition.png  used on input line 42.
 (pdftex.def)             Requested size: 249.13371pt x 111.24002pt.
  [13 <./pict/network-partition.png>]
-<pict/sybil.png, id=310, 371.3875pt x 496.85625pt>
+<pict/sybil.png, id=315, 371.3875pt x 496.85625pt>
 File: pict/sybil.png Graphic file (type png)
 <use pict/sybil.png>
 Package pdftex.def Info: pict/sybil.png  used on input line 59.
 (pdftex.def)             Requested size: 181.18439pt x 242.40028pt.
-<pict/blockrace1.png, id=314, 901.3675pt x 176.66pt>
+<pict/blockrace1.png, id=319, 901.3675pt x 176.66pt>
 File: pict/blockrace1.png Graphic file (type png)
 <use pict/blockrace1.png>
 Package pdftex.def Info: pict/blockrace1.png  used on input line 74.
@@ -508,7 +508,7 @@ Package pdftex.def Info: pict/blockrace1.png  used on input line 74.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<pict/blockrace2.png, id=315, 1141.26375pt x 176.66pt>
+<pict/blockrace2.png, id=320, 1141.26375pt x 176.66pt>
 File: pict/blockrace2.png Graphic file (type png)
 <use pict/blockrace2.png>
 Package pdftex.def Info: pict/blockrace2.png  used on input line 81.
@@ -517,7 +517,7 @@ Package pdftex.def Info: pict/blockrace2.png  used on input line 81.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [14 <./pict/sybil.png>]
-<pict/0confirm-doublespend.png, id=333, 649.42625pt x 147.55125pt>
+<pict/0confirm-doublespend.png, id=338, 649.42625pt x 147.55125pt>
 File: pict/0confirm-doublespend.png Graphic file (type png)
 <use pict/0confirm-doublespend.png>
 Package pdftex.def Info: pict/0confirm-doublespend.png  used on input line 107.
@@ -528,7 +528,7 @@ Package pdftex.def Info: pict/0confirm-doublespend.png  used on input line 107.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [15 <./pict/blockrace1.png> <./pict/blockrace2.png>]
-<pict/nconfirm-doublespend.png, id=344, 743.77875pt x 423.5825pt>
+<pict/nconfirm-doublespend.png, id=349, 743.77875pt x 423.5825pt>
 File: pict/nconfirm-doublespend.png Graphic file (type png)
 <use pict/nconfirm-doublespend.png>
 Package pdftex.def Info: pict/nconfirm-doublespend.png  used on input line 118.
@@ -541,7 +541,7 @@ Chapter 5.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17]
-<pict/atkaddr.png, id=372, 421.575pt x 396.48125pt>
+<pict/atkaddr.png, id=377, 421.575pt x 396.48125pt>
 File: pict/atkaddr.png Graphic file (type png)
 <use pict/atkaddr.png>
 Package pdftex.def Info: pict/atkaddr.png  used on input line 29.
@@ -549,195 +549,195 @@ Package pdftex.def Info: pict/atkaddr.png  used on input line 29.
 
 [18 <./pict/atkaddr.png>] [19]) (./capitolo6.tex
 Chapter 6.
-<pict/results/noatk-40.png, id=391, 462.528pt x 346.896pt>
+<pict/results/noatk-40.png, id=396, 462.528pt x 346.896pt>
 File: pict/results/noatk-40.png Graphic file (type png)
 <use pict/results/noatk-40.png>
-Package pdftex.def Info: pict/results/noatk-40.png  used on input line 10.
+Package pdftex.def Info: pict/results/noatk-40.png  used on input line 16.
 (pdftex.def)             Requested size: 249.13371pt x 186.84995pt.
 
-Overfull \hbox (22.64977pt too wide) in paragraph at lines 10--12
+Overfull \hbox (22.64977pt too wide) in paragraph at lines 16--18
  [][] 
  []
 
-<pict/results/noatk-80.png, id=392, 462.528pt x 346.896pt>
+<pict/results/noatk-80.png, id=397, 462.528pt x 346.896pt>
 File: pict/results/noatk-80.png Graphic file (type png)
 <use pict/results/noatk-80.png>
-Package pdftex.def Info: pict/results/noatk-80.png  used on input line 17.
+Package pdftex.def Info: pict/results/noatk-80.png  used on input line 23.
 (pdftex.def)             Requested size: 249.13371pt x 186.84995pt.
 
-Overfull \hbox (22.64977pt too wide) in paragraph at lines 17--19
+Overfull \hbox (22.64977pt too wide) in paragraph at lines 23--25
  [][] 
  []
 
 
-Overfull \hbox (19.44853pt too wide) in paragraph at lines 9--22
+Overfull \hbox (19.44853pt too wide) in paragraph at lines 15--28
 [][]   [] 
  []
 
-<pict/results/in-cov.png, id=395, 462.528pt x 346.896pt>
+<pict/results/in-cov.png, id=400, 462.528pt x 346.896pt>
 File: pict/results/in-cov.png Graphic file (type png)
 <use pict/results/in-cov.png>
-Package pdftex.def Info: pict/results/in-cov.png  used on input line 27.
+Package pdftex.def Info: pict/results/in-cov.png  used on input line 33.
 (pdftex.def)             Requested size: 362.37569pt x 271.79521pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pict/results/in-hon-avg-neigh.png, id=397, 462.528pt x 346.896pt>
+[20 <./pict/results/noatk-40.png> <./pict/results/noatk-80.png>]
+<pict/results/in-hon-avg-neigh.png, id=410, 462.528pt x 346.896pt>
 File: pict/results/in-hon-avg-neigh.png Graphic file (type png)
 <use pict/results/in-hon-avg-neigh.png>
 Package pdftex.def Info: pict/results/in-hon-avg-neigh.png  used on input line 
-39.
+45.
 (pdftex.def)             Requested size: 249.13371pt x 186.84995pt.
 
-Overfull \hbox (22.64977pt too wide) in paragraph at lines 39--41
+Overfull \hbox (22.64977pt too wide) in paragraph at lines 45--47
  [][] 
  []
 
-<pict/results/in-hon-avg-neigh-atk.png, id=398, 462.528pt x 346.896pt>
+<pict/results/in-hon-avg-neigh-atk.png, id=411, 462.528pt x 346.896pt>
 File: pict/results/in-hon-avg-neigh-atk.png Graphic file (type png)
 <use pict/results/in-hon-avg-neigh-atk.png>
 Package pdftex.def Info: pict/results/in-hon-avg-neigh-atk.png  used on input l
-ine 46.
+ine 52.
 (pdftex.def)             Requested size: 249.13371pt x 186.84995pt.
 
-Overfull \hbox (22.64977pt too wide) in paragraph at lines 46--48
+Overfull \hbox (22.64977pt too wide) in paragraph at lines 52--54
  [][] 
  []
 
 
-Overfull \hbox (19.44853pt too wide) in paragraph at lines 38--51
+Underfull \hbox (badness 1831) in paragraph at lines 54--54
+\OT1/cmr/m/n/12 among neigh-bours (stan-dard at-tack sce-
+ []
+
+
+Overfull \hbox (19.44853pt too wide) in paragraph at lines 44--57
 [][]   [] 
  []
 
-[20 <./pict/results/noatk-40.png> <./pict/results/noatk-80.png>]
-<pict/results/in-hon-avg-known-atk.png, id=410, 462.528pt x 346.896pt>
+<pict/results/in-hon-avg-known-atk.png, id=414, 462.528pt x 346.896pt>
 File: pict/results/in-hon-avg-known-atk.png Graphic file (type png)
 <use pict/results/in-hon-avg-known-atk.png>
 Package pdftex.def Info: pict/results/in-hon-avg-known-atk.png  used on input l
-ine 60.
+ine 66.
 (pdftex.def)             Requested size: 249.13371pt x 186.84995pt.
 
-Overfull \hbox (22.64977pt too wide) in paragraph at lines 60--62
+Overfull \hbox (22.64977pt too wide) in paragraph at lines 66--68
  [][] 
  []
 
-<pict/results/in-atk-avg-degree.png, id=411, 462.528pt x 346.896pt>
+<pict/results/in-atk-avg-degree.png, id=415, 462.528pt x 346.896pt>
 File: pict/results/in-atk-avg-degree.png Graphic file (type png)
 <use pict/results/in-atk-avg-degree.png>
 Package pdftex.def Info: pict/results/in-atk-avg-degree.png  used on input line
- 67.
+ 73.
 (pdftex.def)             Requested size: 249.13371pt x 186.84995pt.
 
-Overfull \hbox (22.64977pt too wide) in paragraph at lines 67--69
+Overfull \hbox (22.64977pt too wide) in paragraph at lines 73--75
  [][] 
  []
 
 
-Overfull \hbox (19.44853pt too wide) in paragraph at lines 59--72
+Overfull \hbox (19.44853pt too wide) in paragraph at lines 65--78
 [][]   [] 
  []
 
-<pict/results/in-cluster.png, id=414, 462.528pt x 346.896pt>
+<pict/results/in-cluster.png, id=418, 462.528pt x 346.896pt>
 File: pict/results/in-cluster.png Graphic file (type png)
 <use pict/results/in-cluster.png>
-Package pdftex.def Info: pict/results/in-cluster.png  used on input line 83.
+Package pdftex.def Info: pict/results/in-cluster.png  used on input line 89.
 (pdftex.def)             Requested size: 249.13371pt x 186.84995pt.
 
-Overfull \hbox (22.64977pt too wide) in paragraph at lines 83--85
+Overfull \hbox (22.64977pt too wide) in paragraph at lines 89--91
  [][] 
  []
 
-<pict/results/in-dns.png, id=415, 462.528pt x 346.896pt>
+<pict/results/in-dns.png, id=419, 462.528pt x 346.896pt>
 File: pict/results/in-dns.png Graphic file (type png)
 <use pict/results/in-dns.png>
-Package pdftex.def Info: pict/results/in-dns.png  used on input line 90.
+Package pdftex.def Info: pict/results/in-dns.png  used on input line 96.
 (pdftex.def)             Requested size: 249.13371pt x 186.84995pt.
 
-Overfull \hbox (22.64977pt too wide) in paragraph at lines 90--92
+Overfull \hbox (22.64977pt too wide) in paragraph at lines 96--98
  [][] 
  []
 
 
-Overfull \hbox (19.44853pt too wide) in paragraph at lines 82--95
+Overfull \hbox (19.44853pt too wide) in paragraph at lines 88--101
 [][]   [] 
  []
 
 [21 <./pict/results/in-cov.png>]
-<pict/results/ext-cov.png, id=425, 462.528pt x 346.896pt>
+<pict/results/ext-cov.png, id=430, 462.528pt x 346.896pt>
 File: pict/results/ext-cov.png Graphic file (type png)
 <use pict/results/ext-cov.png>
-Package pdftex.def Info: pict/results/ext-cov.png  used on input line 105.
+Package pdftex.def Info: pict/results/ext-cov.png  used on input line 111.
 (pdftex.def)             Requested size: 362.37569pt x 271.79521pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<pict/results/ext-hon-atk-neigh.png, id=426, 462.528pt x 346.896pt>
+<pict/results/ext-hon-atk-neigh.png, id=431, 462.528pt x 346.896pt>
 File: pict/results/ext-hon-atk-neigh.png Graphic file (type png)
 <use pict/results/ext-hon-atk-neigh.png>
 Package pdftex.def Info: pict/results/ext-hon-atk-neigh.png  used on input line
- 113.
+ 119.
 (pdftex.def)             Requested size: 249.13371pt x 186.84995pt.
 
-Overfull \hbox (22.64977pt too wide) in paragraph at lines 113--115
+Overfull \hbox (22.64977pt too wide) in paragraph at lines 119--121
  [][] 
  []
 
-<pict/results/ex-hon-atk-known.png, id=427, 462.528pt x 346.896pt>
+<pict/results/ex-hon-atk-known.png, id=432, 462.528pt x 346.896pt>
 File: pict/results/ex-hon-atk-known.png Graphic file (type png)
 <use pict/results/ex-hon-atk-known.png>
 Package pdftex.def Info: pict/results/ex-hon-atk-known.png  used on input line 
-121.
+127.
 (pdftex.def)             Requested size: 249.13371pt x 186.84995pt.
 
-Overfull \hbox (22.64977pt too wide) in paragraph at lines 121--122
+Overfull \hbox (22.64977pt too wide) in paragraph at lines 127--128
  [][] 
  []
 
 
-Overfull \hbox (19.44853pt too wide) in paragraph at lines 112--125
+Overfull \hbox (19.44853pt too wide) in paragraph at lines 118--131
 [][]   [] 
  []
 
-<pict/results/ex-atk-avg-degree.png, id=428, 462.528pt x 346.896pt>
+<pict/results/ex-atk-avg-degree.png, id=433, 462.528pt x 346.896pt>
 File: pict/results/ex-atk-avg-degree.png Graphic file (type png)
 <use pict/results/ex-atk-avg-degree.png>
 Package pdftex.def Info: pict/results/ex-atk-avg-degree.png  used on input line
- 130.
+ 136.
 (pdftex.def)             Requested size: 249.13371pt x 186.84995pt.
 
-Overfull \hbox (22.64977pt too wide) in paragraph at lines 130--131
+Overfull \hbox (22.64977pt too wide) in paragraph at lines 136--137
  [][] 
  []
 
-<pict/results/ex-atk-dd.png, id=429, 462.528pt x 346.896pt>
+<pict/results/ex-atk-dd.png, id=434, 462.528pt x 346.896pt>
 File: pict/results/ex-atk-dd.png Graphic file (type png)
 <use pict/results/ex-atk-dd.png>
-Package pdftex.def Info: pict/results/ex-atk-dd.png  used on input line 137.
+Package pdftex.def Info: pict/results/ex-atk-dd.png  used on input line 143.
 (pdftex.def)             Requested size: 249.13371pt x 186.84995pt.
 
-Overfull \hbox (22.64977pt too wide) in paragraph at lines 137--138
+Overfull \hbox (22.64977pt too wide) in paragraph at lines 143--144
  [][] 
  []
 
 
-Overfull \hbox (19.44853pt too wide) in paragraph at lines 128--141
+Overfull \hbox (19.44853pt too wide) in paragraph at lines 134--147
 [][]   [] 
  []
 
-) (./capitolo7.tex
+[22 <./pict/results/in-hon-avg-neigh.png> <./pict/results/in-hon-avg-neigh-atk.
+png> <./pict/results/in-hon-avg-known-atk.png> <./pict/results/in-atk-avg-degre
+e.png>]) [23 <./pict/results/in-cluster.png> <./pict/results/in-dns.png> <./pic
+t/results/ext-cov.png>] (./capitolo7.tex
 Chapter 7.
-
-Underfull \vbox (badness 4001) has occurred while \output is active []
-
- [22 <./pict/results/in-hon-avg-neigh.png> <./pict/results/in-hon-avg-neigh-atk
-.png> <./pict/results/in-hon-avg-known-atk.png> <./pict/results/in-atk-avg-degr
-ee.png>]
-[23 <./pict/results/in-cluster.png> <./pict/results/in-dns.png> <./pict/results
-/ext-cov.png>] [24 <./pict/results/ext-hon-atk-neigh.png> <./pict/results/ex-ho
-n-atk-known.png> <./pict/results/ex-atk-avg-degree.png> <./pict/results/ex-atk-
-dd.png>]
-<pict/results/in-atkknown-beginning.png, id=474, 462.528pt x 346.896pt>
+[24 <./pict/results/ext-hon-atk-neigh.png> <./pict/results/ex-hon-atk-known.png
+>]
+<pict/results/in-atkknown-beginning.png, id=477, 462.528pt x 346.896pt>
 File: pict/results/in-atkknown-beginning.png Graphic file (type png)
 <use pict/results/in-atkknown-beginning.png>
 Package pdftex.def Info: pict/results/in-atkknown-beginning.png  used on input 
@@ -747,7 +747,8 @@ line 36.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[25] [26 <./pict/results/in-atkknown-beginning.png>])
+[25 <./pict/results/ex-atk-avg-degree.png> <./pict/results/ex-atk-dd.png>]
+[26 <./pict/results/in-atkknown-beginning.png>])
 (./Sassetti_Gianluca_laurea_2021.bbl [27]
 Underfull \hbox (badness 4492) in paragraph at lines 9--12
 []\OT1/cmr/m/n/12 Bitcoin pro-to-col doc-u-men-ta-tion.  []$\OT1/cmtt/m/n/12 ht
@@ -765,17 +766,21 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 164.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 164.
 Package rerunfilecheck Info: File `Sassetti_Gianluca_laurea_2021.out' has not c
 hanged.
-(rerunfilecheck)             Checksum: B00F5F50CC61A69C851DFD1C0950ACCC;1724.
+(rerunfilecheck)             Checksum: 8F0CE7B5BFEC49AFDBFD13D8D6CA3179;1788.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 164.
  ) 
 Here is how much of TeX's memory you used:
- 7774 strings out of 481239
- 124521 string characters out of 5920377
- 394089 words of memory out of 5000000
- 22753 multiletter control sequences out of 15000+600000
+ 7776 strings out of 481239
+ 124545 string characters out of 5920377
+ 393093 words of memory out of 5000000
+ 22754 multiletter control sequences out of 15000+600000
  538972 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,7n,42p,644b,547s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,7n,42p,646b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/tex
@@ -784,10 +789,10 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/font
 s/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Sassetti_Gianluca_laurea_2021.pdf (32 pages, 907177 bytes).
+Output written on Sassetti_Gianluca_laurea_2021.pdf (32 pages, 908086 bytes).
 PDF statistics:
- 568 PDF objects out of 1000 (max. 8388607)
- 462 compressed objects within 5 object streams
- 119 named destinations out of 1000 (max. 500000)
- 354 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 573 PDF objects out of 1000 (max. 8388607)
+ 467 compressed objects within 5 object streams
+ 120 named destinations out of 1000 (max. 500000)
+ 362 words of extra memory for PDF output out of 10000 (max. 10000000)
 

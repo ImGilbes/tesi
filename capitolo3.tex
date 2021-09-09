@@ -18,7 +18,7 @@ In this work only full nodes are considered as they are the ones that have an ac
 The following chapters provide a complete overview of the Bitcoin protocol.
 
 \section{Connection and peer discovery}\label{sec:peerdisc}
-In order to establish a connection two peers need to exchange version messages over an unencrypted TCP channel in a handshake fashion as shown in Fig.~\ref{fig:btcconn}. The node that first sends a \texttt{version} message establishes an \emph{outgoing connection}. The receiving node sets up an \emph{ingoing connection} instead. Once the handshake is completed the connection is fully set up.
+In order to establish a connection two peers need to exchange version messages over an unencrypted TCP channel in a handshake fashion as shown in Figure~\ref{fig:btcconn}. The node that first sends a \texttt{version} message establishes an \emph{outgoing connection}. The receiving node sets up an \emph{ingoing connection} instead. Once the handshake is completed the connection is fully set up.
 
 \begin{figure}[h]
 	\includegraphics[width=.45\textwidth]{pict/BTCconnection.png}
@@ -43,7 +43,7 @@ The use of a local address database, also called \emph{peer cache}, provides rec
 
 Peer discovery after the first connection of a node is carried on through the exchange of \texttt{addr} messages containing the address and port number of other peers in the network~\cite{protocoldoc}~\cite{devguidep2p}.
 
-On connection set up the two nodes exchange \texttt{addr} messages, as shown in \emph{Fig.~\ref{fig:addr}}, providing each other with addresses from their local peer database.
+On connection set up the two nodes exchange \texttt{addr} messages, as shown in \emph{Figure~\ref{fig:addr}}, providing each other with addresses from their local peer database.
 
 On top of that, every twenty-four hours each node advertises itself on the network with an \texttt{addr} message containing only its own address.
 

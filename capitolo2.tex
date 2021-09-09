@@ -23,7 +23,7 @@ In the following sections the reader will find an introduction to the Bitcoin ne
 
 
 \section{An introductory example}\label{sec:useexample}
-A basic use case, shown in Fig.~\ref{fig:basicexample}, is presented here to get the reader started with Bitcoin.
+A basic use case, shown in Figure~\ref{fig:basicexample}, is presented here to get the reader started with Bitcoin.
 
 \begin{figure}[h!]
 	\includegraphics[width=.90\textwidth]{pict/basicexample.png}
@@ -45,7 +45,7 @@ Once the transaction is included in the blockchain, it is confirmed, thus the re
 \section{Transaction structure}\label{sec:tx}
 Transactions implement transfers. Valid transactions are collected together in the blockchain, which represents the entire, ordered history of all sets of coins ever available to users. Hence, one can determine the balance of a certain wallet just by scanning the transactions on the blockchain~\cite{tschorsch-intro-survey}.
 
-In Fig.~\ref{fig:tx} the reader can find the structure of a transaction, with its main fields.
+In Figure~\ref{fig:tx} the reader can find the structure of a transaction, with its main fields.
 
 \begin{figure}[h]
 	\includegraphics[width=.40\textwidth]{pict/txstruct.png}
@@ -75,7 +75,7 @@ Looking for the right nonce is exponential on the number $n$ of zeroes.
 
 The target value, and therefore the \emph{difficulty} of the computational task, is adjusted every 2016 blocks in order to keep the block generation and validation time around ten minutes.
 
-Fig.~\ref{fig:blockstruct} shows the main fields stored in a block.
+Figure~\ref{fig:blockstruct} shows the main fields stored in a block.
 
 \begin{figure}[h]
 	\includegraphics[width=.55\textwidth]{pict/blockstruct.png}
@@ -93,7 +93,7 @@ Transactions and blocks are gossiped through the network. Although each node has
 
 In particular, it is in the interest of miners to spread as fast as possible newly mined blocks in order to claim rewards and not waste time on stale views of the blockchain.
 
-For the latter purpose, nodes need to keep their local blockchain view consistent with that of their neighbours. Nodes exchange \texttt{getblocks} messages to request \texttt{inv} messages which advertise local blocks. Missing blocks in a received \texttt{inv} message are retrieved with a \texttt{getdata} message~\cite{protocoldoc}. The described message exchange can be found in Fig.~\ref{fig:synch}.
+For the latter purpose, nodes need to keep their local blockchain view consistent with that of their neighbours. Nodes exchange \texttt{getblocks} messages to request \texttt{inv} messages which advertise local blocks. Missing blocks in a received \texttt{inv} message are retrieved with a \texttt{getdata} message~\cite{protocoldoc}. The described message exchange can be found in Figure~\ref{fig:synch}.
 
 Furthermore, \texttt{inv} messages are also gossiped when a node receives a new block. It is relevant to note that new blocks will be dropped by the receiving peers if any transaction is invalid or already spent. Nodes implicitly accept a block by starting to work on the next one, which contains the hash of last received valid block. 
 

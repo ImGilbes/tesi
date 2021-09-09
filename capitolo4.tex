@@ -53,7 +53,7 @@ Such vector of attacks is applicable to any peer-to-peer system where users can 
 
 Although the creation of fake identities cannot be exploited to carry out 51\% attacks, since they do not hold any computing power, they can still be used to spread forged information or to withhold blocks.
 
-In the latter scenario, Sybil nodes, upon receiving a new block, send \texttt{inv} messages to their neighbours, but then leave unanswered the following \texttt{getdata} messages, thus delaying the propagation of blocks, as shown in \emph{Fig.~\ref{fig:sybil}}.
+In the latter scenario, Sybil nodes, upon receiving a new block, send \texttt{inv} messages to their neighbours, but then leave unanswered the following \texttt{getdata} messages, thus delaying the propagation of blocks, as shown in \emph{Figure~\ref{fig:sybil}}.
 
 \begin{figure}[h!]
 	\includegraphics[width=.4\textwidth]{pict/sybil.png}
@@ -66,9 +66,9 @@ If the propagation is delayed long enough, the victim node could start mining th
 
 Since only the longest chain stored among all peers is considered valid, all the other branches are dropped. The malicious user can exploit such forks to waste other peers' computing power or to perform double-spending~\cite{zhang-ds-sybil}. 
 
-To launch a double-spend, once the malicious user has successfully created a stale view of the blockchain in the victim, i.e. a fork, he releases two different transactions, Tx 1 and Tx 2, at the same time. Tx 1 is sent only to the victim node and Tx 2 is kept for its private chain, as shown in Fig.~\ref{fig:race1}.
+To launch a double-spend, once the malicious user has successfully created a stale view of the blockchain in the victim, i.e. a fork, he releases two different transactions, Tx 1 and Tx 2, at the same time. Tx 1 is sent only to the victim node and Tx 2 is kept for its private chain, as shown in Figure~\ref{fig:race1}.
 
-In the meanwhile Sybil nodes hamper the growth both of the public and victim's blockchain by withholding blocks. As a result the attacker can mine the next block first and then release the private blockchain therefore invalidating the victim's blockchain, as shown in Fig.~\ref{fig:race2}.
+In the meanwhile Sybil nodes hamper the growth both of the public and victim's blockchain by withholding blocks. As a result the attacker can mine the next block first and then release the private blockchain therefore invalidating the victim's blockchain, as shown in Figure~\ref{fig:race2}.
 
 \begin{figure}[h!]
 	\includegraphics[width=.9\textwidth]{pict/blockrace1.png}
@@ -97,9 +97,9 @@ Upon restarting, with high probability the victim will form all of its eight out
 
 Successful Eclipse attacks enable mining and spending attacks. Namely, eclipsing a subset of peers eliminates their mining power, hence making 51\% attacks easier. Selfish mining attacks can be carried out as well.
 
-The attacker that successfully splits the network can also engineer block races to deliberately waste the resources of other miners or attempt at double-spending attacks, as in Fig.~\ref{fig:race1} and Fig.~\ref{fig:race2}, described in Section~\ref{sec:sybil}.
+The attacker that successfully splits the network can also engineer block races to deliberately waste the resources of other miners or attempt at double-spending attacks, as in Figure~\ref{fig:race1} and Figure~\ref{fig:race2}, described in Section~\ref{sec:sybil}.
 
-Depending on the victim's policies, the malicious user can launch a \textit{0-confirmation double-spending attack}, that is for the case in which the merchant decides to release goods before the transaction is confirmed. As in the case of Sybil-based double-spend, the attacker releases two transactions and keeps the victim's view of the blockchain stale, so that it would be dropped later (Fig.~\ref{fig:0confirm}).
+Depending on the victim's policies, the malicious user can launch a \textit{0-confirmation double-spending attack}, that is for the case in which the merchant decides to release goods before the transaction is confirmed. As in the case of Sybil-based double-spend, the attacker releases two transactions and keeps the victim's view of the blockchain stale, so that it would be dropped later (Figure~\ref{fig:0confirm}).
 
 Compared to the Sybil-based double-spending, Eclipse-based double-spending attacks of this kind have a greater chance of success, since they control all the victim's traffic and do not have to rely on delaying a block from being disseminated. Although the attacker needs to go through the partition set up first, whereas creating Sybils is much easier.
 
@@ -112,7 +112,7 @@ Compared to the Sybil-based double-spending, Eclipse-based double-spending attac
 
 Were the victim to adopt a N-blocks confirmation policy for transactions, the attacker can still launch a \textit{N-confirmations double-spend} if it has successfully eclipsed a subset of connected peers.
 
-If that is the case, then the victims can be kept on an arbitrarily stale view of the blockchain and then be given one of the two transactions the attacker creates, while giving the other to the rest of the cryptocurrency network. After the eclipsed peers mine $N - 1$ blocks, the transaction is confirmed and the goods are exchanged. Thereafter, the obsolete branch of the blockchain known by the victims will be dropped once the attacker releases the up-to-date (and longer) version disseminated in the network (Fig.~\ref{fig:nconfirm} describes the process).
+If that is the case, then the victims can be kept on an arbitrarily stale view of the blockchain and then be given one of the two transactions the attacker creates, while giving the other to the rest of the cryptocurrency network. After the eclipsed peers mine $N - 1$ blocks, the transaction is confirmed and the goods are exchanged. Thereafter, the obsolete branch of the blockchain known by the victims will be dropped once the attacker releases the up-to-date (and longer) version disseminated in the network (Figure~\ref{fig:nconfirm} describes the process).
 
 \begin{figure}[h!]
 	\includegraphics[width=.75\textwidth]{pict/nconfirm-doublespend.png}

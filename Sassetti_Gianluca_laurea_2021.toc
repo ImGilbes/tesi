@@ -1,4 +1,4 @@
-\contentsline {chapter}{Sommario}{2}{chapter*.3}%
+\contentsline {chapter}{Abstract}{2}{chapter*.3}%
 \contentsline {chapter}{\numberline {1}Distributed data storages}{3}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Addressing the issues of distributed ledgers}{3}{section.1.1}%
 \contentsline {chapter}{\numberline {2}Introduction to Bitcoin}{4}{chapter.2}%
@@ -21,6 +21,7 @@
 \contentsline {section}{\numberline {5.2}Metrics and performance evaluation}{19}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Software and implementation}{19}{section.5.3}%
 \contentsline {chapter}{\numberline {6}Results}{20}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Alternative attack scenario}{21}{section.6.1}%
-\contentsline {chapter}{\numberline {7}Conclusions}{23}{chapter.7}%
+\contentsline {section}{\numberline {6.1}Standard scenario}{20}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Alternative attack scenario}{22}{section.6.2}%
+\contentsline {chapter}{\numberline {7}Conclusions}{24}{chapter.7}%
 \contentsline {chapter}{Bibliography}{27}{figure.caption.25}%
